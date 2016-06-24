@@ -31,7 +31,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, sass,  javascriptLibraries, images, copy, templates, extracss));
+ gulp.series(clean, sass, javascript, javascriptLibraries, images, copy, templates, extracss));
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('quick',
@@ -44,7 +44,7 @@ gulp.task('laravel-dev',
  gulp.series(laravel_watch));
 
 gulp.task('laravelize',
- gulp.series(laravel_sass, laravel_copy, laravel_javascript, laravel_javascriptLibraries,laravel_images, laravel_templates, laravel_extracss));
+ gulp.series('build', laravel_sass, laravel_copy, laravel_javascript, laravel_javascriptLibraries,laravel_images, laravel_templates, laravel_extracss));
 
 gulp.task('watch', gulp.series('build', server, watch));
 // Build the site, run the server, and watch for file changes
