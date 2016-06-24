@@ -1,0 +1,2455 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.2.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'update' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 silly mapToRegistry name babel-core
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'babel-core',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   name: 'babel-core',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/babel-core
+9 silly mapToRegistry name browser-sync
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'browser-sync',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'browser-sync',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/browser-sync
+14 silly mapToRegistry name gulp-autoprefixer
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'gulp-autoprefixer',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   name: 'gulp-autoprefixer',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/gulp-autoprefixer
+19 silly mapToRegistry name gulp-babel
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry data Result {
+22 silly mapToRegistry   raw: 'gulp-babel',
+22 silly mapToRegistry   scope: null,
+22 silly mapToRegistry   name: 'gulp-babel',
+22 silly mapToRegistry   rawSpec: '',
+22 silly mapToRegistry   spec: 'latest',
+22 silly mapToRegistry   type: 'tag' }
+23 silly mapToRegistry uri https://registry.npmjs.org/gulp-babel
+24 silly mapToRegistry name gulp-concat
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'gulp-concat',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   name: 'gulp-concat',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/gulp-concat
+29 silly mapToRegistry name gulp-cssnano
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'gulp-cssnano',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   name: 'gulp-cssnano',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/gulp-cssnano
+34 silly mapToRegistry name gulp-if
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'gulp-if',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   name: 'gulp-if',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/gulp-if
+39 silly mapToRegistry name gulp-imagemin
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry data Result {
+42 silly mapToRegistry   raw: 'gulp-imagemin',
+42 silly mapToRegistry   scope: null,
+42 silly mapToRegistry   name: 'gulp-imagemin',
+42 silly mapToRegistry   rawSpec: '',
+42 silly mapToRegistry   spec: 'latest',
+42 silly mapToRegistry   type: 'tag' }
+43 silly mapToRegistry uri https://registry.npmjs.org/gulp-imagemin
+44 silly mapToRegistry name gulp-load-plugins
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'gulp-load-plugins',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   name: 'gulp-load-plugins',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/gulp-load-plugins
+49 silly mapToRegistry name gulp-sass
+50 silly mapToRegistry using default registry
+51 silly mapToRegistry registry https://registry.npmjs.org/
+52 silly mapToRegistry data Result {
+52 silly mapToRegistry   raw: 'gulp-sass',
+52 silly mapToRegistry   scope: null,
+52 silly mapToRegistry   name: 'gulp-sass',
+52 silly mapToRegistry   rawSpec: '',
+52 silly mapToRegistry   spec: 'latest',
+52 silly mapToRegistry   type: 'tag' }
+53 silly mapToRegistry uri https://registry.npmjs.org/gulp-sass
+54 silly mapToRegistry name gulp-sourcemaps
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry data Result {
+57 silly mapToRegistry   raw: 'gulp-sourcemaps',
+57 silly mapToRegistry   scope: null,
+57 silly mapToRegistry   name: 'gulp-sourcemaps',
+57 silly mapToRegistry   rawSpec: '',
+57 silly mapToRegistry   spec: 'latest',
+57 silly mapToRegistry   type: 'tag' }
+58 silly mapToRegistry uri https://registry.npmjs.org/gulp-sourcemaps
+59 silly mapToRegistry name gulp-uglify
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry data Result {
+62 silly mapToRegistry   raw: 'gulp-uglify',
+62 silly mapToRegistry   scope: null,
+62 silly mapToRegistry   name: 'gulp-uglify',
+62 silly mapToRegistry   rawSpec: '',
+62 silly mapToRegistry   spec: 'latest',
+62 silly mapToRegistry   type: 'tag' }
+63 silly mapToRegistry uri https://registry.npmjs.org/gulp-uglify
+64 silly mapToRegistry name gulp-uncss
+65 silly mapToRegistry using default registry
+66 silly mapToRegistry registry https://registry.npmjs.org/
+67 silly mapToRegistry data Result {
+67 silly mapToRegistry   raw: 'gulp-uncss',
+67 silly mapToRegistry   scope: null,
+67 silly mapToRegistry   name: 'gulp-uncss',
+67 silly mapToRegistry   rawSpec: '',
+67 silly mapToRegistry   spec: 'latest',
+67 silly mapToRegistry   type: 'tag' }
+68 silly mapToRegistry uri https://registry.npmjs.org/gulp-uncss
+69 silly mapToRegistry name js-yaml
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry data Result {
+72 silly mapToRegistry   raw: 'js-yaml',
+72 silly mapToRegistry   scope: null,
+72 silly mapToRegistry   name: 'js-yaml',
+72 silly mapToRegistry   rawSpec: '',
+72 silly mapToRegistry   spec: 'latest',
+72 silly mapToRegistry   type: 'tag' }
+73 silly mapToRegistry uri https://registry.npmjs.org/js-yaml
+74 silly mapToRegistry name panini
+75 silly mapToRegistry using default registry
+76 silly mapToRegistry registry https://registry.npmjs.org/
+77 silly mapToRegistry data Result {
+77 silly mapToRegistry   raw: 'panini',
+77 silly mapToRegistry   scope: null,
+77 silly mapToRegistry   name: 'panini',
+77 silly mapToRegistry   rawSpec: '',
+77 silly mapToRegistry   spec: 'latest',
+77 silly mapToRegistry   type: 'tag' }
+78 silly mapToRegistry uri https://registry.npmjs.org/panini
+79 silly mapToRegistry name rimraf
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry data Result {
+82 silly mapToRegistry   raw: 'rimraf',
+82 silly mapToRegistry   scope: null,
+82 silly mapToRegistry   name: 'rimraf',
+82 silly mapToRegistry   rawSpec: '',
+82 silly mapToRegistry   spec: 'latest',
+82 silly mapToRegistry   type: 'tag' }
+83 silly mapToRegistry uri https://registry.npmjs.org/rimraf
+84 silly mapToRegistry name yargs
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry data Result {
+87 silly mapToRegistry   raw: 'yargs',
+87 silly mapToRegistry   scope: null,
+87 silly mapToRegistry   name: 'yargs',
+87 silly mapToRegistry   rawSpec: '',
+87 silly mapToRegistry   spec: 'latest',
+87 silly mapToRegistry   type: 'tag' }
+88 silly mapToRegistry uri https://registry.npmjs.org/yargs
+89 silly mapToRegistry name babel-plugin-transform-es2015-arrow-functions
+90 silly mapToRegistry using default registry
+91 silly mapToRegistry registry https://registry.npmjs.org/
+92 silly mapToRegistry data Result {
+92 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-arrow-functions',
+92 silly mapToRegistry   scope: null,
+92 silly mapToRegistry   name: 'babel-plugin-transform-es2015-arrow-functions',
+92 silly mapToRegistry   rawSpec: '',
+92 silly mapToRegistry   spec: 'latest',
+92 silly mapToRegistry   type: 'tag' }
+93 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-arrow-functions
+94 silly mapToRegistry name babel-plugin-transform-es2015-block-scoped-functions
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry https://registry.npmjs.org/
+97 silly mapToRegistry data Result {
+97 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-block-scoped-functions',
+97 silly mapToRegistry   scope: null,
+97 silly mapToRegistry   name: 'babel-plugin-transform-es2015-block-scoped-functions',
+97 silly mapToRegistry   rawSpec: '',
+97 silly mapToRegistry   spec: 'latest',
+97 silly mapToRegistry   type: 'tag' }
+98 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoped-functions
+99 silly mapToRegistry name babel-plugin-transform-es2015-block-scoping
+100 silly mapToRegistry using default registry
+101 silly mapToRegistry registry https://registry.npmjs.org/
+102 silly mapToRegistry data Result {
+102 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-block-scoping',
+102 silly mapToRegistry   scope: null,
+102 silly mapToRegistry   name: 'babel-plugin-transform-es2015-block-scoping',
+102 silly mapToRegistry   rawSpec: '',
+102 silly mapToRegistry   spec: 'latest',
+102 silly mapToRegistry   type: 'tag' }
+103 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoping
+104 silly mapToRegistry name babel-plugin-transform-es2015-classes
+105 silly mapToRegistry using default registry
+106 silly mapToRegistry registry https://registry.npmjs.org/
+107 silly mapToRegistry data Result {
+107 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-classes',
+107 silly mapToRegistry   scope: null,
+107 silly mapToRegistry   name: 'babel-plugin-transform-es2015-classes',
+107 silly mapToRegistry   rawSpec: '',
+107 silly mapToRegistry   spec: 'latest',
+107 silly mapToRegistry   type: 'tag' }
+108 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-classes
+109 silly mapToRegistry name babel-plugin-transform-es2015-destructuring
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry data Result {
+112 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-destructuring',
+112 silly mapToRegistry   scope: null,
+112 silly mapToRegistry   name: 'babel-plugin-transform-es2015-destructuring',
+112 silly mapToRegistry   rawSpec: '',
+112 silly mapToRegistry   spec: 'latest',
+112 silly mapToRegistry   type: 'tag' }
+113 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-destructuring
+114 silly mapToRegistry name babel-plugin-transform-es2015-modules-commonjs
+115 silly mapToRegistry using default registry
+116 silly mapToRegistry registry https://registry.npmjs.org/
+117 silly mapToRegistry data Result {
+117 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-modules-commonjs',
+117 silly mapToRegistry   scope: null,
+117 silly mapToRegistry   name: 'babel-plugin-transform-es2015-modules-commonjs',
+117 silly mapToRegistry   rawSpec: '',
+117 silly mapToRegistry   spec: 'latest',
+117 silly mapToRegistry   type: 'tag' }
+118 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-modules-commonjs
+119 silly mapToRegistry name babel-plugin-transform-es2015-parameters
+120 silly mapToRegistry using default registry
+121 silly mapToRegistry registry https://registry.npmjs.org/
+122 silly mapToRegistry data Result {
+122 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-parameters',
+122 silly mapToRegistry   scope: null,
+122 silly mapToRegistry   name: 'babel-plugin-transform-es2015-parameters',
+122 silly mapToRegistry   rawSpec: '',
+122 silly mapToRegistry   spec: 'latest',
+122 silly mapToRegistry   type: 'tag' }
+123 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-parameters
+124 silly mapToRegistry name babel-plugin-transform-es2015-shorthand-properties
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry data Result {
+127 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-shorthand-properties',
+127 silly mapToRegistry   scope: null,
+127 silly mapToRegistry   name: 'babel-plugin-transform-es2015-shorthand-properties',
+127 silly mapToRegistry   rawSpec: '',
+127 silly mapToRegistry   spec: 'latest',
+127 silly mapToRegistry   type: 'tag' }
+128 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-shorthand-properties
+129 silly mapToRegistry name babel-plugin-transform-es2015-spread
+130 silly mapToRegistry using default registry
+131 silly mapToRegistry registry https://registry.npmjs.org/
+132 silly mapToRegistry data Result {
+132 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-spread',
+132 silly mapToRegistry   scope: null,
+132 silly mapToRegistry   name: 'babel-plugin-transform-es2015-spread',
+132 silly mapToRegistry   rawSpec: '',
+132 silly mapToRegistry   spec: 'latest',
+132 silly mapToRegistry   type: 'tag' }
+133 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-spread
+134 silly mapToRegistry name babel-plugin-transform-es2015-template-literals
+135 silly mapToRegistry using default registry
+136 silly mapToRegistry registry https://registry.npmjs.org/
+137 silly mapToRegistry data Result {
+137 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-template-literals',
+137 silly mapToRegistry   scope: null,
+137 silly mapToRegistry   name: 'babel-plugin-transform-es2015-template-literals',
+137 silly mapToRegistry   rawSpec: '',
+137 silly mapToRegistry   spec: 'latest',
+137 silly mapToRegistry   type: 'tag' }
+138 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-template-literals
+139 silly mapToRegistry name babel-preset-es2015
+140 silly mapToRegistry using default registry
+141 silly mapToRegistry registry https://registry.npmjs.org/
+142 silly mapToRegistry data Result {
+142 silly mapToRegistry   raw: 'babel-preset-es2015',
+142 silly mapToRegistry   scope: null,
+142 silly mapToRegistry   name: 'babel-preset-es2015',
+142 silly mapToRegistry   rawSpec: '',
+142 silly mapToRegistry   spec: 'latest',
+142 silly mapToRegistry   type: 'tag' }
+143 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-es2015
+144 silly mapToRegistry name gulp-extname
+145 silly mapToRegistry using default registry
+146 silly mapToRegistry registry https://registry.npmjs.org/
+147 silly mapToRegistry data Result {
+147 silly mapToRegistry   raw: 'gulp-extname',
+147 silly mapToRegistry   scope: null,
+147 silly mapToRegistry   name: 'gulp-extname',
+147 silly mapToRegistry   rawSpec: '',
+147 silly mapToRegistry   spec: 'latest',
+147 silly mapToRegistry   type: 'tag' }
+148 silly mapToRegistry uri https://registry.npmjs.org/gulp-extname
+149 silly mapToRegistry name style-sherpa
+150 silly mapToRegistry using default registry
+151 silly mapToRegistry registry https://registry.npmjs.org/
+152 silly mapToRegistry data Result {
+152 silly mapToRegistry   raw: 'style-sherpa',
+152 silly mapToRegistry   scope: null,
+152 silly mapToRegistry   name: 'style-sherpa',
+152 silly mapToRegistry   rawSpec: '',
+152 silly mapToRegistry   spec: 'latest',
+152 silly mapToRegistry   type: 'tag' }
+153 silly mapToRegistry uri https://registry.npmjs.org/style-sherpa
+154 verbose request uri https://registry.npmjs.org/babel-core
+155 verbose request no auth needed
+156 info attempt registry request try #1 at 5:09:01 PM
+157 verbose request id b07e6115ec08453d
+158 http request GET https://registry.npmjs.org/babel-core
+159 verbose request uri https://registry.npmjs.org/browser-sync
+160 verbose request no auth needed
+161 info attempt registry request try #1 at 5:09:01 PM
+162 http request GET https://registry.npmjs.org/browser-sync
+163 verbose request uri https://registry.npmjs.org/gulp-if
+164 verbose request no auth needed
+165 info attempt registry request try #1 at 5:09:01 PM
+166 http request GET https://registry.npmjs.org/gulp-if
+167 verbose request uri https://registry.npmjs.org/panini
+168 verbose request no auth needed
+169 info attempt registry request try #1 at 5:09:01 PM
+170 http request GET https://registry.npmjs.org/panini
+171 verbose request uri https://registry.npmjs.org/babel-plugin-transform-es2015-arrow-functions
+172 verbose request no auth needed
+173 info attempt registry request try #1 at 5:09:01 PM
+174 http request GET https://registry.npmjs.org/babel-plugin-transform-es2015-arrow-functions
+175 verbose request uri https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoped-functions
+176 verbose request no auth needed
+177 info attempt registry request try #1 at 5:09:01 PM
+178 http request GET https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoped-functions
+179 verbose request uri https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoping
+180 verbose request no auth needed
+181 info attempt registry request try #1 at 5:09:01 PM
+182 http request GET https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoping
+183 verbose request uri https://registry.npmjs.org/babel-plugin-transform-es2015-classes
+184 verbose request no auth needed
+185 info attempt registry request try #1 at 5:09:01 PM
+186 http request GET https://registry.npmjs.org/babel-plugin-transform-es2015-classes
+187 verbose request uri https://registry.npmjs.org/babel-plugin-transform-es2015-destructuring
+188 verbose request no auth needed
+189 info attempt registry request try #1 at 5:09:01 PM
+190 http request GET https://registry.npmjs.org/babel-plugin-transform-es2015-destructuring
+191 verbose request uri https://registry.npmjs.org/babel-plugin-transform-es2015-modules-commonjs
+192 verbose request no auth needed
+193 info attempt registry request try #1 at 5:09:01 PM
+194 http request GET https://registry.npmjs.org/babel-plugin-transform-es2015-modules-commonjs
+195 verbose request uri https://registry.npmjs.org/babel-plugin-transform-es2015-parameters
+196 verbose request no auth needed
+197 info attempt registry request try #1 at 5:09:01 PM
+198 http request GET https://registry.npmjs.org/babel-plugin-transform-es2015-parameters
+199 verbose request uri https://registry.npmjs.org/babel-plugin-transform-es2015-shorthand-properties
+200 verbose request no auth needed
+201 info attempt registry request try #1 at 5:09:01 PM
+202 http request GET https://registry.npmjs.org/babel-plugin-transform-es2015-shorthand-properties
+203 verbose request uri https://registry.npmjs.org/babel-plugin-transform-es2015-spread
+204 verbose request no auth needed
+205 info attempt registry request try #1 at 5:09:01 PM
+206 http request GET https://registry.npmjs.org/babel-plugin-transform-es2015-spread
+207 verbose request uri https://registry.npmjs.org/babel-plugin-transform-es2015-template-literals
+208 verbose request no auth needed
+209 info attempt registry request try #1 at 5:09:01 PM
+210 http request GET https://registry.npmjs.org/babel-plugin-transform-es2015-template-literals
+211 verbose request uri https://registry.npmjs.org/babel-preset-es2015
+212 verbose request no auth needed
+213 info attempt registry request try #1 at 5:09:01 PM
+214 http request GET https://registry.npmjs.org/babel-preset-es2015
+215 verbose request uri https://registry.npmjs.org/style-sherpa
+216 verbose request no auth needed
+217 info attempt registry request try #1 at 5:09:01 PM
+218 http request GET https://registry.npmjs.org/style-sherpa
+219 verbose request uri https://registry.npmjs.org/gulp-cssnano
+220 verbose request no auth needed
+221 info attempt registry request try #1 at 5:09:01 PM
+222 verbose etag "AUVLHLFX3VYR1QAE4PZKNWUB2"
+223 http request GET https://registry.npmjs.org/gulp-cssnano
+224 verbose request uri https://registry.npmjs.org/gulp-babel
+225 verbose request no auth needed
+226 info attempt registry request try #1 at 5:09:01 PM
+227 verbose etag "CSDM40U2W8UVW1T2Y4NFSFSWO"
+228 http request GET https://registry.npmjs.org/gulp-babel
+229 verbose request uri https://registry.npmjs.org/gulp-autoprefixer
+230 verbose request no auth needed
+231 info attempt registry request try #1 at 5:09:01 PM
+232 verbose etag "47LTJMEB3UWGAH6W563CQF4YD"
+233 http request GET https://registry.npmjs.org/gulp-autoprefixer
+234 verbose request uri https://registry.npmjs.org/gulp-concat
+235 verbose request no auth needed
+236 info attempt registry request try #1 at 5:09:01 PM
+237 verbose etag "6JDMSJDA2U7CKOJ03IHNK4K6F"
+238 http request GET https://registry.npmjs.org/gulp-concat
+239 verbose request uri https://registry.npmjs.org/gulp-sourcemaps
+240 verbose request no auth needed
+241 info attempt registry request try #1 at 5:09:01 PM
+242 verbose etag "B52J61JOAY0NW51YE0EZGMDPK"
+243 http request GET https://registry.npmjs.org/gulp-sourcemaps
+244 verbose request uri https://registry.npmjs.org/gulp-sass
+245 verbose request no auth needed
+246 info attempt registry request try #1 at 5:09:01 PM
+247 verbose etag "DSD4IQO64QZODLHS0KI86T80F"
+248 http request GET https://registry.npmjs.org/gulp-sass
+249 verbose request uri https://registry.npmjs.org/gulp-imagemin
+250 verbose request no auth needed
+251 info attempt registry request try #1 at 5:09:01 PM
+252 verbose etag "DLU2KPP2ZAN2HJG7ZUU71UX6I"
+253 http request GET https://registry.npmjs.org/gulp-imagemin
+254 verbose request uri https://registry.npmjs.org/gulp-load-plugins
+255 verbose request no auth needed
+256 info attempt registry request try #1 at 5:09:01 PM
+257 verbose etag "6C1R78ERVPLNBZ4SXGFGJTLFY"
+258 http request GET https://registry.npmjs.org/gulp-load-plugins
+259 verbose request uri https://registry.npmjs.org/gulp-uncss
+260 verbose request no auth needed
+261 info attempt registry request try #1 at 5:09:01 PM
+262 verbose etag "DDGS9Z8ZWTEGTBI9I8EVAQ5FT"
+263 http request GET https://registry.npmjs.org/gulp-uncss
+264 verbose request uri https://registry.npmjs.org/gulp-uglify
+265 verbose request no auth needed
+266 info attempt registry request try #1 at 5:09:01 PM
+267 verbose etag "PWR5GOBI3YRQWANWGVZTHYV4"
+268 http request GET https://registry.npmjs.org/gulp-uglify
+269 verbose request uri https://registry.npmjs.org/gulp-extname
+270 verbose request no auth needed
+271 info attempt registry request try #1 at 5:09:01 PM
+272 verbose etag "8W8CO0C6X0TIRPVN1UET4JHW4"
+273 http request GET https://registry.npmjs.org/gulp-extname
+274 verbose request uri https://registry.npmjs.org/rimraf
+275 verbose request no auth needed
+276 info attempt registry request try #1 at 5:09:01 PM
+277 verbose etag "C71VH0KPUAM2UHW9Q55GHJPKU"
+278 http request GET https://registry.npmjs.org/rimraf
+279 verbose request uri https://registry.npmjs.org/js-yaml
+280 verbose request no auth needed
+281 info attempt registry request try #1 at 5:09:01 PM
+282 verbose etag "5SRZ9MUE5Q4H6QYGEEHQT5JQE"
+283 http request GET https://registry.npmjs.org/js-yaml
+284 verbose request uri https://registry.npmjs.org/yargs
+285 verbose request no auth needed
+286 info attempt registry request try #1 at 5:09:01 PM
+287 verbose etag "11MR9LYIPFPOIXVB7BV6642F5"
+288 http request GET https://registry.npmjs.org/yargs
+289 http 200 https://registry.npmjs.org/babel-plugin-transform-es2015-shorthand-properties
+290 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+290 verbose headers   etag: '"EYBQI7NLKIYSVPWF0ZPQYDSA6"',
+290 verbose headers   'content-type': 'application/json',
+290 verbose headers   'content-encoding': 'gzip',
+290 verbose headers   'cache-control': 'max-age=300',
+290 verbose headers   'content-length': '2221',
+290 verbose headers   'accept-ranges': 'bytes',
+290 verbose headers   date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+290 verbose headers   via: '1.1 varnish',
+290 verbose headers   age: '160',
+290 verbose headers   connection: 'keep-alive',
+290 verbose headers   'x-served-by': 'cache-lax1437-LAX',
+290 verbose headers   'x-cache': 'HIT',
+290 verbose headers   'x-cache-hits': '1',
+290 verbose headers   'x-timer': 'S1466122142.977441,VS0,VE0',
+290 verbose headers   vary: 'Accept-Encoding' }
+291 silly get cb [ 200,
+291 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+291 silly get     etag: '"EYBQI7NLKIYSVPWF0ZPQYDSA6"',
+291 silly get     'content-type': 'application/json',
+291 silly get     'content-encoding': 'gzip',
+291 silly get     'cache-control': 'max-age=300',
+291 silly get     'content-length': '2221',
+291 silly get     'accept-ranges': 'bytes',
+291 silly get     date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+291 silly get     via: '1.1 varnish',
+291 silly get     age: '160',
+291 silly get     connection: 'keep-alive',
+291 silly get     'x-served-by': 'cache-lax1437-LAX',
+291 silly get     'x-cache': 'HIT',
+291 silly get     'x-cache-hits': '1',
+291 silly get     'x-timer': 'S1466122142.977441,VS0,VE0',
+291 silly get     vary: 'Accept-Encoding' } ]
+292 verbose get saving babel-plugin-transform-es2015-shorthand-properties to /Users/adamvisser/.npm/registry.npmjs.org/babel-plugin-transform-es2015-shorthand-properties/.cache.json
+293 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+294 http 200 https://registry.npmjs.org/babel-plugin-transform-es2015-arrow-functions
+295 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+295 verbose headers   etag: '"9LTVR7GLUC8IQW4OUDY1IBK8T"',
+295 verbose headers   'content-type': 'application/json',
+295 verbose headers   'content-encoding': 'gzip',
+295 verbose headers   'cache-control': 'max-age=300',
+295 verbose headers   'content-length': '2618',
+295 verbose headers   'accept-ranges': 'bytes',
+295 verbose headers   date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+295 verbose headers   via: '1.1 varnish',
+295 verbose headers   age: '1',
+295 verbose headers   connection: 'keep-alive',
+295 verbose headers   'x-served-by': 'cache-lax1425-LAX',
+295 verbose headers   'x-cache': 'HIT',
+295 verbose headers   'x-cache-hits': '1',
+295 verbose headers   'x-timer': 'S1466122142.979361,VS0,VE0',
+295 verbose headers   vary: 'Accept-Encoding' }
+296 silly get cb [ 200,
+296 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+296 silly get     etag: '"9LTVR7GLUC8IQW4OUDY1IBK8T"',
+296 silly get     'content-type': 'application/json',
+296 silly get     'content-encoding': 'gzip',
+296 silly get     'cache-control': 'max-age=300',
+296 silly get     'content-length': '2618',
+296 silly get     'accept-ranges': 'bytes',
+296 silly get     date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+296 silly get     via: '1.1 varnish',
+296 silly get     age: '1',
+296 silly get     connection: 'keep-alive',
+296 silly get     'x-served-by': 'cache-lax1425-LAX',
+296 silly get     'x-cache': 'HIT',
+296 silly get     'x-cache-hits': '1',
+296 silly get     'x-timer': 'S1466122142.979361,VS0,VE0',
+296 silly get     vary: 'Accept-Encoding' } ]
+297 verbose get saving babel-plugin-transform-es2015-arrow-functions to /Users/adamvisser/.npm/registry.npmjs.org/babel-plugin-transform-es2015-arrow-functions/.cache.json
+298 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+299 http 200 https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoping
+300 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+300 verbose headers   etag: '"8QYMYB4S2UYOFPLT43TT9W8RA"',
+300 verbose headers   'content-type': 'application/json',
+300 verbose headers   'content-encoding': 'gzip',
+300 verbose headers   'cache-control': 'max-age=300',
+300 verbose headers   'content-length': '3847',
+300 verbose headers   'accept-ranges': 'bytes',
+300 verbose headers   date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+300 verbose headers   via: '1.1 varnish',
+300 verbose headers   age: '175',
+300 verbose headers   connection: 'keep-alive',
+300 verbose headers   'x-served-by': 'cache-lax1429-LAX',
+300 verbose headers   'x-cache': 'HIT',
+300 verbose headers   'x-cache-hits': '3',
+300 verbose headers   'x-timer': 'S1466122142.981531,VS0,VE0',
+300 verbose headers   vary: 'Accept-Encoding' }
+301 silly get cb [ 200,
+301 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+301 silly get     etag: '"8QYMYB4S2UYOFPLT43TT9W8RA"',
+301 silly get     'content-type': 'application/json',
+301 silly get     'content-encoding': 'gzip',
+301 silly get     'cache-control': 'max-age=300',
+301 silly get     'content-length': '3847',
+301 silly get     'accept-ranges': 'bytes',
+301 silly get     date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+301 silly get     via: '1.1 varnish',
+301 silly get     age: '175',
+301 silly get     connection: 'keep-alive',
+301 silly get     'x-served-by': 'cache-lax1429-LAX',
+301 silly get     'x-cache': 'HIT',
+301 silly get     'x-cache-hits': '3',
+301 silly get     'x-timer': 'S1466122142.981531,VS0,VE0',
+301 silly get     vary: 'Accept-Encoding' } ]
+302 verbose get saving babel-plugin-transform-es2015-block-scoping to /Users/adamvisser/.npm/registry.npmjs.org/babel-plugin-transform-es2015-block-scoping/.cache.json
+303 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+304 http 200 https://registry.npmjs.org/babel-plugin-transform-es2015-parameters
+305 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+305 verbose headers   etag: '"CEKK9GDTX092E4MNEI61E2TXH"',
+305 verbose headers   'content-type': 'application/json',
+305 verbose headers   'content-encoding': 'gzip',
+305 verbose headers   'cache-control': 'max-age=300',
+305 verbose headers   'content-length': '4029',
+305 verbose headers   'accept-ranges': 'bytes',
+305 verbose headers   date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+305 verbose headers   via: '1.1 varnish',
+305 verbose headers   age: '281',
+305 verbose headers   connection: 'keep-alive',
+305 verbose headers   'x-served-by': 'cache-lax1423-LAX',
+305 verbose headers   'x-cache': 'HIT',
+305 verbose headers   'x-cache-hits': '4',
+305 verbose headers   'x-timer': 'S1466122142.978976,VS0,VE0',
+305 verbose headers   vary: 'Accept-Encoding' }
+306 silly get cb [ 200,
+306 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+306 silly get     etag: '"CEKK9GDTX092E4MNEI61E2TXH"',
+306 silly get     'content-type': 'application/json',
+306 silly get     'content-encoding': 'gzip',
+306 silly get     'cache-control': 'max-age=300',
+306 silly get     'content-length': '4029',
+306 silly get     'accept-ranges': 'bytes',
+306 silly get     date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+306 silly get     via: '1.1 varnish',
+306 silly get     age: '281',
+306 silly get     connection: 'keep-alive',
+306 silly get     'x-served-by': 'cache-lax1423-LAX',
+306 silly get     'x-cache': 'HIT',
+306 silly get     'x-cache-hits': '4',
+306 silly get     'x-timer': 'S1466122142.978976,VS0,VE0',
+306 silly get     vary: 'Accept-Encoding' } ]
+307 verbose get saving babel-plugin-transform-es2015-parameters to /Users/adamvisser/.npm/registry.npmjs.org/babel-plugin-transform-es2015-parameters/.cache.json
+308 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+309 http 200 https://registry.npmjs.org/babel-plugin-transform-es2015-classes
+310 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+310 verbose headers   etag: '"67FHHP31Q3ILGMRWT4K14TAFZ"',
+310 verbose headers   'content-type': 'application/json',
+310 verbose headers   'content-encoding': 'gzip',
+310 verbose headers   'cache-control': 'max-age=300',
+310 verbose headers   'content-length': '4863',
+310 verbose headers   'accept-ranges': 'bytes',
+310 verbose headers   date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+310 verbose headers   via: '1.1 varnish',
+310 verbose headers   age: '1',
+310 verbose headers   connection: 'keep-alive',
+310 verbose headers   'x-served-by': 'cache-lax1432-LAX',
+310 verbose headers   'x-cache': 'HIT',
+310 verbose headers   'x-cache-hits': '1',
+310 verbose headers   'x-timer': 'S1466122142.980161,VS0,VE0',
+310 verbose headers   vary: 'Accept-Encoding' }
+311 silly get cb [ 200,
+311 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+311 silly get     etag: '"67FHHP31Q3ILGMRWT4K14TAFZ"',
+311 silly get     'content-type': 'application/json',
+311 silly get     'content-encoding': 'gzip',
+311 silly get     'cache-control': 'max-age=300',
+311 silly get     'content-length': '4863',
+311 silly get     'accept-ranges': 'bytes',
+311 silly get     date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+311 silly get     via: '1.1 varnish',
+311 silly get     age: '1',
+311 silly get     connection: 'keep-alive',
+311 silly get     'x-served-by': 'cache-lax1432-LAX',
+311 silly get     'x-cache': 'HIT',
+311 silly get     'x-cache-hits': '1',
+311 silly get     'x-timer': 'S1466122142.980161,VS0,VE0',
+311 silly get     vary: 'Accept-Encoding' } ]
+312 verbose get saving babel-plugin-transform-es2015-classes to /Users/adamvisser/.npm/registry.npmjs.org/babel-plugin-transform-es2015-classes/.cache.json
+313 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+314 http 200 https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoped-functions
+315 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+315 verbose headers   etag: '"91TE3JP7XU1NNBEBG6QRYATVO"',
+315 verbose headers   'content-type': 'application/json',
+315 verbose headers   'content-encoding': 'gzip',
+315 verbose headers   'cache-control': 'max-age=300',
+315 verbose headers   'content-length': '2496',
+315 verbose headers   'accept-ranges': 'bytes',
+315 verbose headers   date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+315 verbose headers   via: '1.1 varnish',
+315 verbose headers   age: '219',
+315 verbose headers   connection: 'keep-alive',
+315 verbose headers   'x-served-by': 'cache-lax1426-LAX',
+315 verbose headers   'x-cache': 'HIT',
+315 verbose headers   'x-cache-hits': '3',
+315 verbose headers   'x-timer': 'S1466122142.988907,VS0,VE0',
+315 verbose headers   vary: 'Accept-Encoding' }
+316 silly get cb [ 200,
+316 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+316 silly get     etag: '"91TE3JP7XU1NNBEBG6QRYATVO"',
+316 silly get     'content-type': 'application/json',
+316 silly get     'content-encoding': 'gzip',
+316 silly get     'cache-control': 'max-age=300',
+316 silly get     'content-length': '2496',
+316 silly get     'accept-ranges': 'bytes',
+316 silly get     date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+316 silly get     via: '1.1 varnish',
+316 silly get     age: '219',
+316 silly get     connection: 'keep-alive',
+316 silly get     'x-served-by': 'cache-lax1426-LAX',
+316 silly get     'x-cache': 'HIT',
+316 silly get     'x-cache-hits': '3',
+316 silly get     'x-timer': 'S1466122142.988907,VS0,VE0',
+316 silly get     vary: 'Accept-Encoding' } ]
+317 verbose get saving babel-plugin-transform-es2015-block-scoped-functions to /Users/adamvisser/.npm/registry.npmjs.org/babel-plugin-transform-es2015-block-scoped-functions/.cache.json
+318 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+319 http 200 https://registry.npmjs.org/gulp-if
+320 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+320 verbose headers   etag: '"DK95HVR451GUE17WJ5EK3DV0D"',
+320 verbose headers   'content-type': 'application/json',
+320 verbose headers   'content-encoding': 'gzip',
+320 verbose headers   'cache-control': 'max-age=300',
+320 verbose headers   'content-length': '6352',
+320 verbose headers   'accept-ranges': 'bytes',
+320 verbose headers   date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+320 verbose headers   via: '1.1 varnish',
+320 verbose headers   age: '88',
+320 verbose headers   connection: 'keep-alive',
+320 verbose headers   'x-served-by': 'cache-lax1421-LAX',
+320 verbose headers   'x-cache': 'HIT',
+320 verbose headers   'x-cache-hits': '2',
+320 verbose headers   'x-timer': 'S1466122142.986583,VS0,VE0',
+320 verbose headers   vary: 'Accept-Encoding' }
+321 silly get cb [ 200,
+321 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+321 silly get     etag: '"DK95HVR451GUE17WJ5EK3DV0D"',
+321 silly get     'content-type': 'application/json',
+321 silly get     'content-encoding': 'gzip',
+321 silly get     'cache-control': 'max-age=300',
+321 silly get     'content-length': '6352',
+321 silly get     'accept-ranges': 'bytes',
+321 silly get     date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+321 silly get     via: '1.1 varnish',
+321 silly get     age: '88',
+321 silly get     connection: 'keep-alive',
+321 silly get     'x-served-by': 'cache-lax1421-LAX',
+321 silly get     'x-cache': 'HIT',
+321 silly get     'x-cache-hits': '2',
+321 silly get     'x-timer': 'S1466122142.986583,VS0,VE0',
+321 silly get     vary: 'Accept-Encoding' } ]
+322 verbose get saving gulp-if to /Users/adamvisser/.npm/registry.npmjs.org/gulp-if/.cache.json
+323 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+324 http 200 https://registry.npmjs.org/babel-core
+325 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+325 verbose headers   etag: '"D6LUBDJ5GW12W0KLKPPDDV62A"',
+325 verbose headers   'content-type': 'application/json',
+325 verbose headers   'content-encoding': 'gzip',
+325 verbose headers   'cache-control': 'max-age=300',
+325 verbose headers   'content-length': '36328',
+325 verbose headers   'accept-ranges': 'bytes',
+325 verbose headers   date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+325 verbose headers   via: '1.1 varnish',
+325 verbose headers   age: '55',
+325 verbose headers   connection: 'keep-alive',
+325 verbose headers   'x-served-by': 'cache-lax1438-LAX',
+325 verbose headers   'x-cache': 'HIT',
+325 verbose headers   'x-cache-hits': '2',
+325 verbose headers   'x-timer': 'S1466122142.976430,VS0,VE0',
+325 verbose headers   vary: 'Accept-Encoding' }
+326 silly get cb [ 200,
+326 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+326 silly get     etag: '"D6LUBDJ5GW12W0KLKPPDDV62A"',
+326 silly get     'content-type': 'application/json',
+326 silly get     'content-encoding': 'gzip',
+326 silly get     'cache-control': 'max-age=300',
+326 silly get     'content-length': '36328',
+326 silly get     'accept-ranges': 'bytes',
+326 silly get     date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+326 silly get     via: '1.1 varnish',
+326 silly get     age: '55',
+326 silly get     connection: 'keep-alive',
+326 silly get     'x-served-by': 'cache-lax1438-LAX',
+326 silly get     'x-cache': 'HIT',
+326 silly get     'x-cache-hits': '2',
+326 silly get     'x-timer': 'S1466122142.976430,VS0,VE0',
+326 silly get     vary: 'Accept-Encoding' } ]
+327 verbose get saving babel-core to /Users/adamvisser/.npm/registry.npmjs.org/babel-core/.cache.json
+328 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+329 http 200 https://registry.npmjs.org/browser-sync
+330 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+330 verbose headers   etag: '"BEIR8KHPJ5MFM1KXLZVSBGT82"',
+330 verbose headers   'content-type': 'application/json',
+330 verbose headers   'content-encoding': 'gzip',
+330 verbose headers   'cache-control': 'max-age=300',
+330 verbose headers   'content-length': '39730',
+330 verbose headers   'accept-ranges': 'bytes',
+330 verbose headers   date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+330 verbose headers   via: '1.1 varnish',
+330 verbose headers   age: '124',
+330 verbose headers   connection: 'keep-alive',
+330 verbose headers   'x-served-by': 'cache-lax1420-LAX',
+330 verbose headers   'x-cache': 'HIT',
+330 verbose headers   'x-cache-hits': '2',
+330 verbose headers   'x-timer': 'S1466122142.984755,VS0,VE0',
+330 verbose headers   vary: 'Accept-Encoding' }
+331 silly get cb [ 200,
+331 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+331 silly get     etag: '"BEIR8KHPJ5MFM1KXLZVSBGT82"',
+331 silly get     'content-type': 'application/json',
+331 silly get     'content-encoding': 'gzip',
+331 silly get     'cache-control': 'max-age=300',
+331 silly get     'content-length': '39730',
+331 silly get     'accept-ranges': 'bytes',
+331 silly get     date: 'Fri, 17 Jun 2016 00:09:02 GMT',
+331 silly get     via: '1.1 varnish',
+331 silly get     age: '124',
+331 silly get     connection: 'keep-alive',
+331 silly get     'x-served-by': 'cache-lax1420-LAX',
+331 silly get     'x-cache': 'HIT',
+331 silly get     'x-cache-hits': '2',
+331 silly get     'x-timer': 'S1466122142.984755,VS0,VE0',
+331 silly get     vary: 'Accept-Encoding' } ]
+332 verbose get saving browser-sync to /Users/adamvisser/.npm/registry.npmjs.org/browser-sync/.cache.json
+333 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+334 http 200 https://registry.npmjs.org/panini
+335 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+335 verbose headers   etag: '"AOA693H2FVD0GGIXVWTAZS8SX"',
+335 verbose headers   'content-type': 'application/json',
+335 verbose headers   'content-encoding': 'gzip',
+335 verbose headers   'cache-control': 'max-age=300',
+335 verbose headers   'content-length': '3965',
+335 verbose headers   'accept-ranges': 'bytes',
+335 verbose headers   date: 'Fri, 17 Jun 2016 00:09:03 GMT',
+335 verbose headers   via: '1.1 varnish',
+335 verbose headers   age: '0',
+335 verbose headers   connection: 'keep-alive',
+335 verbose headers   'x-served-by': 'cache-lax1426-LAX',
+335 verbose headers   'x-cache': 'MISS',
+335 verbose headers   'x-cache-hits': '0',
+335 verbose headers   'x-timer': 'S1466122142.986991,VS0,VE88',
+335 verbose headers   vary: 'Accept-Encoding' }
+336 silly get cb [ 200,
+336 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+336 silly get     etag: '"AOA693H2FVD0GGIXVWTAZS8SX"',
+336 silly get     'content-type': 'application/json',
+336 silly get     'content-encoding': 'gzip',
+336 silly get     'cache-control': 'max-age=300',
+336 silly get     'content-length': '3965',
+336 silly get     'accept-ranges': 'bytes',
+336 silly get     date: 'Fri, 17 Jun 2016 00:09:03 GMT',
+336 silly get     via: '1.1 varnish',
+336 silly get     age: '0',
+336 silly get     connection: 'keep-alive',
+336 silly get     'x-served-by': 'cache-lax1426-LAX',
+336 silly get     'x-cache': 'MISS',
+336 silly get     'x-cache-hits': '0',
+336 silly get     'x-timer': 'S1466122142.986991,VS0,VE88',
+336 silly get     vary: 'Accept-Encoding' } ]
+337 verbose get saving panini to /Users/adamvisser/.npm/registry.npmjs.org/panini/.cache.json
+338 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+339 http 200 https://registry.npmjs.org/babel-plugin-transform-es2015-template-literals
+340 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+340 verbose headers   etag: '"86HWGM15XL1BTPQI2U6YCAEGU"',
+340 verbose headers   'content-type': 'application/json',
+340 verbose headers   'content-encoding': 'gzip',
+340 verbose headers   'cache-control': 'max-age=300',
+340 verbose headers   'content-length': '2525',
+340 verbose headers   'accept-ranges': 'bytes',
+340 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+340 verbose headers   via: '1.1 varnish',
+340 verbose headers   age: '134',
+340 verbose headers   connection: 'keep-alive',
+340 verbose headers   'x-served-by': 'cache-lax1437-LAX',
+340 verbose headers   'x-cache': 'HIT',
+340 verbose headers   'x-cache-hits': '1',
+340 verbose headers   'x-timer': 'S1466122144.407536,VS0,VE0',
+340 verbose headers   vary: 'Accept-Encoding' }
+341 silly get cb [ 200,
+341 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+341 silly get     etag: '"86HWGM15XL1BTPQI2U6YCAEGU"',
+341 silly get     'content-type': 'application/json',
+341 silly get     'content-encoding': 'gzip',
+341 silly get     'cache-control': 'max-age=300',
+341 silly get     'content-length': '2525',
+341 silly get     'accept-ranges': 'bytes',
+341 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+341 silly get     via: '1.1 varnish',
+341 silly get     age: '134',
+341 silly get     connection: 'keep-alive',
+341 silly get     'x-served-by': 'cache-lax1437-LAX',
+341 silly get     'x-cache': 'HIT',
+341 silly get     'x-cache-hits': '1',
+341 silly get     'x-timer': 'S1466122144.407536,VS0,VE0',
+341 silly get     vary: 'Accept-Encoding' } ]
+342 verbose get saving babel-plugin-transform-es2015-template-literals to /Users/adamvisser/.npm/registry.npmjs.org/babel-plugin-transform-es2015-template-literals/.cache.json
+343 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+344 http 200 https://registry.npmjs.org/babel-plugin-transform-es2015-spread
+345 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+345 verbose headers   etag: '"89U0UPSE8ZAB3NDEOA2E8MBWC"',
+345 verbose headers   'content-type': 'application/json',
+345 verbose headers   'content-encoding': 'gzip',
+345 verbose headers   'cache-control': 'max-age=300',
+345 verbose headers   'content-length': '2579',
+345 verbose headers   'accept-ranges': 'bytes',
+345 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+345 verbose headers   via: '1.1 varnish',
+345 verbose headers   age: '282',
+345 verbose headers   connection: 'keep-alive',
+345 verbose headers   'x-served-by': 'cache-lax1443-LAX',
+345 verbose headers   'x-cache': 'HIT',
+345 verbose headers   'x-cache-hits': '2',
+345 verbose headers   'x-timer': 'S1466122144.410001,VS0,VE0',
+345 verbose headers   vary: 'Accept-Encoding' }
+346 silly get cb [ 200,
+346 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+346 silly get     etag: '"89U0UPSE8ZAB3NDEOA2E8MBWC"',
+346 silly get     'content-type': 'application/json',
+346 silly get     'content-encoding': 'gzip',
+346 silly get     'cache-control': 'max-age=300',
+346 silly get     'content-length': '2579',
+346 silly get     'accept-ranges': 'bytes',
+346 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+346 silly get     via: '1.1 varnish',
+346 silly get     age: '282',
+346 silly get     connection: 'keep-alive',
+346 silly get     'x-served-by': 'cache-lax1443-LAX',
+346 silly get     'x-cache': 'HIT',
+346 silly get     'x-cache-hits': '2',
+346 silly get     'x-timer': 'S1466122144.410001,VS0,VE0',
+346 silly get     vary: 'Accept-Encoding' } ]
+347 verbose get saving babel-plugin-transform-es2015-spread to /Users/adamvisser/.npm/registry.npmjs.org/babel-plugin-transform-es2015-spread/.cache.json
+348 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+349 http 200 https://registry.npmjs.org/babel-preset-es2015
+350 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+350 verbose headers   etag: '"7P70HSPCJTDLUTOPL9UJFPM58"',
+350 verbose headers   'content-type': 'application/json',
+350 verbose headers   'content-encoding': 'gzip',
+350 verbose headers   'cache-control': 'max-age=300',
+350 verbose headers   'content-length': '4200',
+350 verbose headers   'accept-ranges': 'bytes',
+350 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+350 verbose headers   via: '1.1 varnish',
+350 verbose headers   age: '165',
+350 verbose headers   connection: 'keep-alive',
+350 verbose headers   'x-served-by': 'cache-lax1426-LAX',
+350 verbose headers   'x-cache': 'HIT',
+350 verbose headers   'x-cache-hits': '4',
+350 verbose headers   'x-timer': 'S1466122144.410833,VS0,VE0',
+350 verbose headers   vary: 'Accept-Encoding' }
+351 silly get cb [ 200,
+351 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+351 silly get     etag: '"7P70HSPCJTDLUTOPL9UJFPM58"',
+351 silly get     'content-type': 'application/json',
+351 silly get     'content-encoding': 'gzip',
+351 silly get     'cache-control': 'max-age=300',
+351 silly get     'content-length': '4200',
+351 silly get     'accept-ranges': 'bytes',
+351 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+351 silly get     via: '1.1 varnish',
+351 silly get     age: '165',
+351 silly get     connection: 'keep-alive',
+351 silly get     'x-served-by': 'cache-lax1426-LAX',
+351 silly get     'x-cache': 'HIT',
+351 silly get     'x-cache-hits': '4',
+351 silly get     'x-timer': 'S1466122144.410833,VS0,VE0',
+351 silly get     vary: 'Accept-Encoding' } ]
+352 verbose get saving babel-preset-es2015 to /Users/adamvisser/.npm/registry.npmjs.org/babel-preset-es2015/.cache.json
+353 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+354 http 200 https://registry.npmjs.org/babel-plugin-transform-es2015-modules-commonjs
+355 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+355 verbose headers   etag: '"AL212YRQ4X1VQOBJ0RWJZEZWS"',
+355 verbose headers   'content-type': 'application/json',
+355 verbose headers   'content-encoding': 'gzip',
+355 verbose headers   'cache-control': 'max-age=300',
+355 verbose headers   'content-length': '4377',
+355 verbose headers   'accept-ranges': 'bytes',
+355 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+355 verbose headers   via: '1.1 varnish',
+355 verbose headers   age: '162',
+355 verbose headers   connection: 'keep-alive',
+355 verbose headers   'x-served-by': 'cache-lax1440-LAX',
+355 verbose headers   'x-cache': 'HIT',
+355 verbose headers   'x-cache-hits': '5',
+355 verbose headers   'x-timer': 'S1466122144.413581,VS0,VE0',
+355 verbose headers   vary: 'Accept-Encoding' }
+356 silly get cb [ 200,
+356 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+356 silly get     etag: '"AL212YRQ4X1VQOBJ0RWJZEZWS"',
+356 silly get     'content-type': 'application/json',
+356 silly get     'content-encoding': 'gzip',
+356 silly get     'cache-control': 'max-age=300',
+356 silly get     'content-length': '4377',
+356 silly get     'accept-ranges': 'bytes',
+356 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+356 silly get     via: '1.1 varnish',
+356 silly get     age: '162',
+356 silly get     connection: 'keep-alive',
+356 silly get     'x-served-by': 'cache-lax1440-LAX',
+356 silly get     'x-cache': 'HIT',
+356 silly get     'x-cache-hits': '5',
+356 silly get     'x-timer': 'S1466122144.413581,VS0,VE0',
+356 silly get     vary: 'Accept-Encoding' } ]
+357 verbose get saving babel-plugin-transform-es2015-modules-commonjs to /Users/adamvisser/.npm/registry.npmjs.org/babel-plugin-transform-es2015-modules-commonjs/.cache.json
+358 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+359 http 200 https://registry.npmjs.org/babel-plugin-transform-es2015-destructuring
+360 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+360 verbose headers   etag: '"45PZJCGDH7SFGQ1G9CDLQYEIF"',
+360 verbose headers   'content-type': 'application/json',
+360 verbose headers   'content-encoding': 'gzip',
+360 verbose headers   'cache-control': 'max-age=300',
+360 verbose headers   'content-length': '2991',
+360 verbose headers   'accept-ranges': 'bytes',
+360 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+360 verbose headers   via: '1.1 varnish',
+360 verbose headers   age: '282',
+360 verbose headers   connection: 'keep-alive',
+360 verbose headers   'x-served-by': 'cache-lax1423-LAX',
+360 verbose headers   'x-cache': 'HIT',
+360 verbose headers   'x-cache-hits': '2',
+360 verbose headers   'x-timer': 'S1466122144.414956,VS0,VE0',
+360 verbose headers   vary: 'Accept-Encoding' }
+361 silly get cb [ 200,
+361 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+361 silly get     etag: '"45PZJCGDH7SFGQ1G9CDLQYEIF"',
+361 silly get     'content-type': 'application/json',
+361 silly get     'content-encoding': 'gzip',
+361 silly get     'cache-control': 'max-age=300',
+361 silly get     'content-length': '2991',
+361 silly get     'accept-ranges': 'bytes',
+361 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+361 silly get     via: '1.1 varnish',
+361 silly get     age: '282',
+361 silly get     connection: 'keep-alive',
+361 silly get     'x-served-by': 'cache-lax1423-LAX',
+361 silly get     'x-cache': 'HIT',
+361 silly get     'x-cache-hits': '2',
+361 silly get     'x-timer': 'S1466122144.414956,VS0,VE0',
+361 silly get     vary: 'Accept-Encoding' } ]
+362 verbose get saving babel-plugin-transform-es2015-destructuring to /Users/adamvisser/.npm/registry.npmjs.org/babel-plugin-transform-es2015-destructuring/.cache.json
+363 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+364 http 200 https://registry.npmjs.org/gulp-babel
+365 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+365 verbose headers   etag: '"6MEWCFLTH80BZOGD22YDD1CAE"',
+365 verbose headers   'content-type': 'application/json',
+365 verbose headers   'content-encoding': 'gzip',
+365 verbose headers   'cache-control': 'max-age=300',
+365 verbose headers   'content-length': '4191',
+365 verbose headers   'accept-ranges': 'bytes',
+365 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+365 verbose headers   via: '1.1 varnish',
+365 verbose headers   age: '183',
+365 verbose headers   connection: 'keep-alive',
+365 verbose headers   'x-served-by': 'cache-lax1431-LAX',
+365 verbose headers   'x-cache': 'HIT',
+365 verbose headers   'x-cache-hits': '2',
+365 verbose headers   'x-timer': 'S1466122144.461352,VS0,VE0',
+365 verbose headers   vary: 'Accept-Encoding' }
+366 silly get cb [ 200,
+366 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+366 silly get     etag: '"6MEWCFLTH80BZOGD22YDD1CAE"',
+366 silly get     'content-type': 'application/json',
+366 silly get     'content-encoding': 'gzip',
+366 silly get     'cache-control': 'max-age=300',
+366 silly get     'content-length': '4191',
+366 silly get     'accept-ranges': 'bytes',
+366 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+366 silly get     via: '1.1 varnish',
+366 silly get     age: '183',
+366 silly get     connection: 'keep-alive',
+366 silly get     'x-served-by': 'cache-lax1431-LAX',
+366 silly get     'x-cache': 'HIT',
+366 silly get     'x-cache-hits': '2',
+366 silly get     'x-timer': 'S1466122144.461352,VS0,VE0',
+366 silly get     vary: 'Accept-Encoding' } ]
+367 verbose get saving gulp-babel to /Users/adamvisser/.npm/registry.npmjs.org/gulp-babel/.cache.json
+368 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+369 http 200 https://registry.npmjs.org/gulp-autoprefixer
+370 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+370 verbose headers   etag: '"AGNNX82SVKSXIDUDJJIAN8LHG"',
+370 verbose headers   'content-type': 'application/json',
+370 verbose headers   'content-encoding': 'gzip',
+370 verbose headers   'cache-control': 'max-age=300',
+370 verbose headers   'content-length': '6144',
+370 verbose headers   'accept-ranges': 'bytes',
+370 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+370 verbose headers   via: '1.1 varnish',
+370 verbose headers   age: '107',
+370 verbose headers   connection: 'keep-alive',
+370 verbose headers   'x-served-by': 'cache-lax1427-LAX',
+370 verbose headers   'x-cache': 'HIT',
+370 verbose headers   'x-cache-hits': '1',
+370 verbose headers   'x-timer': 'S1466122144.462075,VS0,VE0',
+370 verbose headers   vary: 'Accept-Encoding' }
+371 silly get cb [ 200,
+371 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+371 silly get     etag: '"AGNNX82SVKSXIDUDJJIAN8LHG"',
+371 silly get     'content-type': 'application/json',
+371 silly get     'content-encoding': 'gzip',
+371 silly get     'cache-control': 'max-age=300',
+371 silly get     'content-length': '6144',
+371 silly get     'accept-ranges': 'bytes',
+371 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+371 silly get     via: '1.1 varnish',
+371 silly get     age: '107',
+371 silly get     connection: 'keep-alive',
+371 silly get     'x-served-by': 'cache-lax1427-LAX',
+371 silly get     'x-cache': 'HIT',
+371 silly get     'x-cache-hits': '1',
+371 silly get     'x-timer': 'S1466122144.462075,VS0,VE0',
+371 silly get     vary: 'Accept-Encoding' } ]
+372 verbose get saving gulp-autoprefixer to /Users/adamvisser/.npm/registry.npmjs.org/gulp-autoprefixer/.cache.json
+373 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+374 http 200 https://registry.npmjs.org/gulp-load-plugins
+375 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+375 verbose headers   etag: '"C7UF7VND45VX82DWCDUY69S2Q"',
+375 verbose headers   'content-type': 'application/json',
+375 verbose headers   'content-encoding': 'gzip',
+375 verbose headers   'cache-control': 'max-age=300',
+375 verbose headers   'content-length': '8999',
+375 verbose headers   'accept-ranges': 'bytes',
+375 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+375 verbose headers   via: '1.1 varnish',
+375 verbose headers   age: '251',
+375 verbose headers   connection: 'keep-alive',
+375 verbose headers   'x-served-by': 'cache-lax1437-LAX',
+375 verbose headers   'x-cache': 'HIT',
+375 verbose headers   'x-cache-hits': '2',
+375 verbose headers   'x-timer': 'S1466122144.467820,VS0,VE0',
+375 verbose headers   vary: 'Accept-Encoding' }
+376 silly get cb [ 200,
+376 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+376 silly get     etag: '"C7UF7VND45VX82DWCDUY69S2Q"',
+376 silly get     'content-type': 'application/json',
+376 silly get     'content-encoding': 'gzip',
+376 silly get     'cache-control': 'max-age=300',
+376 silly get     'content-length': '8999',
+376 silly get     'accept-ranges': 'bytes',
+376 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+376 silly get     via: '1.1 varnish',
+376 silly get     age: '251',
+376 silly get     connection: 'keep-alive',
+376 silly get     'x-served-by': 'cache-lax1437-LAX',
+376 silly get     'x-cache': 'HIT',
+376 silly get     'x-cache-hits': '2',
+376 silly get     'x-timer': 'S1466122144.467820,VS0,VE0',
+376 silly get     vary: 'Accept-Encoding' } ]
+377 verbose get saving gulp-load-plugins to /Users/adamvisser/.npm/registry.npmjs.org/gulp-load-plugins/.cache.json
+378 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+379 http 200 https://registry.npmjs.org/gulp-sass
+380 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+380 verbose headers   etag: '"1LUB6YCYBEPADQEIPQPV2ATBD"',
+380 verbose headers   'content-type': 'application/json',
+380 verbose headers   'content-encoding': 'gzip',
+380 verbose headers   'cache-control': 'max-age=300',
+380 verbose headers   'content-length': '9688',
+380 verbose headers   'accept-ranges': 'bytes',
+380 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+380 verbose headers   via: '1.1 varnish',
+380 verbose headers   age: '183',
+380 verbose headers   connection: 'keep-alive',
+380 verbose headers   'x-served-by': 'cache-lax1440-LAX',
+380 verbose headers   'x-cache': 'HIT',
+380 verbose headers   'x-cache-hits': '3',
+380 verbose headers   'x-timer': 'S1466122144.466886,VS0,VE0',
+380 verbose headers   vary: 'Accept-Encoding' }
+381 silly get cb [ 200,
+381 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+381 silly get     etag: '"1LUB6YCYBEPADQEIPQPV2ATBD"',
+381 silly get     'content-type': 'application/json',
+381 silly get     'content-encoding': 'gzip',
+381 silly get     'cache-control': 'max-age=300',
+381 silly get     'content-length': '9688',
+381 silly get     'accept-ranges': 'bytes',
+381 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+381 silly get     via: '1.1 varnish',
+381 silly get     age: '183',
+381 silly get     connection: 'keep-alive',
+381 silly get     'x-served-by': 'cache-lax1440-LAX',
+381 silly get     'x-cache': 'HIT',
+381 silly get     'x-cache-hits': '3',
+381 silly get     'x-timer': 'S1466122144.466886,VS0,VE0',
+381 silly get     vary: 'Accept-Encoding' } ]
+382 verbose get saving gulp-sass to /Users/adamvisser/.npm/registry.npmjs.org/gulp-sass/.cache.json
+383 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+384 http 200 https://registry.npmjs.org/gulp-imagemin
+385 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+385 verbose headers   etag: '"5LDXAP5OI57ZOBKZEH0D72SD"',
+385 verbose headers   'content-type': 'application/json',
+385 verbose headers   'content-encoding': 'gzip',
+385 verbose headers   'cache-control': 'max-age=300',
+385 verbose headers   'content-length': '6934',
+385 verbose headers   'accept-ranges': 'bytes',
+385 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+385 verbose headers   via: '1.1 varnish',
+385 verbose headers   age: '181',
+385 verbose headers   connection: 'keep-alive',
+385 verbose headers   'x-served-by': 'cache-lax1423-LAX',
+385 verbose headers   'x-cache': 'HIT',
+385 verbose headers   'x-cache-hits': '1',
+385 verbose headers   'x-timer': 'S1466122144.468648,VS0,VE0',
+385 verbose headers   vary: 'Accept-Encoding' }
+386 silly get cb [ 200,
+386 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+386 silly get     etag: '"5LDXAP5OI57ZOBKZEH0D72SD"',
+386 silly get     'content-type': 'application/json',
+386 silly get     'content-encoding': 'gzip',
+386 silly get     'cache-control': 'max-age=300',
+386 silly get     'content-length': '6934',
+386 silly get     'accept-ranges': 'bytes',
+386 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+386 silly get     via: '1.1 varnish',
+386 silly get     age: '181',
+386 silly get     connection: 'keep-alive',
+386 silly get     'x-served-by': 'cache-lax1423-LAX',
+386 silly get     'x-cache': 'HIT',
+386 silly get     'x-cache-hits': '1',
+386 silly get     'x-timer': 'S1466122144.468648,VS0,VE0',
+386 silly get     vary: 'Accept-Encoding' } ]
+387 verbose get saving gulp-imagemin to /Users/adamvisser/.npm/registry.npmjs.org/gulp-imagemin/.cache.json
+388 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+389 http 200 https://registry.npmjs.org/gulp-concat
+390 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+390 verbose headers   etag: '"2UVOU6MBZTZ9ULDUZJ82EMQ1Q"',
+390 verbose headers   'content-type': 'application/json',
+390 verbose headers   'content-encoding': 'gzip',
+390 verbose headers   'cache-control': 'max-age=300',
+390 verbose headers   'content-length': '7656',
+390 verbose headers   'accept-ranges': 'bytes',
+390 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+390 verbose headers   via: '1.1 varnish',
+390 verbose headers   age: '232',
+390 verbose headers   connection: 'keep-alive',
+390 verbose headers   'x-served-by': 'cache-lax1422-LAX',
+390 verbose headers   'x-cache': 'HIT',
+390 verbose headers   'x-cache-hits': '4',
+390 verbose headers   'x-timer': 'S1466122144.470473,VS0,VE0',
+390 verbose headers   vary: 'Accept-Encoding' }
+391 silly get cb [ 200,
+391 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+391 silly get     etag: '"2UVOU6MBZTZ9ULDUZJ82EMQ1Q"',
+391 silly get     'content-type': 'application/json',
+391 silly get     'content-encoding': 'gzip',
+391 silly get     'cache-control': 'max-age=300',
+391 silly get     'content-length': '7656',
+391 silly get     'accept-ranges': 'bytes',
+391 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+391 silly get     via: '1.1 varnish',
+391 silly get     age: '232',
+391 silly get     connection: 'keep-alive',
+391 silly get     'x-served-by': 'cache-lax1422-LAX',
+391 silly get     'x-cache': 'HIT',
+391 silly get     'x-cache-hits': '4',
+391 silly get     'x-timer': 'S1466122144.470473,VS0,VE0',
+391 silly get     vary: 'Accept-Encoding' } ]
+392 verbose get saving gulp-concat to /Users/adamvisser/.npm/registry.npmjs.org/gulp-concat/.cache.json
+393 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+394 http 200 https://registry.npmjs.org/gulp-uglify
+395 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+395 verbose headers   etag: '"8DWPOOB11Z81BLY6USCQUJG6C"',
+395 verbose headers   'content-type': 'application/json',
+395 verbose headers   'content-encoding': 'gzip',
+395 verbose headers   'cache-control': 'max-age=300',
+395 verbose headers   'content-length': '8738',
+395 verbose headers   'accept-ranges': 'bytes',
+395 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+395 verbose headers   via: '1.1 varnish',
+395 verbose headers   age: '53',
+395 verbose headers   connection: 'keep-alive',
+395 verbose headers   'x-served-by': 'cache-lax1434-LAX',
+395 verbose headers   'x-cache': 'HIT',
+395 verbose headers   'x-cache-hits': '3',
+395 verbose headers   'x-timer': 'S1466122144.470935,VS0,VE0',
+395 verbose headers   vary: 'Accept-Encoding' }
+396 silly get cb [ 200,
+396 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+396 silly get     etag: '"8DWPOOB11Z81BLY6USCQUJG6C"',
+396 silly get     'content-type': 'application/json',
+396 silly get     'content-encoding': 'gzip',
+396 silly get     'cache-control': 'max-age=300',
+396 silly get     'content-length': '8738',
+396 silly get     'accept-ranges': 'bytes',
+396 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+396 silly get     via: '1.1 varnish',
+396 silly get     age: '53',
+396 silly get     connection: 'keep-alive',
+396 silly get     'x-served-by': 'cache-lax1434-LAX',
+396 silly get     'x-cache': 'HIT',
+396 silly get     'x-cache-hits': '3',
+396 silly get     'x-timer': 'S1466122144.470935,VS0,VE0',
+396 silly get     vary: 'Accept-Encoding' } ]
+397 verbose get saving gulp-uglify to /Users/adamvisser/.npm/registry.npmjs.org/gulp-uglify/.cache.json
+398 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+399 http 200 https://registry.npmjs.org/gulp-sourcemaps
+400 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+400 verbose headers   etag: '"9ODRMYB69M2HPXFQC8BI8TQ3F"',
+400 verbose headers   'content-type': 'application/json',
+400 verbose headers   'content-encoding': 'gzip',
+400 verbose headers   'cache-control': 'max-age=300',
+400 verbose headers   'content-length': '9951',
+400 verbose headers   'accept-ranges': 'bytes',
+400 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+400 verbose headers   via: '1.1 varnish',
+400 verbose headers   age: '15',
+400 verbose headers   connection: 'keep-alive',
+400 verbose headers   'x-served-by': 'cache-lax1430-LAX',
+400 verbose headers   'x-cache': 'HIT',
+400 verbose headers   'x-cache-hits': '1',
+400 verbose headers   'x-timer': 'S1466122144.474896,VS0,VE0',
+400 verbose headers   vary: 'Accept-Encoding' }
+401 silly get cb [ 200,
+401 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+401 silly get     etag: '"9ODRMYB69M2HPXFQC8BI8TQ3F"',
+401 silly get     'content-type': 'application/json',
+401 silly get     'content-encoding': 'gzip',
+401 silly get     'cache-control': 'max-age=300',
+401 silly get     'content-length': '9951',
+401 silly get     'accept-ranges': 'bytes',
+401 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+401 silly get     via: '1.1 varnish',
+401 silly get     age: '15',
+401 silly get     connection: 'keep-alive',
+401 silly get     'x-served-by': 'cache-lax1430-LAX',
+401 silly get     'x-cache': 'HIT',
+401 silly get     'x-cache-hits': '1',
+401 silly get     'x-timer': 'S1466122144.474896,VS0,VE0',
+401 silly get     vary: 'Accept-Encoding' } ]
+402 verbose get saving gulp-sourcemaps to /Users/adamvisser/.npm/registry.npmjs.org/gulp-sourcemaps/.cache.json
+403 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+404 http 200 https://registry.npmjs.org/rimraf
+405 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+405 verbose headers   etag: '"7VXFBCS7OMXD19W2BEV0TMP5G"',
+405 verbose headers   'content-type': 'application/json',
+405 verbose headers   'content-encoding': 'gzip',
+405 verbose headers   'cache-control': 'max-age=300',
+405 verbose headers   'content-length': '8367',
+405 verbose headers   'accept-ranges': 'bytes',
+405 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+405 verbose headers   via: '1.1 varnish',
+405 verbose headers   age: '165',
+405 verbose headers   connection: 'keep-alive',
+405 verbose headers   'x-served-by': 'cache-lax1435-LAX',
+405 verbose headers   'x-cache': 'HIT',
+405 verbose headers   'x-cache-hits': '9',
+405 verbose headers   'x-timer': 'S1466122144.477465,VS0,VE0',
+405 verbose headers   vary: 'Accept-Encoding' }
+406 silly get cb [ 200,
+406 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+406 silly get     etag: '"7VXFBCS7OMXD19W2BEV0TMP5G"',
+406 silly get     'content-type': 'application/json',
+406 silly get     'content-encoding': 'gzip',
+406 silly get     'cache-control': 'max-age=300',
+406 silly get     'content-length': '8367',
+406 silly get     'accept-ranges': 'bytes',
+406 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+406 silly get     via: '1.1 varnish',
+406 silly get     age: '165',
+406 silly get     connection: 'keep-alive',
+406 silly get     'x-served-by': 'cache-lax1435-LAX',
+406 silly get     'x-cache': 'HIT',
+406 silly get     'x-cache-hits': '9',
+406 silly get     'x-timer': 'S1466122144.477465,VS0,VE0',
+406 silly get     vary: 'Accept-Encoding' } ]
+407 verbose get saving rimraf to /Users/adamvisser/.npm/registry.npmjs.org/rimraf/.cache.json
+408 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+409 http 200 https://registry.npmjs.org/js-yaml
+410 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+410 verbose headers   etag: '"C9D8TVG215QM5K5NJN58RK3EN"',
+410 verbose headers   'content-type': 'application/json',
+410 verbose headers   'content-encoding': 'gzip',
+410 verbose headers   'cache-control': 'max-age=300',
+410 verbose headers   'content-length': '12417',
+410 verbose headers   'accept-ranges': 'bytes',
+410 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+410 verbose headers   via: '1.1 varnish',
+410 verbose headers   age: '147',
+410 verbose headers   connection: 'keep-alive',
+410 verbose headers   'x-served-by': 'cache-lax1431-LAX',
+410 verbose headers   'x-cache': 'HIT',
+410 verbose headers   'x-cache-hits': '7',
+410 verbose headers   'x-timer': 'S1466122144.477090,VS0,VE0',
+410 verbose headers   vary: 'Accept-Encoding' }
+411 silly get cb [ 200,
+411 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+411 silly get     etag: '"C9D8TVG215QM5K5NJN58RK3EN"',
+411 silly get     'content-type': 'application/json',
+411 silly get     'content-encoding': 'gzip',
+411 silly get     'cache-control': 'max-age=300',
+411 silly get     'content-length': '12417',
+411 silly get     'accept-ranges': 'bytes',
+411 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+411 silly get     via: '1.1 varnish',
+411 silly get     age: '147',
+411 silly get     connection: 'keep-alive',
+411 silly get     'x-served-by': 'cache-lax1431-LAX',
+411 silly get     'x-cache': 'HIT',
+411 silly get     'x-cache-hits': '7',
+411 silly get     'x-timer': 'S1466122144.477090,VS0,VE0',
+411 silly get     vary: 'Accept-Encoding' } ]
+412 verbose get saving js-yaml to /Users/adamvisser/.npm/registry.npmjs.org/js-yaml/.cache.json
+413 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+414 http 200 https://registry.npmjs.org/style-sherpa
+415 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+415 verbose headers   etag: '"45L853J4Q693GMTB66YARI570"',
+415 verbose headers   'content-type': 'application/json',
+415 verbose headers   'content-encoding': 'gzip',
+415 verbose headers   'cache-control': 'max-age=300',
+415 verbose headers   'content-length': '1905',
+415 verbose headers   'accept-ranges': 'bytes',
+415 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+415 verbose headers   via: '1.1 varnish',
+415 verbose headers   age: '0',
+415 verbose headers   connection: 'keep-alive',
+415 verbose headers   'x-served-by': 'cache-lax1424-LAX',
+415 verbose headers   'x-cache': 'MISS',
+415 verbose headers   'x-cache-hits': '0',
+415 verbose headers   'x-timer': 'S1466122144.450358,VS0,VE47',
+415 verbose headers   vary: 'Accept-Encoding' }
+416 silly get cb [ 200,
+416 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+416 silly get     etag: '"45L853J4Q693GMTB66YARI570"',
+416 silly get     'content-type': 'application/json',
+416 silly get     'content-encoding': 'gzip',
+416 silly get     'cache-control': 'max-age=300',
+416 silly get     'content-length': '1905',
+416 silly get     'accept-ranges': 'bytes',
+416 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+416 silly get     via: '1.1 varnish',
+416 silly get     age: '0',
+416 silly get     connection: 'keep-alive',
+416 silly get     'x-served-by': 'cache-lax1424-LAX',
+416 silly get     'x-cache': 'MISS',
+416 silly get     'x-cache-hits': '0',
+416 silly get     'x-timer': 'S1466122144.450358,VS0,VE47',
+416 silly get     vary: 'Accept-Encoding' } ]
+417 verbose get saving style-sherpa to /Users/adamvisser/.npm/registry.npmjs.org/style-sherpa/.cache.json
+418 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+419 http 200 https://registry.npmjs.org/gulp-cssnano
+420 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+420 verbose headers   etag: '"8CPMW9E9A1V5E9NUDJYIIZY5I"',
+420 verbose headers   'content-type': 'application/json',
+420 verbose headers   'content-encoding': 'gzip',
+420 verbose headers   'cache-control': 'max-age=300',
+420 verbose headers   'content-length': '2818',
+420 verbose headers   'accept-ranges': 'bytes',
+420 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+420 verbose headers   via: '1.1 varnish',
+420 verbose headers   age: '0',
+420 verbose headers   connection: 'keep-alive',
+420 verbose headers   'x-served-by': 'cache-lax1436-LAX',
+420 verbose headers   'x-cache': 'MISS',
+420 verbose headers   'x-cache-hits': '0',
+420 verbose headers   'x-timer': 'S1466122144.463890,VS0,VE91',
+420 verbose headers   vary: 'Accept-Encoding' }
+421 silly get cb [ 200,
+421 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+421 silly get     etag: '"8CPMW9E9A1V5E9NUDJYIIZY5I"',
+421 silly get     'content-type': 'application/json',
+421 silly get     'content-encoding': 'gzip',
+421 silly get     'cache-control': 'max-age=300',
+421 silly get     'content-length': '2818',
+421 silly get     'accept-ranges': 'bytes',
+421 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+421 silly get     via: '1.1 varnish',
+421 silly get     age: '0',
+421 silly get     connection: 'keep-alive',
+421 silly get     'x-served-by': 'cache-lax1436-LAX',
+421 silly get     'x-cache': 'MISS',
+421 silly get     'x-cache-hits': '0',
+421 silly get     'x-timer': 'S1466122144.463890,VS0,VE91',
+421 silly get     vary: 'Accept-Encoding' } ]
+422 verbose get saving gulp-cssnano to /Users/adamvisser/.npm/registry.npmjs.org/gulp-cssnano/.cache.json
+423 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+424 http 200 https://registry.npmjs.org/yargs
+425 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+425 verbose headers   etag: '"M9K1NGIRCPD5NO67Q0HBA2RW"',
+425 verbose headers   'content-type': 'application/json',
+425 verbose headers   'content-encoding': 'gzip',
+425 verbose headers   'cache-control': 'max-age=300',
+425 verbose headers   'content-length': '33687',
+425 verbose headers   'accept-ranges': 'bytes',
+425 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+425 verbose headers   via: '1.1 varnish',
+425 verbose headers   age: '29',
+425 verbose headers   connection: 'keep-alive',
+425 verbose headers   'x-served-by': 'cache-lax1431-LAX',
+425 verbose headers   'x-cache': 'HIT',
+425 verbose headers   'x-cache-hits': '3',
+425 verbose headers   'x-timer': 'S1466122144.554285,VS0,VE0',
+425 verbose headers   vary: 'Accept-Encoding' }
+426 silly get cb [ 200,
+426 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+426 silly get     etag: '"M9K1NGIRCPD5NO67Q0HBA2RW"',
+426 silly get     'content-type': 'application/json',
+426 silly get     'content-encoding': 'gzip',
+426 silly get     'cache-control': 'max-age=300',
+426 silly get     'content-length': '33687',
+426 silly get     'accept-ranges': 'bytes',
+426 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+426 silly get     via: '1.1 varnish',
+426 silly get     age: '29',
+426 silly get     connection: 'keep-alive',
+426 silly get     'x-served-by': 'cache-lax1431-LAX',
+426 silly get     'x-cache': 'HIT',
+426 silly get     'x-cache-hits': '3',
+426 silly get     'x-timer': 'S1466122144.554285,VS0,VE0',
+426 silly get     vary: 'Accept-Encoding' } ]
+427 verbose get saving yargs to /Users/adamvisser/.npm/registry.npmjs.org/yargs/.cache.json
+428 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+429 http 304 https://registry.npmjs.org/gulp-extname
+430 verbose headers { date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+430 verbose headers   via: '1.1 varnish',
+430 verbose headers   'cache-control': 'max-age=300',
+430 verbose headers   etag: '"8W8CO0C6X0TIRPVN1UET4JHW4"',
+430 verbose headers   age: '0',
+430 verbose headers   connection: 'keep-alive',
+430 verbose headers   'x-served-by': 'cache-lax1442-LAX',
+430 verbose headers   'x-cache': 'HIT',
+430 verbose headers   'x-cache-hits': '1',
+430 verbose headers   'x-timer': 'S1466122144.473725,VS0,VE173',
+430 verbose headers   vary: 'Accept-Encoding' }
+431 silly get cb [ 304,
+431 silly get   { date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+431 silly get     via: '1.1 varnish',
+431 silly get     'cache-control': 'max-age=300',
+431 silly get     etag: '"8W8CO0C6X0TIRPVN1UET4JHW4"',
+431 silly get     age: '0',
+431 silly get     connection: 'keep-alive',
+431 silly get     'x-served-by': 'cache-lax1442-LAX',
+431 silly get     'x-cache': 'HIT',
+431 silly get     'x-cache-hits': '1',
+431 silly get     'x-timer': 'S1466122144.473725,VS0,VE173',
+431 silly get     vary: 'Accept-Encoding' } ]
+432 verbose etag https://registry.npmjs.org/gulp-extname from cache
+433 verbose get saving gulp-extname to /Users/adamvisser/.npm/registry.npmjs.org/gulp-extname/.cache.json
+434 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+435 http 200 https://registry.npmjs.org/gulp-uncss
+436 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+436 verbose headers   etag: '"5D5M9W60IOJC478K1SR37F1VH"',
+436 verbose headers   'content-type': 'application/json',
+436 verbose headers   'content-encoding': 'gzip',
+436 verbose headers   'cache-control': 'max-age=300',
+436 verbose headers   'content-length': '6043',
+436 verbose headers   'accept-ranges': 'bytes',
+436 verbose headers   date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+436 verbose headers   via: '1.1 varnish',
+436 verbose headers   age: '0',
+436 verbose headers   connection: 'keep-alive',
+436 verbose headers   'x-served-by': 'cache-lax1438-LAX',
+436 verbose headers   'x-cache': 'HIT',
+436 verbose headers   'x-cache-hits': '1',
+436 verbose headers   'x-timer': 'S1466122144.476422,VS0,VE171',
+436 verbose headers   vary: 'Accept-Encoding' }
+437 silly get cb [ 200,
+437 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+437 silly get     etag: '"5D5M9W60IOJC478K1SR37F1VH"',
+437 silly get     'content-type': 'application/json',
+437 silly get     'content-encoding': 'gzip',
+437 silly get     'cache-control': 'max-age=300',
+437 silly get     'content-length': '6043',
+437 silly get     'accept-ranges': 'bytes',
+437 silly get     date: 'Fri, 17 Jun 2016 00:09:04 GMT',
+437 silly get     via: '1.1 varnish',
+437 silly get     age: '0',
+437 silly get     connection: 'keep-alive',
+437 silly get     'x-served-by': 'cache-lax1438-LAX',
+437 silly get     'x-cache': 'HIT',
+437 silly get     'x-cache-hits': '1',
+437 silly get     'x-timer': 'S1466122144.476422,VS0,VE171',
+437 silly get     vary: 'Accept-Encoding' } ]
+438 verbose get saving gulp-uncss to /Users/adamvisser/.npm/registry.npmjs.org/gulp-uncss/.cache.json
+439 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+440 verbose outdated not updating gulp-imagemin because it's currently at the maximum version that matches its specified semver range
+441 info outdated updating [ { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-plugin-transform-es2015-arrow-functions',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.8.0',
+441 info outdated     latest: '6.8.0',
+441 info outdated     req: '^6.5.2',
+441 info outdated     what: 'babel-plugin-transform-es2015-arrow-functions@6.8.0' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-plugin-transform-es2015-block-scoped-functions',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.8.0',
+441 info outdated     latest: '6.8.0',
+441 info outdated     req: '^6.5.0',
+441 info outdated     what: 'babel-plugin-transform-es2015-block-scoped-functions@6.8.0' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-plugin-transform-es2015-block-scoping',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.10.1',
+441 info outdated     latest: '6.10.1',
+441 info outdated     req: '^6.5.0',
+441 info outdated     what: 'babel-plugin-transform-es2015-block-scoping@6.10.1' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-plugin-transform-es2015-classes',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.9.0',
+441 info outdated     latest: '6.9.0',
+441 info outdated     req: '^6.5.2',
+441 info outdated     what: 'babel-plugin-transform-es2015-classes@6.9.0' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-plugin-transform-es2015-destructuring',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.9.0',
+441 info outdated     latest: '6.9.0',
+441 info outdated     req: '^6.5.0',
+441 info outdated     what: 'babel-plugin-transform-es2015-destructuring@6.9.0' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-plugin-transform-es2015-modules-commonjs',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.8.0',
+441 info outdated     latest: '6.8.0',
+441 info outdated     req: '^6.5.2',
+441 info outdated     what: 'babel-plugin-transform-es2015-modules-commonjs@6.8.0' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-plugin-transform-es2015-parameters',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.9.0',
+441 info outdated     latest: '6.9.0',
+441 info outdated     req: '^6.5.0',
+441 info outdated     what: 'babel-plugin-transform-es2015-parameters@6.9.0' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-plugin-transform-es2015-shorthand-properties',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.8.0',
+441 info outdated     latest: '6.8.0',
+441 info outdated     req: '^6.5.0',
+441 info outdated     what: 'babel-plugin-transform-es2015-shorthand-properties@6.8.0' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-plugin-transform-es2015-spread',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.8.0',
+441 info outdated     latest: '6.8.0',
+441 info outdated     req: '^6.5.2',
+441 info outdated     what: 'babel-plugin-transform-es2015-spread@6.8.0' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-plugin-transform-es2015-template-literals',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.8.0',
+441 info outdated     latest: '6.8.0',
+441 info outdated     req: '^6.5.2',
+441 info outdated     what: 'babel-plugin-transform-es2015-template-literals@6.8.0' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'babel-preset-es2015',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '6.9.0',
+441 info outdated     latest: '6.9.0',
+441 info outdated     req: '^6.3.13',
+441 info outdated     what: 'babel-preset-es2015@6.9.0' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'gulp-extname',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '0.2.2',
+441 info outdated     latest: '0.2.2',
+441 info outdated     req: '^0.2.0',
+441 info outdated     what: 'gulp-extname@0.2.2' },
+441 info outdated   { dep:
+441 info outdated      { package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets',
+441 info outdated        parent: [Object],
+441 info outdated        isMissing: true },
+441 info outdated     depname: 'style-sherpa',
+441 info outdated     current: undefined,
+441 info outdated     wanted: '1.0.1',
+441 info outdated     latest: '1.0.1',
+441 info outdated     req: '^1.0.0',
+441 info outdated     what: 'style-sherpa@1.0.1' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 37,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/babel-core',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/babel-core',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: true,
+441 info outdated        existing: false },
+441 info outdated     depname: 'babel-core',
+441 info outdated     current: '6.7.2',
+441 info outdated     wanted: '6.9.1',
+441 info outdated     latest: '6.9.1',
+441 info outdated     req: '^6.3.17',
+441 info outdated     what: 'babel-core@6.9.1' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 730,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/browser-sync',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/browser-sync',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: true,
+441 info outdated        existing: false },
+441 info outdated     depname: 'browser-sync',
+441 info outdated     current: '2.11.1',
+441 info outdated     wanted: '2.13.0',
+441 info outdated     latest: '2.13.0',
+441 info outdated     req: '^2.10.0',
+441 info outdated     what: 'browser-sync@2.13.0' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 747,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: false,
+441 info outdated        existing: false },
+441 info outdated     depname: 'gulp',
+441 info outdated     current: '4.0.0-alpha.2',
+441 info outdated     wanted: 'git',
+441 info outdated     latest: 'git',
+441 info outdated     req: 'github:gulpjs/gulp#4.0',
+441 info outdated     what: 'gulp@git' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 748,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-cli',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-cli',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: true,
+441 info outdated        existing: false },
+441 info outdated     depname: 'gulp-cli',
+441 info outdated     current: '0.4.0',
+441 info outdated     wanted: 'git',
+441 info outdated     latest: 'git',
+441 info outdated     req: 'github:gulpjs/gulp-cli#4.0',
+441 info outdated     what: 'gulp-cli@git' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 245,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-cssnano',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-cssnano',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: false,
+441 info outdated        existing: false },
+441 info outdated     depname: 'gulp-cssnano',
+441 info outdated     current: '2.1.1',
+441 info outdated     wanted: '2.1.2',
+441 info outdated     latest: '2.1.2',
+441 info outdated     req: '^2.1.0',
+441 info outdated     what: 'gulp-cssnano@2.1.2' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 250,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-if',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-if',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: false,
+441 info outdated        existing: false },
+441 info outdated     depname: 'gulp-if',
+441 info outdated     current: '2.0.0',
+441 info outdated     wanted: '2.0.1',
+441 info outdated     latest: '2.0.1',
+441 info outdated     req: '^2.0.0',
+441 info outdated     what: 'gulp-if@2.0.1' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 255,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-load-plugins',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-load-plugins',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: true,
+441 info outdated        existing: false },
+441 info outdated     depname: 'gulp-load-plugins',
+441 info outdated     current: '1.2.0',
+441 info outdated     wanted: '1.2.4',
+441 info outdated     latest: '1.2.4',
+441 info outdated     req: '^1.1.0',
+441 info outdated     what: 'gulp-load-plugins@1.2.4' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 265,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-sass',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-sass',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: false,
+441 info outdated        existing: false },
+441 info outdated     depname: 'gulp-sass',
+441 info outdated     current: '2.2.0',
+441 info outdated     wanted: '2.3.2',
+441 info outdated     latest: '2.3.2',
+441 info outdated     req: '^2.1.0',
+441 info outdated     what: 'gulp-sass@2.3.2' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 267,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-uncss',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/gulp-uncss',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: false,
+441 info outdated        existing: false },
+441 info outdated     depname: 'gulp-uncss',
+441 info outdated     current: '1.0.4',
+441 info outdated     wanted: '1.0.5',
+441 info outdated     latest: '1.0.5',
+441 info outdated     req: '^1.0.1',
+441 info outdated     what: 'gulp-uncss@1.0.5' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 753,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/js-yaml',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/js-yaml',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: true,
+441 info outdated        existing: false },
+441 info outdated     depname: 'js-yaml',
+441 info outdated     current: '3.5.4',
+441 info outdated     wanted: '3.6.1',
+441 info outdated     latest: '3.6.1',
+441 info outdated     req: '^3.4.6',
+441 info outdated     what: 'js-yaml@3.6.1' },
+441 info outdated   { dep:
+441 info outdated      Node {
+441 info outdated        id: 777,
+441 info outdated        package: [Object],
+441 info outdated        path: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/yargs',
+441 info outdated        realpath: '/Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets/node_modules/yargs',
+441 info outdated        parent: [Object],
+441 info outdated        isLink: false,
+441 info outdated        children: [Object],
+441 info outdated        error: null,
+441 info outdated        loaded: false,
+441 info outdated        requiredBy: [Object],
+441 info outdated        requires: [Object],
+441 info outdated        missingDeps: {},
+441 info outdated        missingDevDeps: {},
+441 info outdated        userRequired: false,
+441 info outdated        existing: false },
+441 info outdated     depname: 'yargs',
+441 info outdated     current: '3.10.0',
+441 info outdated     wanted: '3.32.0',
+441 info outdated     latest: '4.7.1',
+441 info outdated     req: '^3.8.0',
+441 info outdated     what: 'yargs@3.32.0' } ]
+442 silly loadCurrentTree Starting
+443 silly install loadCurrentTree
+444 silly install readLocalPackageData
+445 silly fetchPackageMetaData babel-plugin-transform-es2015-arrow-functions@6.8.0
+446 silly fetchPackageMetaData babel-plugin-transform-es2015-block-scoped-functions@6.8.0
+447 silly fetchPackageMetaData babel-plugin-transform-es2015-block-scoping@6.10.1
+448 silly fetchPackageMetaData babel-plugin-transform-es2015-classes@6.9.0
+449 silly fetchPackageMetaData babel-plugin-transform-es2015-destructuring@6.9.0
+450 silly fetchPackageMetaData babel-plugin-transform-es2015-modules-commonjs@6.8.0
+451 silly fetchPackageMetaData babel-plugin-transform-es2015-parameters@6.9.0
+452 silly fetchPackageMetaData babel-plugin-transform-es2015-shorthand-properties@6.8.0
+453 silly fetchPackageMetaData babel-plugin-transform-es2015-spread@6.8.0
+454 silly fetchPackageMetaData babel-plugin-transform-es2015-template-literals@6.8.0
+455 silly fetchPackageMetaData babel-preset-es2015@6.9.0
+456 silly fetchPackageMetaData gulp-extname@0.2.2
+457 silly fetchPackageMetaData style-sherpa@1.0.1
+458 silly fetchPackageMetaData babel-core@6.9.1
+459 silly fetchPackageMetaData browser-sync@2.13.0
+460 silly fetchPackageMetaData github:gulpjs/gulp#4.0
+461 silly fetchPackageMetaData github:gulpjs/gulp-cli#4.0
+462 silly fetchPackageMetaData gulp-cssnano@2.1.2
+463 silly fetchPackageMetaData gulp-if@2.0.1
+464 silly fetchPackageMetaData gulp-load-plugins@1.2.4
+465 silly fetchPackageMetaData gulp-sass@2.3.2
+466 silly fetchPackageMetaData gulp-uncss@1.0.5
+467 silly fetchPackageMetaData js-yaml@3.6.1
+468 silly fetchPackageMetaData yargs@3.32.0
+469 silly fetchNamedPackageData babel-plugin-transform-es2015-arrow-functions
+470 silly mapToRegistry name babel-plugin-transform-es2015-arrow-functions
+471 silly mapToRegistry using default registry
+472 silly mapToRegistry registry https://registry.npmjs.org/
+473 silly mapToRegistry data Result {
+473 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-arrow-functions',
+473 silly mapToRegistry   scope: null,
+473 silly mapToRegistry   name: 'babel-plugin-transform-es2015-arrow-functions',
+473 silly mapToRegistry   rawSpec: '',
+473 silly mapToRegistry   spec: 'latest',
+473 silly mapToRegistry   type: 'tag' }
+474 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-arrow-functions
+475 silly fetchNamedPackageData babel-plugin-transform-es2015-block-scoped-functions
+476 silly mapToRegistry name babel-plugin-transform-es2015-block-scoped-functions
+477 silly mapToRegistry using default registry
+478 silly mapToRegistry registry https://registry.npmjs.org/
+479 silly mapToRegistry data Result {
+479 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-block-scoped-functions',
+479 silly mapToRegistry   scope: null,
+479 silly mapToRegistry   name: 'babel-plugin-transform-es2015-block-scoped-functions',
+479 silly mapToRegistry   rawSpec: '',
+479 silly mapToRegistry   spec: 'latest',
+479 silly mapToRegistry   type: 'tag' }
+480 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoped-functions
+481 silly fetchNamedPackageData babel-plugin-transform-es2015-block-scoping
+482 silly mapToRegistry name babel-plugin-transform-es2015-block-scoping
+483 silly mapToRegistry using default registry
+484 silly mapToRegistry registry https://registry.npmjs.org/
+485 silly mapToRegistry data Result {
+485 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-block-scoping',
+485 silly mapToRegistry   scope: null,
+485 silly mapToRegistry   name: 'babel-plugin-transform-es2015-block-scoping',
+485 silly mapToRegistry   rawSpec: '',
+485 silly mapToRegistry   spec: 'latest',
+485 silly mapToRegistry   type: 'tag' }
+486 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoping
+487 silly fetchNamedPackageData babel-plugin-transform-es2015-classes
+488 silly mapToRegistry name babel-plugin-transform-es2015-classes
+489 silly mapToRegistry using default registry
+490 silly mapToRegistry registry https://registry.npmjs.org/
+491 silly mapToRegistry data Result {
+491 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-classes',
+491 silly mapToRegistry   scope: null,
+491 silly mapToRegistry   name: 'babel-plugin-transform-es2015-classes',
+491 silly mapToRegistry   rawSpec: '',
+491 silly mapToRegistry   spec: 'latest',
+491 silly mapToRegistry   type: 'tag' }
+492 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-classes
+493 silly fetchNamedPackageData babel-plugin-transform-es2015-destructuring
+494 silly mapToRegistry name babel-plugin-transform-es2015-destructuring
+495 silly mapToRegistry using default registry
+496 silly mapToRegistry registry https://registry.npmjs.org/
+497 silly mapToRegistry data Result {
+497 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-destructuring',
+497 silly mapToRegistry   scope: null,
+497 silly mapToRegistry   name: 'babel-plugin-transform-es2015-destructuring',
+497 silly mapToRegistry   rawSpec: '',
+497 silly mapToRegistry   spec: 'latest',
+497 silly mapToRegistry   type: 'tag' }
+498 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-destructuring
+499 silly fetchNamedPackageData babel-plugin-transform-es2015-modules-commonjs
+500 silly mapToRegistry name babel-plugin-transform-es2015-modules-commonjs
+501 silly mapToRegistry using default registry
+502 silly mapToRegistry registry https://registry.npmjs.org/
+503 silly mapToRegistry data Result {
+503 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-modules-commonjs',
+503 silly mapToRegistry   scope: null,
+503 silly mapToRegistry   name: 'babel-plugin-transform-es2015-modules-commonjs',
+503 silly mapToRegistry   rawSpec: '',
+503 silly mapToRegistry   spec: 'latest',
+503 silly mapToRegistry   type: 'tag' }
+504 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-modules-commonjs
+505 silly fetchNamedPackageData babel-plugin-transform-es2015-parameters
+506 silly mapToRegistry name babel-plugin-transform-es2015-parameters
+507 silly mapToRegistry using default registry
+508 silly mapToRegistry registry https://registry.npmjs.org/
+509 silly mapToRegistry data Result {
+509 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-parameters',
+509 silly mapToRegistry   scope: null,
+509 silly mapToRegistry   name: 'babel-plugin-transform-es2015-parameters',
+509 silly mapToRegistry   rawSpec: '',
+509 silly mapToRegistry   spec: 'latest',
+509 silly mapToRegistry   type: 'tag' }
+510 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-parameters
+511 silly fetchNamedPackageData babel-plugin-transform-es2015-shorthand-properties
+512 silly mapToRegistry name babel-plugin-transform-es2015-shorthand-properties
+513 silly mapToRegistry using default registry
+514 silly mapToRegistry registry https://registry.npmjs.org/
+515 silly mapToRegistry data Result {
+515 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-shorthand-properties',
+515 silly mapToRegistry   scope: null,
+515 silly mapToRegistry   name: 'babel-plugin-transform-es2015-shorthand-properties',
+515 silly mapToRegistry   rawSpec: '',
+515 silly mapToRegistry   spec: 'latest',
+515 silly mapToRegistry   type: 'tag' }
+516 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-shorthand-properties
+517 silly fetchNamedPackageData babel-plugin-transform-es2015-spread
+518 silly mapToRegistry name babel-plugin-transform-es2015-spread
+519 silly mapToRegistry using default registry
+520 silly mapToRegistry registry https://registry.npmjs.org/
+521 silly mapToRegistry data Result {
+521 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-spread',
+521 silly mapToRegistry   scope: null,
+521 silly mapToRegistry   name: 'babel-plugin-transform-es2015-spread',
+521 silly mapToRegistry   rawSpec: '',
+521 silly mapToRegistry   spec: 'latest',
+521 silly mapToRegistry   type: 'tag' }
+522 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-spread
+523 silly fetchNamedPackageData babel-plugin-transform-es2015-template-literals
+524 silly mapToRegistry name babel-plugin-transform-es2015-template-literals
+525 silly mapToRegistry using default registry
+526 silly mapToRegistry registry https://registry.npmjs.org/
+527 silly mapToRegistry data Result {
+527 silly mapToRegistry   raw: 'babel-plugin-transform-es2015-template-literals',
+527 silly mapToRegistry   scope: null,
+527 silly mapToRegistry   name: 'babel-plugin-transform-es2015-template-literals',
+527 silly mapToRegistry   rawSpec: '',
+527 silly mapToRegistry   spec: 'latest',
+527 silly mapToRegistry   type: 'tag' }
+528 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-transform-es2015-template-literals
+529 silly fetchNamedPackageData babel-preset-es2015
+530 silly mapToRegistry name babel-preset-es2015
+531 silly mapToRegistry using default registry
+532 silly mapToRegistry registry https://registry.npmjs.org/
+533 silly mapToRegistry data Result {
+533 silly mapToRegistry   raw: 'babel-preset-es2015',
+533 silly mapToRegistry   scope: null,
+533 silly mapToRegistry   name: 'babel-preset-es2015',
+533 silly mapToRegistry   rawSpec: '',
+533 silly mapToRegistry   spec: 'latest',
+533 silly mapToRegistry   type: 'tag' }
+534 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-es2015
+535 silly fetchNamedPackageData gulp-extname
+536 silly mapToRegistry name gulp-extname
+537 silly mapToRegistry using default registry
+538 silly mapToRegistry registry https://registry.npmjs.org/
+539 silly mapToRegistry data Result {
+539 silly mapToRegistry   raw: 'gulp-extname',
+539 silly mapToRegistry   scope: null,
+539 silly mapToRegistry   name: 'gulp-extname',
+539 silly mapToRegistry   rawSpec: '',
+539 silly mapToRegistry   spec: 'latest',
+539 silly mapToRegistry   type: 'tag' }
+540 silly mapToRegistry uri https://registry.npmjs.org/gulp-extname
+541 silly fetchNamedPackageData style-sherpa
+542 silly mapToRegistry name style-sherpa
+543 silly mapToRegistry using default registry
+544 silly mapToRegistry registry https://registry.npmjs.org/
+545 silly mapToRegistry data Result {
+545 silly mapToRegistry   raw: 'style-sherpa',
+545 silly mapToRegistry   scope: null,
+545 silly mapToRegistry   name: 'style-sherpa',
+545 silly mapToRegistry   rawSpec: '',
+545 silly mapToRegistry   spec: 'latest',
+545 silly mapToRegistry   type: 'tag' }
+546 silly mapToRegistry uri https://registry.npmjs.org/style-sherpa
+547 silly fetchNamedPackageData babel-core
+548 silly mapToRegistry name babel-core
+549 silly mapToRegistry using default registry
+550 silly mapToRegistry registry https://registry.npmjs.org/
+551 silly mapToRegistry data Result {
+551 silly mapToRegistry   raw: 'babel-core',
+551 silly mapToRegistry   scope: null,
+551 silly mapToRegistry   name: 'babel-core',
+551 silly mapToRegistry   rawSpec: '',
+551 silly mapToRegistry   spec: 'latest',
+551 silly mapToRegistry   type: 'tag' }
+552 silly mapToRegistry uri https://registry.npmjs.org/babel-core
+553 silly fetchNamedPackageData browser-sync
+554 silly mapToRegistry name browser-sync
+555 silly mapToRegistry using default registry
+556 silly mapToRegistry registry https://registry.npmjs.org/
+557 silly mapToRegistry data Result {
+557 silly mapToRegistry   raw: 'browser-sync',
+557 silly mapToRegistry   scope: null,
+557 silly mapToRegistry   name: 'browser-sync',
+557 silly mapToRegistry   rawSpec: '',
+557 silly mapToRegistry   spec: 'latest',
+557 silly mapToRegistry   type: 'tag' }
+558 silly mapToRegistry uri https://registry.npmjs.org/browser-sync
+559 silly fetchNamedPackageData gulp-cssnano
+560 silly mapToRegistry name gulp-cssnano
+561 silly mapToRegistry using default registry
+562 silly mapToRegistry registry https://registry.npmjs.org/
+563 silly mapToRegistry data Result {
+563 silly mapToRegistry   raw: 'gulp-cssnano',
+563 silly mapToRegistry   scope: null,
+563 silly mapToRegistry   name: 'gulp-cssnano',
+563 silly mapToRegistry   rawSpec: '',
+563 silly mapToRegistry   spec: 'latest',
+563 silly mapToRegistry   type: 'tag' }
+564 silly mapToRegistry uri https://registry.npmjs.org/gulp-cssnano
+565 silly fetchNamedPackageData gulp-if
+566 silly mapToRegistry name gulp-if
+567 silly mapToRegistry using default registry
+568 silly mapToRegistry registry https://registry.npmjs.org/
+569 silly mapToRegistry data Result {
+569 silly mapToRegistry   raw: 'gulp-if',
+569 silly mapToRegistry   scope: null,
+569 silly mapToRegistry   name: 'gulp-if',
+569 silly mapToRegistry   rawSpec: '',
+569 silly mapToRegistry   spec: 'latest',
+569 silly mapToRegistry   type: 'tag' }
+570 silly mapToRegistry uri https://registry.npmjs.org/gulp-if
+571 silly fetchNamedPackageData gulp-load-plugins
+572 silly mapToRegistry name gulp-load-plugins
+573 silly mapToRegistry using default registry
+574 silly mapToRegistry registry https://registry.npmjs.org/
+575 silly mapToRegistry data Result {
+575 silly mapToRegistry   raw: 'gulp-load-plugins',
+575 silly mapToRegistry   scope: null,
+575 silly mapToRegistry   name: 'gulp-load-plugins',
+575 silly mapToRegistry   rawSpec: '',
+575 silly mapToRegistry   spec: 'latest',
+575 silly mapToRegistry   type: 'tag' }
+576 silly mapToRegistry uri https://registry.npmjs.org/gulp-load-plugins
+577 silly fetchNamedPackageData gulp-sass
+578 silly mapToRegistry name gulp-sass
+579 silly mapToRegistry using default registry
+580 silly mapToRegistry registry https://registry.npmjs.org/
+581 silly mapToRegistry data Result {
+581 silly mapToRegistry   raw: 'gulp-sass',
+581 silly mapToRegistry   scope: null,
+581 silly mapToRegistry   name: 'gulp-sass',
+581 silly mapToRegistry   rawSpec: '',
+581 silly mapToRegistry   spec: 'latest',
+581 silly mapToRegistry   type: 'tag' }
+582 silly mapToRegistry uri https://registry.npmjs.org/gulp-sass
+583 silly fetchNamedPackageData gulp-uncss
+584 silly mapToRegistry name gulp-uncss
+585 silly mapToRegistry using default registry
+586 silly mapToRegistry registry https://registry.npmjs.org/
+587 silly mapToRegistry data Result {
+587 silly mapToRegistry   raw: 'gulp-uncss',
+587 silly mapToRegistry   scope: null,
+587 silly mapToRegistry   name: 'gulp-uncss',
+587 silly mapToRegistry   rawSpec: '',
+587 silly mapToRegistry   spec: 'latest',
+587 silly mapToRegistry   type: 'tag' }
+588 silly mapToRegistry uri https://registry.npmjs.org/gulp-uncss
+589 silly fetchNamedPackageData js-yaml
+590 silly mapToRegistry name js-yaml
+591 silly mapToRegistry using default registry
+592 silly mapToRegistry registry https://registry.npmjs.org/
+593 silly mapToRegistry data Result {
+593 silly mapToRegistry   raw: 'js-yaml',
+593 silly mapToRegistry   scope: null,
+593 silly mapToRegistry   name: 'js-yaml',
+593 silly mapToRegistry   rawSpec: '',
+593 silly mapToRegistry   spec: 'latest',
+593 silly mapToRegistry   type: 'tag' }
+594 silly mapToRegistry uri https://registry.npmjs.org/js-yaml
+595 silly fetchNamedPackageData yargs
+596 silly mapToRegistry name yargs
+597 silly mapToRegistry using default registry
+598 silly mapToRegistry registry https://registry.npmjs.org/
+599 silly mapToRegistry data Result {
+599 silly mapToRegistry   raw: 'yargs',
+599 silly mapToRegistry   scope: null,
+599 silly mapToRegistry   name: 'yargs',
+599 silly mapToRegistry   rawSpec: '',
+599 silly mapToRegistry   spec: 'latest',
+599 silly mapToRegistry   type: 'tag' }
+600 silly mapToRegistry uri https://registry.npmjs.org/yargs
+601 silly fetchOtherPackageData github:gulpjs/gulp#4.0
+602 silly cache add args [ 'github:gulpjs/gulp#4.0', null ]
+603 verbose cache add spec github:gulpjs/gulp#4.0
+604 silly fetchOtherPackageData github:gulpjs/gulp-cli#4.0
+605 silly cache add args [ 'github:gulpjs/gulp-cli#4.0', null ]
+606 verbose cache add spec github:gulpjs/gulp-cli#4.0
+607 silly cache add parsed spec Result {
+607 silly cache add   raw: 'github:gulpjs/gulp#4.0',
+607 silly cache add   scope: null,
+607 silly cache add   name: null,
+607 silly cache add   rawSpec: 'github:gulpjs/gulp#4.0',
+607 silly cache add   spec: 'github:gulpjs/gulp#4.0',
+607 silly cache add   type: 'hosted',
+607 silly cache add   hosted:
+607 silly cache add    { type: 'github',
+607 silly cache add      ssh: 'git@github.com:gulpjs/gulp.git#4.0',
+607 silly cache add      sshUrl: 'git+ssh://git@github.com/gulpjs/gulp.git#4.0',
+607 silly cache add      httpsUrl: 'git+https://github.com/gulpjs/gulp.git#4.0',
+607 silly cache add      gitUrl: 'git://github.com/gulpjs/gulp.git#4.0',
+607 silly cache add      shortcut: 'github:gulpjs/gulp#4.0',
+607 silly cache add      directUrl: 'https://raw.githubusercontent.com/gulpjs/gulp/4.0/package.json' } }
+608 verbose addRemoteGit caching github:gulpjs/gulp#4.0
+609 verbose addRemoteGit gulpjs/gulp#4.0 is a repository hosted by github
+610 silly tryGitProto attempting to clone git://github.com/gulpjs/gulp.git#4.0
+611 silly tryClone cloning gulpjs/gulp#4.0 via git://github.com/gulpjs/gulp.git#4.0
+612 verbose tryClone git-github-com-gulpjs-gulp-git-4-0-ecf98f08 not in flight; caching
+613 verbose correctMkdir /Users/adamvisser/.npm/_git-remotes correctMkdir not in flight; initializing
+614 silly cache add parsed spec Result {
+614 silly cache add   raw: 'github:gulpjs/gulp-cli#4.0',
+614 silly cache add   scope: null,
+614 silly cache add   name: null,
+614 silly cache add   rawSpec: 'github:gulpjs/gulp-cli#4.0',
+614 silly cache add   spec: 'github:gulpjs/gulp-cli#4.0',
+614 silly cache add   type: 'hosted',
+614 silly cache add   hosted:
+614 silly cache add    { type: 'github',
+614 silly cache add      ssh: 'git@github.com:gulpjs/gulp-cli.git#4.0',
+614 silly cache add      sshUrl: 'git+ssh://git@github.com/gulpjs/gulp-cli.git#4.0',
+614 silly cache add      httpsUrl: 'git+https://github.com/gulpjs/gulp-cli.git#4.0',
+614 silly cache add      gitUrl: 'git://github.com/gulpjs/gulp-cli.git#4.0',
+614 silly cache add      shortcut: 'github:gulpjs/gulp-cli#4.0',
+614 silly cache add      directUrl: 'https://raw.githubusercontent.com/gulpjs/gulp-cli/4.0/package.json' } }
+615 verbose addRemoteGit caching github:gulpjs/gulp-cli#4.0
+616 verbose addRemoteGit gulpjs/gulp-cli#4.0 is a repository hosted by github
+617 silly tryGitProto attempting to clone git://github.com/gulpjs/gulp-cli.git#4.0
+618 silly tryClone cloning gulpjs/gulp-cli#4.0 via git://github.com/gulpjs/gulp-cli.git#4.0
+619 verbose tryClone git-github-com-gulpjs-gulp-cli-git-4-0-177dc8bb not in flight; caching
+620 verbose correctMkdir /Users/adamvisser/.npm/_git-remotes correctMkdir already in flight; waiting
+621 verbose get https://registry.npmjs.org/babel-plugin-transform-es2015-arrow-functions not expired, no request
+622 verbose get https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoped-functions not expired, no request
+623 verbose get https://registry.npmjs.org/babel-plugin-transform-es2015-block-scoping not expired, no request
+624 verbose get https://registry.npmjs.org/babel-plugin-transform-es2015-classes not expired, no request
+625 verbose get https://registry.npmjs.org/babel-plugin-transform-es2015-destructuring not expired, no request
+626 verbose get https://registry.npmjs.org/babel-plugin-transform-es2015-shorthand-properties not expired, no request
+627 verbose get https://registry.npmjs.org/babel-plugin-transform-es2015-modules-commonjs not expired, no request
+628 verbose get https://registry.npmjs.org/babel-plugin-transform-es2015-parameters not expired, no request
+629 verbose get https://registry.npmjs.org/babel-plugin-transform-es2015-spread not expired, no request
+630 verbose get https://registry.npmjs.org/babel-plugin-transform-es2015-template-literals not expired, no request
+631 verbose get https://registry.npmjs.org/style-sherpa not expired, no request
+632 verbose get https://registry.npmjs.org/gulp-extname not expired, no request
+633 verbose get https://registry.npmjs.org/babel-preset-es2015 not expired, no request
+634 verbose get https://registry.npmjs.org/gulp-cssnano not expired, no request
+635 verbose get https://registry.npmjs.org/gulp-if not expired, no request
+636 verbose get https://registry.npmjs.org/gulp-sass not expired, no request
+637 verbose get https://registry.npmjs.org/gulp-load-plugins not expired, no request
+638 verbose get https://registry.npmjs.org/gulp-uncss not expired, no request
+639 verbose get https://registry.npmjs.org/js-yaml not expired, no request
+640 info git [ 'clone',
+640 info git   '--template=/Users/adamvisser/.npm/_git-remotes/_templates',
+640 info git   '--mirror',
+640 info git   'git://github.com/gulpjs/gulp.git',
+640 info git   '/Users/adamvisser/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-4-0-ecf98f08' ]
+641 info git [ 'clone',
+641 info git   '--template=/Users/adamvisser/.npm/_git-remotes/_templates',
+641 info git   '--mirror',
+641 info git   'git://github.com/gulpjs/gulp-cli.git',
+641 info git   '/Users/adamvisser/.npm/_git-remotes/git-github-com-gulpjs-gulp-cli-git-4-0-177dc8bb' ]
+642 verbose get https://registry.npmjs.org/babel-core not expired, no request
+643 verbose get https://registry.npmjs.org/yargs not expired, no request
+644 verbose get https://registry.npmjs.org/browser-sync not expired, no request
+645 verbose mirrorRemote gulpjs/gulp-cli#4.0 git clone git://github.com/gulpjs/gulp-cli.git
+646 verbose correctMkdir /Users/adamvisser/.npm/_git-remotes correctMkdir not in flight; initializing
+647 verbose setPermissions gulpjs/gulp-cli#4.0 set permissions on /Users/adamvisser/.npm/_git-remotes/git-github-com-gulpjs-gulp-cli-git-4-0-177dc8bb
+648 verbose resolveHead gulpjs/gulp-cli#4.0 original treeish: 4.0
+649 info git [ 'rev-list', '-n1', '4.0' ]
+650 error git rev-list -n1 4.0: fatal: ambiguous argument '4.0': unknown revision or path not in the working tree.
+650 error git rev-list -n1 4.0: Use '--' to separate paths from revisions, like this:
+650 error git rev-list -n1 4.0: 'git <command> [<revision>...] -- [<file>...]'
+651 silly tryHTTPS attempting to clone git+https://github.com/gulpjs/gulp-cli.git#4.0
+652 silly tryClone cloning gulpjs/gulp-cli#4.0 via git+https://github.com/gulpjs/gulp-cli.git#4.0
+653 verbose tryClone git-https-github-com-gulpjs-gulp-cli-git-4-0-4d1486f1 not in flight; caching
+654 verbose correctMkdir /Users/adamvisser/.npm/_git-remotes correctMkdir not in flight; initializing
+655 info git [ 'clone',
+655 info git   '--template=/Users/adamvisser/.npm/_git-remotes/_templates',
+655 info git   '--mirror',
+655 info git   'https://github.com/gulpjs/gulp-cli.git',
+655 info git   '/Users/adamvisser/.npm/_git-remotes/git-https-github-com-gulpjs-gulp-cli-git-4-0-4d1486f1' ]
+656 verbose mirrorRemote gulpjs/gulp#4.0 git clone git://github.com/gulpjs/gulp.git
+657 verbose correctMkdir /Users/adamvisser/.npm/_git-remotes correctMkdir not in flight; initializing
+658 verbose setPermissions gulpjs/gulp#4.0 set permissions on /Users/adamvisser/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-4-0-ecf98f08
+659 verbose resolveHead gulpjs/gulp#4.0 original treeish: 4.0
+660 info git [ 'rev-list', '-n1', '4.0' ]
+661 silly resolveHead gulpjs/gulp#4.0 resolved treeish: 4ed9a4a3275559c73a396eff7e1fde3824951ebb
+662 verbose resolveHead gulpjs/gulp#4.0 resolved Git URL: git://github.com/gulpjs/gulp.git#4ed9a4a3275559c73a396eff7e1fde3824951ebb
+663 silly resolveHead Git working directory: /var/folders/nm/rkmv1j5j2_x5cjnpj70k0bc40000gp/T/npm-34482-f7e0c64a/git-cache-ae4c6582/4ed9a4a3275559c73a396eff7e1fde3824951ebb
+664 info git [ 'clone',
+664 info git   '/Users/adamvisser/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-4-0-ecf98f08',
+664 info git   '/var/folders/nm/rkmv1j5j2_x5cjnpj70k0bc40000gp/T/npm-34482-f7e0c64a/git-cache-ae4c6582/4ed9a4a3275559c73a396eff7e1fde3824951ebb' ]
+665 verbose cloneResolved gulpjs/gulp#4.0 clone Cloning into '/var/folders/nm/rkmv1j5j2_x5cjnpj70k0bc40000gp/T/npm-34482-f7e0c64a/git-cache-ae4c6582/4ed9a4a3275559c73a396eff7e1fde3824951ebb'...
+665 verbose cloneResolved done.
+666 info git [ 'checkout', '4ed9a4a3275559c73a396eff7e1fde3824951ebb' ]
+667 verbose checkoutTreeish gulpjs/gulp#4.0 checkout Note: checking out '4ed9a4a3275559c73a396eff7e1fde3824951ebb'.
+667 verbose checkoutTreeish
+667 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+667 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+667 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+667 verbose checkoutTreeish
+667 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+667 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+667 verbose checkoutTreeish
+667 verbose checkoutTreeish   git checkout -b <new-branch-name>
+667 verbose checkoutTreeish
+667 verbose checkoutTreeish HEAD is now at 4ed9a4a... Call reload on instance, not package (#1661)
+668 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+669 verbose updateSubmodules gulpjs/gulp#4.0 submodule update
+670 verbose addLocalDirectory /Users/adamvisser/.npm/gulp/4.0.0-alpha.2/package.tgz not in flight; packing
+671 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+672 verbose tar pack [ '/Users/adamvisser/.npm/gulp/4.0.0-alpha.2/package.tgz',
+672 verbose tar pack   '/var/folders/nm/rkmv1j5j2_x5cjnpj70k0bc40000gp/T/npm-34482-f7e0c64a/git-cache-ae4c6582/4ed9a4a3275559c73a396eff7e1fde3824951ebb' ]
+673 verbose tarball /Users/adamvisser/.npm/gulp/4.0.0-alpha.2/package.tgz
+674 verbose folder /var/folders/nm/rkmv1j5j2_x5cjnpj70k0bc40000gp/T/npm-34482-f7e0c64a/git-cache-ae4c6582/4ed9a4a3275559c73a396eff7e1fde3824951ebb
+675 verbose addLocalTarball adding from inside cache /Users/adamvisser/.npm/gulp/4.0.0-alpha.2/package.tgz
+676 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+677 verbose addRemoteGit data._from: gulpjs/gulp#4.0
+678 verbose addRemoteGit data._resolved: git://github.com/gulpjs/gulp.git#4ed9a4a3275559c73a396eff7e1fde3824951ebb
+679 silly cache afterAdd gulp@4.0.0-alpha.2
+680 verbose afterAdd /Users/adamvisser/.npm/gulp/4.0.0-alpha.2/package/package.json not in flight; writing
+681 verbose correctMkdir /Users/adamvisser/.npm correctMkdir not in flight; initializing
+682 verbose afterAdd /Users/adamvisser/.npm/gulp/4.0.0-alpha.2/package/package.json written
+683 verbose mirrorRemote gulpjs/gulp-cli#4.0 git clone https://github.com/gulpjs/gulp-cli.git
+684 verbose correctMkdir /Users/adamvisser/.npm/_git-remotes correctMkdir not in flight; initializing
+685 verbose setPermissions gulpjs/gulp-cli#4.0 set permissions on /Users/adamvisser/.npm/_git-remotes/git-https-github-com-gulpjs-gulp-cli-git-4-0-4d1486f1
+686 verbose resolveHead gulpjs/gulp-cli#4.0 original treeish: 4.0
+687 info git [ 'rev-list', '-n1', '4.0' ]
+688 error git rev-list -n1 4.0: fatal: ambiguous argument '4.0': unknown revision or path not in the working tree.
+688 error git rev-list -n1 4.0: Use '--' to separate paths from revisions, like this:
+688 error git rev-list -n1 4.0: 'git <command> [<revision>...] -- [<file>...]'
+689 silly trySSH attempting to clone git@github.com:gulpjs/gulp-cli.git#4.0
+690 silly tryClone cloning gulpjs/gulp-cli#4.0 via git@github.com:gulpjs/gulp-cli.git#4.0
+691 verbose tryClone git-github-com-gulpjs-gulp-cli-git-4-0-799725fb not in flight; caching
+692 verbose correctMkdir /Users/adamvisser/.npm/_git-remotes correctMkdir not in flight; initializing
+693 info git [ 'clone',
+693 info git   '--template=/Users/adamvisser/.npm/_git-remotes/_templates',
+693 info git   '--mirror',
+693 info git   'git@github.com:gulpjs/gulp-cli.git',
+693 info git   '/Users/adamvisser/.npm/_git-remotes/git-github-com-gulpjs-gulp-cli-git-4-0-799725fb' ]
+694 verbose mirrorRemote gulpjs/gulp-cli#4.0 git clone git@github.com:gulpjs/gulp-cli.git
+695 verbose correctMkdir /Users/adamvisser/.npm/_git-remotes correctMkdir not in flight; initializing
+696 verbose setPermissions gulpjs/gulp-cli#4.0 set permissions on /Users/adamvisser/.npm/_git-remotes/git-github-com-gulpjs-gulp-cli-git-4-0-799725fb
+697 verbose resolveHead gulpjs/gulp-cli#4.0 original treeish: 4.0
+698 info git [ 'rev-list', '-n1', '4.0' ]
+699 error git rev-list -n1 4.0: fatal: ambiguous argument '4.0': unknown revision or path not in the working tree.
+699 error git rev-list -n1 4.0: Use '--' to separate paths from revisions, like this:
+699 error git rev-list -n1 4.0: 'git <command> [<revision>...] -- [<file>...]'
+700 silly fetchPackageMetaData Error: Command failed: git rev-list -n1 4.0
+700 silly fetchPackageMetaData fatal: ambiguous argument '4.0': unknown revision or path not in the working tree.
+700 silly fetchPackageMetaData Use '--' to separate paths from revisions, like this:
+700 silly fetchPackageMetaData 'git <command> [<revision>...] -- [<file>...]'
+700 silly fetchPackageMetaData
+700 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:202:12)
+700 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+700 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+700 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:850:16)
+700 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:323:11)
+700 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+700 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+700 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:492:12)
+700 silly fetchPackageMetaData  error for github:gulpjs/gulp-cli#4.0 { Error: Command failed: git rev-list -n1 4.0
+700 silly fetchPackageMetaData fatal: ambiguous argument '4.0': unknown revision or path not in the working tree.
+700 silly fetchPackageMetaData Use '--' to separate paths from revisions, like this:
+700 silly fetchPackageMetaData 'git <command> [<revision>...] -- [<file>...]'
+700 silly fetchPackageMetaData
+700 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:202:12)
+700 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+700 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+700 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:850:16)
+700 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:323:11)
+700 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+700 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+700 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:492:12)
+700 silly fetchPackageMetaData   killed: false,
+700 silly fetchPackageMetaData   code: 128,
+700 silly fetchPackageMetaData   signal: null,
+700 silly fetchPackageMetaData   cmd: 'git rev-list -n1 4.0' }
+701 silly rollbackFailedOptional Starting
+702 silly rollbackFailedOptional Finishing
+703 silly runTopLevelLifecycles Starting
+704 silly runTopLevelLifecycles Finishing
+705 silly install printInstalled
+706 verbose stack Error: Command failed: git rev-list -n1 4.0
+706 verbose stack fatal: ambiguous argument '4.0': unknown revision or path not in the working tree.
+706 verbose stack Use '--' to separate paths from revisions, like this:
+706 verbose stack 'git <command> [<revision>...] -- [<file>...]'
+706 verbose stack
+706 verbose stack     at ChildProcess.exithandler (child_process.js:202:12)
+706 verbose stack     at emitTwo (events.js:106:13)
+706 verbose stack     at ChildProcess.emit (events.js:191:7)
+706 verbose stack     at maybeClose (internal/child_process.js:850:16)
+706 verbose stack     at Socket.<anonymous> (internal/child_process.js:323:11)
+706 verbose stack     at emitOne (events.js:96:13)
+706 verbose stack     at Socket.emit (events.js:188:7)
+706 verbose stack     at Pipe._handle.close [as _onclose] (net.js:492:12)
+707 verbose cwd /Users/adamvisser/Documents/workspace/Autodesk/adskshield/frontend-assets
+708 error Darwin 15.5.0
+709 error argv "/usr/local/Cellar/node/6.2.0/bin/node" "/usr/local/bin/npm" "update"
+710 error node v6.2.0
+711 error npm  v3.8.9
+712 error code 128
+713 error Command failed: git rev-list -n1 4.0
+713 error fatal: ambiguous argument '4.0': unknown revision or path not in the working tree.
+713 error Use '--' to separate paths from revisions, like this:
+713 error 'git <command> [<revision>...] -- [<file>...]'
+714 error If you need help, you may report this error at:
+714 error     <https://github.com/npm/npm/issues>
+715 verbose exit [ 1, true ]

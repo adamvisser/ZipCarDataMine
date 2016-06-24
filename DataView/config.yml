@@ -1,0 +1,51 @@
+# Your project's server will run on localhost:xxxx at this port
+PORT: 8000
+
+# Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+  - "last 2 versions"
+  - "ie >= 9"
+
+# UnCSS will use these settings
+UNCSS_OPTIONS:
+  html:
+    - "src/**/*.html"
+  ignore:
+    - !!js/regexp ^\.is-.*
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Paths to static assets that aren't images, CSS, or JavaScript
+  assets:
+    - "src/assets/**/*"
+    - "src/index.html"
+    - "!src/assets/{img,js,scss}/**/*"
+  templates:
+    - "src/views/**/*"
+  extracss:
+    - "src/assets/css/semantic.min.css"
+  javascript:
+    # stuff to get the app working
+    - "src/assets/js/app.js"
+    - "src/assets/js/routes.js"
+    # stuff to get the app displaying data nicely
+    - "src/assets/js/graphs/*.js"
+    - "src/assets/js/graphs/*/*.js"
+    # stuff to get the controllers functions included
+    - "src/assets/js/controllers/*.js"
+    - "src/assets/js/controllers/*/*.js"
+    # all the services needed for this app
+    - "src/assets/js/services/*.js"
+    - "src/assets/js/services/*/*.js"
+    # all the directives needed for this
+    - "src/assets/js/directives/*.js"
+    - "src/assets/js/directives/*/*.js"
+  javascriptLibraries:
+    - "bower_components/jquery/dist/jquery.js"
+    - "bower_components/angular/angular.js"
+    - "bower_components/angular-route/angular-route.js"
+    - "bower_components/angular-resource/angular-resource.js"
+    - "bower_components/highcharts/highcharts.js"
+    - "bower_components/highcharts-ng/dist/highcharts-ng.js"
+    - "src/assets/js/semantic.js"
+    
