@@ -14,6 +14,7 @@ class CreateWalkingsTable extends Migration
     {
         Schema::create('walkings', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('turn_number')->unsigned();
             $table->integer('person_time')->unsigned();
             $table->integer('person_time0')->unsigned();
             $table->integer('walking_to')->unsigned();

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Waiting extends Model
 {
 	protected $table = 'waitings';
-	protected $fillable = ['total_waiting','remaining_waiting','waiting_at','waiting_for','moment_id','people_id',];
+	protected $fillable = ['waiting_at','waiting_for','moment_id','people_id', 'turn_number', 'person_time','person_time0'];
     public function waitingFor()
 	{
 		return $this->belongsTo('App\Building');

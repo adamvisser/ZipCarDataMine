@@ -36,17 +36,6 @@ xhr.onload = function() {
 };
 
 
-
-if(AdamHatesGlobalVariables === undefined){
-	console.log('creating global.... omg i just did that');
-	AdamHatesGlobalVariables = 0;
-}else if(AdamHatesGlobalVariables > 100){
-	console.log('PAST TURN 100!!!');
-} else {
-	console.log('nnnoooo');
-}
-
-
 if(window.AdamHatesGlobals === undefined){
 	window.AdamHatesGlobals = 0;
 }else if(window.AdamHatesGlobals > 100){

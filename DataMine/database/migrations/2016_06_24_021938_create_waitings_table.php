@@ -14,6 +14,7 @@ class CreateWaitingsTable extends Migration
     {
         Schema::create('waitings', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('turn_number')->unsigned();
             $table->integer('person_time')->unsigned();
             $table->integer('person_time0')->unsigned();
             $table->integer('waiting_at')->unsigned();

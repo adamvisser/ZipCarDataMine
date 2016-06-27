@@ -16,4 +16,12 @@ class Moment extends Model
 	protected $fillable = ['milliseconds'];
 
 	protected $guarded = ['id'];
+
+	public function getByTime($time){
+		$exists = Moment::where('milliseconds',  $time)->get()->first();
+		if ($exists) {
+			return $exists;
+		}
+		return Moment::create(['milliseconds'=>$time]);
+	}
 }

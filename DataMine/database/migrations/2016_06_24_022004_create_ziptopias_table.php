@@ -15,6 +15,8 @@ class CreateZiptopiasTable extends Migration
         Schema::create('ziptopias', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('client_id')->unsigned();
+            $table->integer('start_time')->unsigned();
+            $table->integer('end_time')->unsigned();
             $table->timestamps();
         });
     }

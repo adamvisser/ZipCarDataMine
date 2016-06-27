@@ -14,7 +14,7 @@ class Walking extends Model
 
 	protected $connection = 'mysql';
 
-	protected $fillable = ['person_time','person_time0'];
+	protected $fillable = ['waiting_at','waiting_for','moment_id','people_id', 'turn_number', 'person_time','person_time0'];
 
 	protected $guarded = ['id'];
 
