@@ -11,6 +11,47 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        DB::table('buildings')->insert([
+			'name' => 'A',
+			'x' =>  '15',
+			'y' => '16',
+		]);
+
+		DB::table('buildings')->insert([
+			'name' => 'B',
+			'x' =>  '5',
+			'y' => '10',
+		]);
+
+		DB::table('buildings')->insert([
+			'name' => 'C',
+			'x' =>  '23',
+			'y' => '2',
+		]);
+
+
+		DB::table('buildings')->insert([
+			'name' => 'D',
+			'x' =>  '23',
+			'y' => '18',
+		]);
+
+		DB::table('buildings')->insert([
+			'name' => 'E',
+			'x' =>  '17',
+			'y' => '20',
+		]);
+
+		DB::table('buildings')->insert([
+			'name' => 'F',
+			'x' =>  '2',
+			'y' => '23',
+		]);
+
+		DB::table('buildings')->insert([
+			'name' => 'G',
+			'x' =>  '16',
+			'y' => '10',
+		]);
     }
 }
