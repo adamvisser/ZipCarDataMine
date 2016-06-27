@@ -14,6 +14,7 @@ class CreateZiptopiasTable extends Migration
     {
         Schema::create('ziptopias', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('client_id')->unsigned();
             $table->timestamps();
         });
     }

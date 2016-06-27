@@ -10,19 +10,19 @@ class Waiting extends Model
 	protected $fillable = ['total_waiting','remaining_waiting','waiting_at','waiting_for','moment_id','people_id',];
     public function waitingFor()
 	{
-		return $this->belongsTo('App\Building', 'waiting_for','name');
+		return $this->belongsTo('App\Building');
 	}
 
 	public function waitingAt()
 	{
-		return $this->belongsTo('App\Building', 'waiting_at','name');
+		return $this->belongsTo('App\Building');
 	}
 
 	public function moment(){
 		return $this->belongsTo('App\Moment');
 	}
 
-	public function moment(){
+	public function person(){
 		return $this->belongsTo('App\People');
 	}
 }

@@ -14,7 +14,8 @@ class CreatePeopleTable extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->string('name');
+            $table->integer('ziptopia_id')->unsigned();
         });
     }
 

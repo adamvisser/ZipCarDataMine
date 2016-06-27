@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateWaitingsTable extends Migration
+class CreateWalkingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,12 @@ class CreateWaitingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('waitings', function (Blueprint $table) {
+        Schema::create('walkings', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('person_time')->unsigned();
             $table->integer('person_time0')->unsigned();
-            $table->integer('waiting_at')->unsigned();
-            $table->integer('waiting_for')->unsigned();
+            $table->integer('walking_to')->unsigned();
+            $table->integer('walking_from')->unsigned();
             $table->integer('moment_id')->unsigned();
             $table->integer('people_id')->unsigned();
         });
@@ -30,6 +30,6 @@ class CreateWaitingsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('waitings');
+        Schema::drop('walkings');
     }
 }
