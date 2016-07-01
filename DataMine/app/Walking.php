@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Walking extends Model
 {
-	protected $table = 'products';
+	protected $table = 'walkings';
 
 	protected $primaryKey = 'id';
 

@@ -22,4 +22,14 @@ class Ziptopia extends Model
     {
         return $this->hasMany('App\People');
     }
+
+    public function  startMoment()
+    {
+        return $this->hasMany('App\People');
+    }
+
+    public function  endMoment()
+    {
+        return $this->hasMany('App\People');
+    }
 }

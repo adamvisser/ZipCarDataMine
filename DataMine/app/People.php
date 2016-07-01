@@ -14,7 +14,7 @@ class People extends Model
 
 	protected $connection = 'mysql';
 
-	protected $fillable = [];
+	protected $fillable = ['name','ziptopia_id'];
 
 	protected $guarded = ['id'];
 
