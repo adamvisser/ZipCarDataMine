@@ -49,11 +49,11 @@ class DataSubmissionController extends Controller
 
 	public function submitData(Request $request){
 		//well need the turn number to know what to do with the ziptopia
-		$turnNumber = $request->input('turn-number');
+		$turnNumber = $request->input('turnNumber');
 		//well need the client id (millisecond of code start time) to know which ziptopia
-		$clientID = $request->input('client-id');
+		$clientID = $request->input('clientID');
 		//well need the current millisecond of that turn to get the proper moment association
-		$currentMoment = Moment::getByTime($request->input('current-time'));
+		$currentMoment = Moment::getByTime($request->input('currentTime'));
 		//we will need a list of all the peoples
 		$peoplesRequest = $request->input('peoples');
 		if ($turnNumber == 0) {
