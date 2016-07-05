@@ -103,7 +103,7 @@ function getClientID(){
 
 /*
 ====================================
-	BEGIN CODE TO PROPERLY TRACK GLOBALS
+	END CODE TO PROPERLY TRACK GLOBALS
 ====================================
 */
 

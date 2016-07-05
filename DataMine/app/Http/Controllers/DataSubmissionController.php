@@ -76,7 +76,8 @@ class DataSubmissionController extends Controller
 				'ziptopia'=>$ziptopia,
 				'turnNumber' => $turnNumber,
 				'currentMoment' => $currentMoment,
-				'clientID '=>$clientID
+				'clientID '=>$clientID,
+				'peopleRequest'=>$peoplesRequest,
 			));
 		} else if ($turnNumber == 999) {
 			//everything is ending
