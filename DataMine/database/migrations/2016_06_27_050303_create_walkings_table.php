@@ -21,6 +21,8 @@ class CreateWalkingsTable extends Migration
             $table->integer('walking_from')->unsigned();
             $table->integer('moment_id')->unsigned();
             $table->integer('people_id')->unsigned();
+            $table->integer('x')->unsigned();
+            $table->integer('y')->unsigned();
         });
     }
 

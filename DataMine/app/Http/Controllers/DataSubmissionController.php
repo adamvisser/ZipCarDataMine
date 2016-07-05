@@ -13,6 +13,37 @@ use App\Walking;
 use App\Person;
 use App\Building;
 
+
+/*
+{
+	turn-number:0-999,
+	client-id:int milisecond of when the user started, its not the best but works
+	current-time:milisecond time of when user started turn
+	peoples:[
+			{
+				destination:"D",
+				img:"people9",
+				name:"mike12793",
+				origin:"B",
+				time:9,
+				time0:83,
+				x:21,
+				y:16
+			},
+			{
+				destination:"D",
+				img:"people9",
+				name:"mike12793",
+				origin:"B",
+				time:9,
+				time0:83,
+				x:21,
+				y:16
+			},
+		]
+}
+*/
+
 class DataSubmissionController extends Controller
 {
 
@@ -23,12 +54,30 @@ class DataSubmissionController extends Controller
 		$clientID = $request->input('client-id');
 		//well need the current millisecond of that turn to get the proper moment association
 		$currentMoment = Moment::getByTime($request->input('current-time'));
+		//we will need a list of all the peoples
+		$peoplesRequest = $request->input('peoples');
 		if ($turnNumber == 0) {
 			//everything is just begining
 			//create the ziptopia id
-			$ziptopia = Ziptopia::createZipTopinstance($clientID, $currentMoment);
+			$ziptopia = Ziptopia::createZipTopinstance($clientID, $currentMoment->id);
 			//create all the peoples
-			//for all the peoples, do their walking/waitings
+			$peoples = [];
+			$actions = [];
+			foreach ($peoplesRequest as $peopleRequest) {
+				//for all the peoples, do their walking/waitings
+				$peoplesSetup = People::createOrRetrieve($currentMoment, $ziptopia->id, $destination, $name, $origin, $time, $time0, $turnNumber, $x, $y);
+				$peoples[] = $peoplesSetup['person'];
+				$actions[] = $peoplesSetup['action'];
+			}
+			//ziptopia starting so make sure to set its start
+			return response()->json(array(
+				'people'=>$peoples,
+				'actions' =>$actions,
+				'ziptopia'=>$ziptopia,
+				'turnNumber' => $turnNumber,
+				'currentMoment' => $currentMoment,
+				'clientID '=>$clientID
+			));
 		} else if ($turnNumber == 999) {
 			//everything is ending
 			//load the ziptopia id
@@ -40,8 +89,12 @@ class DataSubmissionController extends Controller
 			//get/create all the peoples
 			//for all the peoples, do their walking/waitings
 		}
-
-		return 'returning useless info for now';
+		return response()->json(array(
+			'peopleRequest'=>$peoplesRequest,
+			'clientID '=>$clientID
+			'turnNumber' => $turnNumber,
+			'currentMoment' => $currentMoment,
+		));
 	}
 
 	public function checkPeople(){

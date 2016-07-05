@@ -21,6 +21,8 @@ class CreateWaitingsTable extends Migration
             $table->integer('waiting_for')->unsigned();
             $table->integer('moment_id')->unsigned();
             $table->integer('people_id')->unsigned();
+            $table->integer('x')->unsigned();
+            $table->integer('y')->unsigned();
         });
     }
 

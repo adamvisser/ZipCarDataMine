@@ -29,4 +29,14 @@ class Building extends Model
     {
         return $this->hasMany('App\Walking', 'walking_from');
     }
+
+    public static function getBuilding($name, $x=-1, $y=-1)
+    {
+        if($x==-1 || $y==-1){
+            $whereClause = ['name'=>$name];
+        }else{
+            $whereClause = ['name'=>$name, 'x'=> $x, 'y'=> $y];
+        }
+        return Building::where($whereClause)->get()->first();
+    }
 }

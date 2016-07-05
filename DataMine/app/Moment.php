@@ -18,14 +18,11 @@ class Moment extends Model
 	protected $guarded = ['id'];
 
 	public function getByTime($time){
-		//milliseconds would be too much of a spread... for now.
-		$time = $time/1000;
-		$time = round($time, 0, PHP_ROUND_HALF_DOWN);
-		$exists = Moment::where('seconds',  $time)->get()->first();
+		$exists = Moment::where('milliseconds',  $time)->get()->first();
 		if ($exists) {
 			return $exists;
 		}
-		return Moment::create(['seconds'=>$time]);
+		return Moment::create(['milliseconds'=>$time]);
 	}
 
 	public function  ziptopiaStarts()

@@ -25,11 +25,16 @@ class Ziptopia extends Model
 
     public function  startMoment()
     {
-        return $this->hasMany('App\People');
+        return $this->belongsTo('App\Moment','start_time');
     }
 
     public function  endMoment()
     {
-        return $this->hasMany('App\People');
+        return $this->belongsTo('App\Moment','end_time');
+    }
+
+    public function createZipTopinstance($clientID, $currentMomentID)
+    {
+        return Ziptopia::create(['client_id'=>$clientID, 'start_time'=>$currentMomentID]);
     }
 }
