@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ziptopia extends Model
 {
-	protected $table = 'products';
+	protected $table = 'ziptopias';
 
 	protected $primaryKey = 'id';
 
@@ -33,7 +33,7 @@ class Ziptopia extends Model
         return $this->belongsTo('App\Moment','end_time');
     }
 
-    public function createZipTopinstance($clientID, $currentMomentID)
+    public static function createZipTopinstance($clientID, $currentMomentID)
     {
         return Ziptopia::create(['client_id'=>$clientID, 'start_time'=>$currentMomentID]);
     }

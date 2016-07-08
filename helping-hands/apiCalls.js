@@ -6,10 +6,12 @@
 ====================================
 */
 function dataSubmissionSetup(method, url) {
+	console.log('starting data submission setup');
 	var ziptopiaCrossSiteRequest = new XMLHttpRequest();
 	if ("withCredentials" in ziptopiaCrossSiteRequest) {
 		//Chrome/Firefox/Opera/Safari.
 		ziptopiaCrossSiteRequest.open(method, url, true);
+		console.log('CSR setup');
 	} else if (typeof XDomainRequest != "undefined") {
 		//Microsoft has a larger "im different" complex than the others
 		ziptopiaCrossSiteRequest = new XDomainRequest();
@@ -52,7 +54,9 @@ function submitDataToServer(persons, currentTime) {
 	};
 	//all that mumbo jumbo, just so I can run this call is pure JS.
 	//it submits data to my api. 
+	console.log('sending request....');
 	ziptopiaCrossSiteRequest.send(JSON.stringify(dataMap));
+	console.log('request sent....');
 }
 /*
 ====================================
@@ -85,6 +89,7 @@ function setupTurnNumber(){
 //this breaks if it gets called more than once....
 //thats some really crap programming adam
 function getTurnNumber(){
+	console.log('turn number was requested');
 	setupTurnNumber();
 	return window.AdamHatesGlobalsTurnNumber;
 }
@@ -97,6 +102,7 @@ function setupClientID(){
 }
 
 function getClientID(){
+	console.log('client id was requested');
 	setupClientID();
 	return window.AdamHatesGlobalsClientID;
 }
@@ -116,6 +122,10 @@ function getClientID(){
 
 
 function turn(vehicles,peoples,buildings){
-	//just to be safe we use the parseint here
-	submitDataToServer(peoples, parseInt(Date.now()));
+	//lets change this to only run once eh?
+	if(window.AdamHatesGlobalsTurnNumber === undefined){
+		//just to be safe we use the parseint here
+		submitDataToServer(peoples, parseInt(Date.now()));
+	}
+	
 }

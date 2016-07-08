@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/submitdata', 'DataSubmissionController@submitData');
+Route::post('/submitdata', 'DataSubmissionController@submitData');
 
-Route::post('/checkdata','DataSubmissionController@checkData');
+Route::get('/check/people','DataSubmissionController@checkPeople');
+
+Route::get('/check/waiting','DataSubmissionController@checkWaiting');
+
+Route::get('/check/walking','DataSubmissionController@checkWalking');
+
+Route::get('/check/buildings','DataSubmissionController@checkBuildings');

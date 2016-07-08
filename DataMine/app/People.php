@@ -10,7 +10,7 @@ use App\Building;
 
 class People extends Model
 {
-	protected $table = 'products';
+	protected $table = 'people';
 
 	protected $primaryKey = 'id';
 
@@ -47,7 +47,8 @@ class People extends Model
 		$person = People::where('name',$name)->where('ziptopia_id',$clientID)->get()->first();
 		if (!$person) {
 			//or create it
-			$person = People::create(['name' => $peopleRequest['name'],'ziptopia_id'=>]);
+			$name = $peopleRequest['name'];
+			$person = People::create(['name' => $name,'ziptopia_id'=>$clientID]);
 		}
 		//get the building the person is going to
 		$destination= Building::getBuilding($destination);
@@ -55,7 +56,7 @@ class People extends Model
 		$origin= Building::getBuilding($origin, $x, $y);
 		if ($origin->isAtOrigin) {
 			//the person is waiting at the building, create a waiting
-			$action = Waiting::setupData($person->id, $origin->id, $turnNumber, $destination->id, $time, $time0, $x, $y, $currentMoment->id));
+			$action = Waiting::setupData($person->id, $origin->id, $turnNumber, $destination->id, $time, $time0, $x, $y, $currentMoment->id);
 		}else{
 			//the person has left the building, create a walking
 			$action = Walking::setupData($person->id, $origin->id, $turnNumber, $destination->id, $time, $time0, $x, $y, $currentMoment->id);

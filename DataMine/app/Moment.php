@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Moment extends Model
-	protected $table = 'products';
+class Moment extends Model{
+	protected $table = 'moments';
 
 	protected $primaryKey = 'id';
 
@@ -17,12 +17,8 @@ class Moment extends Model
 
 	protected $guarded = ['id'];
 
-	public function getByTime($time){
-		$exists = Moment::where('milliseconds',  $time)->get()->first();
-		if ($exists) {
-			return $exists;
-		}
-		return Moment::create(['milliseconds'=>$time]);
+	public static function getByTime($time){
+		return Moment::firstOrCreate(['milliseconds'=>$time]);
 	}
 
 	public function  ziptopiaStarts()

@@ -10,7 +10,7 @@ use App\Ziptopia;
 use App\Moment;
 use App\Waiting;
 use App\Walking;
-use App\Person;
+use App\People;
 use App\Building;
 
 
@@ -47,15 +47,27 @@ use App\Building;
 class DataSubmissionController extends Controller
 {
 
+	    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('cors');
+    }
+
+
 	public function submitData(Request $request){
+		$jsonData = $request-->json()->all()
 		//well need the turn number to know what to do with the ziptopia
-		$turnNumber = $request->input('turnNumber');
+		$turnNumber = $jsonData['turnNumber'];
 		//well need the client id (millisecond of code start time) to know which ziptopia
-		$clientID = $request->input('clientID');
+		$clientID = $jsonData['clientID')];
 		//well need the current millisecond of that turn to get the proper moment association
-		$currentMoment = Moment::getByTime($request->input('currentTime'));
+		$currentMoment = Moment::getByTime($jsonData['currentTime']);
 		//we will need a list of all the peoples
-		$peoplesRequest = $request->input('peoples');
+		$peoplesRequest = $jsonData['peoples');
 		if ($turnNumber == 0) {
 			//everything is just begining
 			//create the ziptopia id
@@ -92,7 +104,7 @@ class DataSubmissionController extends Controller
 		}
 		return response()->json(array(
 			'peopleRequest'=>$peoplesRequest,
-			'clientID '=>$clientID
+			'clientID '=>$clientID,
 			'turnNumber' => $turnNumber,
 			'currentMoment' => $currentMoment,
 		));
@@ -105,11 +117,16 @@ class DataSubmissionController extends Controller
 
 	public function checkWaiting(){
 
-		return json_encode(People::take(30)->get());
+		return json_encode(Waiting::take(30)->get());
 	}
 
 	public function checkWalking(){
 
-		return json_encode(People::take(30)->get());
+		return json_encode(Walking::take(30)->get());
+	}
+
+	public function checkBuildings(){
+
+		return json_encode(Building::take(30)->get());
 	}
 }
