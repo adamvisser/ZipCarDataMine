@@ -80,9 +80,9 @@ class DataSubmissionController extends Controller
 				$peoples[] = $peoplesSetup;
 			}
 			//ziptopia starting so make sure to set its start
-			return response()->json(array(
+			return response()->json([
 				'ziptopia-id'=>$ziptopia->id,
-			));
+			]);
 		} else if ($turnNumber == 999) {
 			//everything is ending
 			//load the ziptopia id
