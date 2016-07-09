@@ -23,14 +23,8 @@ function dataSubmissionSetup(method, url) {
 	return ziptopiaCrossSiteRequest;
 }
 
-function submitDataToServer(persons, currentTime) {
-	//build the json data we will submit later
-	var dataMap = {
-		turnNumber:getTurnNumber(),
-		clientID:getClientID(),
-		peoples:persons,
-		currentTime,currentTime
-	};
+function getDataSubmitterConnection() {
+	
 	//this is the api url i have setup
 	var url = 'http://ziptopia.adamvisser.me/submitdata';
 	//setting up the request to another site (my site)
@@ -41,22 +35,36 @@ function submitDataToServer(persons, currentTime) {
 	}
 	//it actually worked! log the data so I can make sense of it as I program things out
 	ziptopiaCrossSiteRequest.onload = function() {
-		var text = ziptopiaCrossSiteRequest.responseText;
-		console.log('REQUEST WORKED AND RESPONDED WELL ==== BEGIN RESPONSE DUMP');
-		console.log(text);
-		console.log('===inmid===');
-		console.log(JSON.parse(text));
-		console.log('REQUEST WORKED AND RESPONDED WELL ==== END RESPONSE DUMP');
+		console.log('REQUEST WORKED AND RESPONDED WELL');
 	};
+
+	ziptopiaCrossSiteRequest.onreadystatechange = function() {
+        if (ziptopiaCrossSiteRequest.readyState === 4) {
+            if (ziptopiaCrossSiteRequest.status >= 200 && req.status < 400) {
+                // JSON.parse(req.responseText) etc.
+            } else {
+                // Handle error case
+            }
+        }
+    };
 	//it didnt work, so now I can have users get a notice, and I will have to check the error logs
 	ziptopiaCrossSiteRequest.onerror = function() {
 		alert('Please contact adam at: adamvissers@gmail.com to let him know to check his error logs!');
 	};
 	//all that mumbo jumbo, just so I can run this call is pure JS.
 	//it submits data to my api. 
-	console.log('sending request....');
-	ziptopiaCrossSiteRequest.send(JSON.stringify(dataMap));
-	console.log('request sent....');
+	return ziptopiaCrossSiteRequest;
+}
+
+
+function getDataMapString(persons, currentTime){
+	//build the json data we will submit later
+	return JSON.stringify({
+		turnNumber:getTurnNumber(),
+		clientID:getClientID(),
+		peoples:persons,
+		currentTime,currentTime
+	});
 }
 /*
 ====================================
@@ -124,5 +132,10 @@ function getClientID(){
 function turn(vehicles,peoples,buildings){
 	//just to be safe we use the parseint here
 	console.log('Launching the request functions');
-	submitDataToServer(peoples, Date.now());	
+	var ziptopiaCrossSiteRequest = getDataSubmitterConnection();
+	var dataMapString = getDataMapString(peoples, Date.now());
+	ziptopiaCrossSiteRequest.send(dataMapString);
+	var text = ziptopiaCrossSiteRequest.responseText;
+	console.log(text);
+	console.log(JSON.parse(text));
 }
