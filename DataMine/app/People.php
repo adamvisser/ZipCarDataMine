@@ -43,13 +43,7 @@ class People extends Model
     */
 	public static function createOrRetrieve(Moment $currentMoment, $clientID, $destination, $name, $origin, $time, $time0, $turnNumber, $x, $y)
 	{
-		//find the person
-		$person = People::where('name',$name)->where('ziptopia_id',$clientID)->get()->first();
-		if (!$person) {
-			//or create it
-			$name = $peopleRequest['name'];
-			$person = People::create(['name' => $name,'ziptopia_id'=>$clientID]);
-		}
+		$person = People::firstOrCreate(['name' => $name,'ziptopia_id'=>$clientID]);
 		//get the building the person is going to
 		$destination= Building::getBuilding($destination);
 		//get the building the person is headed from
@@ -62,7 +56,7 @@ class People extends Model
 			$action = Walking::setupData($person->id, $origin->id, $turnNumber, $destination->id, $time, $time0, $x, $y, $currentMoment->id);
 		}
 		//return the person
-		return array('person'=>$person,'action'=>$action);
+		return $person;
 	}
 
 }

@@ -125,7 +125,8 @@ function turn(vehicles,peoples,buildings){
 	//lets change this to only run once eh?
 	if(window.AdamHatesGlobalsTurnNumber === undefined){
 		//just to be safe we use the parseint here
-		submitDataToServer(peoples, parseInt(Date.now()));
+		console.log('Launching the request functions');
+		submitDataToServer(peoples, Date.now());
 	}
 	
 }

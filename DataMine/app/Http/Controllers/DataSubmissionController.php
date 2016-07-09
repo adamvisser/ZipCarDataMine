@@ -59,37 +59,29 @@ class DataSubmissionController extends Controller
 
 
 	public function submitData(Request $request){
-		$jsonData = $request-->json()->all()
+		$jsonData = $request->json()->all();
 		//well need the turn number to know what to do with the ziptopia
 		$turnNumber = $jsonData['turnNumber'];
 		//well need the client id (millisecond of code start time) to know which ziptopia
-		$clientID = $jsonData['clientID')];
+		$clientID = $jsonData['clientID'];
 		//well need the current millisecond of that turn to get the proper moment association
 		$currentMoment = Moment::getByTime($jsonData['currentTime']);
 		//we will need a list of all the peoples
-		$peoplesRequest = $jsonData['peoples');
+		$peoplesRequest = $jsonData['peoples'];
 		if ($turnNumber == 0) {
 			//everything is just begining
 			//create the ziptopia id
 			$ziptopia = Ziptopia::createZipTopinstance($clientID, $currentMoment->id);
 			//create all the peoples
 			$peoples = [];
-			$actions = [];
 			foreach ($peoplesRequest as $peopleRequest) {
 				//for all the peoples, do their walking/waitings
-				$peoplesSetup = People::createOrRetrieve($currentMoment, $ziptopia->id, $destination, $name, $origin, $time, $time0, $turnNumber, $x, $y);
-				$peoples[] = $peoplesSetup['person'];
-				$actions[] = $peoplesSetup['action'];
+				$peoplesSetup = People::createOrRetrieve($currentMoment, $ziptopia->id, $peopleRequest['destination'], $peopleRequest['name'], $peopleRequest['origin'], $peopleRequest['time'], $peopleRequest['time0'], $turnNumber, $peopleRequest['x'], $peopleRequest['y']);
+				$peoples[] = $peoplesSetup;
 			}
 			//ziptopia starting so make sure to set its start
 			return response()->json(array(
-				'people'=>$peoples,
-				'actions' =>$actions,
-				'ziptopia'=>$ziptopia,
-				'turnNumber' => $turnNumber,
-				'currentMoment' => $currentMoment,
-				'clientID '=>$clientID,
-				'peopleRequest'=>$peoplesRequest,
+				'ziptopia-id'=>$ziptopia->id,
 			));
 		} else if ($turnNumber == 999) {
 			//everything is ending
@@ -112,21 +104,21 @@ class DataSubmissionController extends Controller
 
 	public function checkPeople(){
 
-		return json_encode(People::take(30)->get());
+		return json_encode(People::take(300)->get());
 	}
 
 	public function checkWaiting(){
 
-		return json_encode(Waiting::take(30)->get());
+		return json_encode(Waiting::take(300)->get());
 	}
 
 	public function checkWalking(){
 
-		return json_encode(Walking::take(30)->get());
+		return json_encode(Walking::take(300)->get());
 	}
 
 	public function checkBuildings(){
 
-		return json_encode(Building::take(30)->get());
+		return json_encode(Building::take(300)->get());
 	}
 }

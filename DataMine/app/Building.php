@@ -37,6 +37,12 @@ class Building extends Model
         }else{
             $whereClause = ['name'=>$name, 'x'=> $x, 'y'=> $y];
         }
-        return Building::where($whereClause)->get()->first();
+        $building = Building::where($whereClause)->get()->first();
+        //check if the x and y passed in are here
+        $building->isAtBuilding = false;
+        if ($building->x == $x && $building->y == $y) {
+           $building->isAtBuilding = true;
+        }
+        return $building
     }
 }

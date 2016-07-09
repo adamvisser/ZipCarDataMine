@@ -37,7 +37,7 @@ class Waiting extends Model
 
 	public static function setupData($personID, $origin, $turnNumber, $destination, $time, $time0, $x, $y, $momentID)
 	{
-		return Walking::create(
+		return Walking::create([
 				'waiting_for'=> $destination,
 				'waiting_at'=> $origin,
 				'moment_id'=> $momentID,
@@ -47,6 +47,6 @@ class Waiting extends Model
 				'person_time0'=> $time0,
 				'x'=> $x,
 				'y'=> $y,
-			);
+			]);
 	}
 }

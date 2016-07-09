@@ -38,7 +38,7 @@ class Walking extends Model
 
 	public static function setupData($personID, $origin, $turnNumber, $destination, $time, $time0, $x, $y, $momentID)
 	{
-		return Walking::create(
+		return Walking::create([
 				'walking_to'=> $destination,
 				'walking_from'=> $origin,
 				'moment_id'=> $momentID,
@@ -48,6 +48,6 @@ class Walking extends Model
 				'person_time0'=> $time0,
 				'x'=> $x,
 				'y'=> $y,
-			);
+			]);
 	}
 }
