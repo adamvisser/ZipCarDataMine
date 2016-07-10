@@ -40,12 +40,12 @@ class Ziptopia extends Model
 
     public static function loadZipTopinstance($clientID, $ziptopiaID)
     {
-        return Ziptopia::where('client_id'=>$clientID)->where('start_time'=>$currentMomentID)->get()->first();
+        return Ziptopia::where('client_id',$clientID)->where('start_time',$currentMomentID)->get()->first();
     }
 
     public static function endZipTopinstance($clientID, $ziptopiaID, $currentMomentID)
     {
-        $ziptopia = Ziptopia::where('client_id'=>$clientID)->where('start_time'=>$currentMomentID)->update(['end_time' => $]);
+        $ziptopia = Ziptopia::where('client_id',$clientID)->where('start_time',$currentMomentID)->update(['end_time' => $currentMomentID]);
         if ($ziptopia == 1) {
             //we only want to return a ziptopia if there is a SINGLE ziptopia with this unique combination
             return Ziptopia::loadZipTopinstance($clientID, $ziptopiaID);

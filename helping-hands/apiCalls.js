@@ -154,13 +154,15 @@ function turn(vehicles,peoples,buildings){
 		var dataMapString = getDataMapString(peoples, Date.now());
 		ziptopiaCrossSiteRequest.send(dataMapString);
 		var text = ziptopiaCrossSiteRequest.responseText;
-		var hasZiptopiaID = text.search('{"ziptopiaID:');
+		var hasZiptopiaID = text.search('{"ziptopiaID":');
+		console.log(hasZiptopiaID );
 		if (hasZiptopiaID) {
 			//console.log(text);
-			var responseJSON = JSON.parse(text.substring(hasZiptopiaID));
-			console.log(responseJSON);
+			var subString = text.substring(hasZiptopiaID);
+			console.log(subString);
 			//were calling this every turn.... for now...
-			setupZiptopiaID(responseJSON.ziptopiaID);
+			//responseJSON = JSON.parse(subString);
+			//setupZiptopiaID(responseJSON.ziptopiaID);
 		}else{
 			console.log('JSON Parse has no Ziptopia ID, have to restart the run!');
 			resetupRun();

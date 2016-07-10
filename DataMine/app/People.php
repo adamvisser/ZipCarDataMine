@@ -41,7 +41,7 @@ class People extends Model
     /*
 =================
     */
-	public static function dataSubmit(Moment $currentMoment, Ziptopa $ziptopia, $turnNumber, $peoplesRequest){
+	public static function dataSubmit(Moment $currentMoment, Ziptopia $ziptopia, $turnNumber, $peoplesRequest){
 		//create all the peoples
 		$peoples = [];
 		foreach ($peoplesRequest as $peopleRequest) {

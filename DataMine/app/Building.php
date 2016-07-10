@@ -43,6 +43,6 @@ class Building extends Model
         if ($building->x == $x && $building->y == $y) {
            $building->isAtBuilding = true;
         }
-        return $building
+        return $building;
     }
 }

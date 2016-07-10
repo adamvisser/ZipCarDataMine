@@ -89,7 +89,7 @@ class DataSubmissionController extends Controller
 			$ziptopiaID = $jsonData['ziptopiaID'];
 			//load the ziptopia id
 			if ($ziptopiaID > -1) {
-				$ziptopia = Ziptopia::endZipTopinstance($clientID, $ziptopiaID, $currentMoment->id);
+				$ziptopia = Ziptopia::endZipTopinstance($clientID, $ziptopiaID, $currentMoment);
 				if ($ziptopia) {
 					//for all the peoples, do their walking/waitings
 					$peoples = People::dataSubmit($currentMoment, $ziptopia, $turnNumber, $peoplesRequest);
