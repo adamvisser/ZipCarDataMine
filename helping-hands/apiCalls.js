@@ -53,6 +53,7 @@ function getDataSubmitterConnection() {
 function getDataMapString(persons, currentTime){
 	//build the json data we will submit later
 	return JSON.stringify({
+		ziptopiaID:getZiptopiaID(),
 		turnNumber:getTurnNumber(),
 		clientID:getClientID(),
 		peoples:persons,
@@ -72,18 +73,36 @@ function getDataMapString(persons, currentTime){
 
 /*
 ====================================
-	BEGIN CODE TO PROPERLY TRACK GLOBALS
+	BEGIN CODE TO PROPERLY TRACK DATAMAP
 ====================================
 */
 function setupTurnNumber(){
 	if(window.AdamHatesGlobalsTurnNumber === undefined){
 		window.AdamHatesGlobalsTurnNumber = 0;
 	}else if(window.AdamHatesGlobalsTurnNumber > 999){
+		//we are starting at 0, but going until 1000 because we want the request to fully go through. this will act as our "sync"... for now
 		window.AdamHatesGlobalsTurnNumber = 0;
 		jQuery('#run').click();
 	}else{
 		window.AdamHatesGlobalsTurnNumber++;
 	}
+}
+
+function setupZiptopiaID(id){
+	//I baked in an "o goodness all is wrong" flag to the ziptopiaID. for now....
+	if (id < -1) {
+		resetupRun()
+	} else {
+		window.AdamHatesGlobalsZiptopiaID = id;
+	}
+	
+}
+
+function getZiptopiaID(){
+	if(window.AdamHatesGlobalsZiptopiaID === undefined){
+		return -1;
+	}
+	return window.AdamHatesGlobalsZiptopiaID;
 }
 
 
@@ -107,14 +126,15 @@ function getClientID(){
 }
 
 function resetupRun(){
-	window.AdamHatesGlobalsTurnNumber = 0;
-	window.AdamHatesGlobalsClientID = parseInt(Date.now());
+	window.AdamHatesGlobalsTurnNumber = undefined;
+	window.AdamHatesGlobalsClientID = undefined;
+	window.AdamHatesGlobalsZiptopiaID = undefined;
 	jQuery('#run').click();
 }
 
 /*
 ====================================
-	END CODE TO PROPERLY TRACK GLOBALS
+	END CODE TO PROPERLY TRACK DATAMAP
 ====================================
 */
 
@@ -137,7 +157,10 @@ function turn(vehicles,peoples,buildings){
 		var hasZiptopiaID = text.search('{"ziptopiaID:');
 		if (hasZiptopiaID) {
 			//console.log(text);
-			console.log(JSON.parse(text.substring(hasZiptopiaID)));
+			var responseJSON = JSON.parse(text.substring(hasZiptopiaID));
+			console.log(responseJSON);
+			//were calling this every turn.... for now...
+			setupZiptopiaID(responseJSON.ziptopiaID);
 		}else{
 			console.log('JSON Parse has no Ziptopia ID, have to restart the run!');
 			resetupRun();

@@ -41,9 +41,20 @@ class People extends Model
     /*
 =================
     */
-	public static function createOrRetrieve(Moment $currentMoment, $clientID, $destination, $name, $origin, $time, $time0, $turnNumber, $x, $y)
+	public static function dataSubmit(Moment $currentMoment, Ziptopa $ziptopia, $turnNumber, $peoplesRequest){
+		//create all the peoples
+		$peoples = [];
+		foreach ($peoplesRequest as $peopleRequest) {
+			//for all the peoples, do their walking/waitings
+			$peoplesSetup = People::createOrRetrieve($currentMoment, $ziptopia->id, $turnNumber, $peopleRequest['name'], $peopleRequest['destination'], $peopleRequest['origin'], $peopleRequest['time'], $peopleRequest['time0'],  $peopleRequest['x'], $peopleRequest['y']);
+			$peoples[] = $peoplesSetup;
+		}
+		return $peoples;
+
+	}
+	public static function createOrRetrieve(Moment $currentMoment, $ziptopiaID, $turnNumber, $name, $destination, $origin, $time, $time0, $x, $y)
 	{
-		$person = People::firstOrCreate(['name' => $name,'ziptopia_id'=>$clientID]);
+		$person = People::firstOrCreate(['name' => $name,'ziptopia_id'=>$ziptopiaID]);
 		//get the building the person is going to
 		$destination= Building::getBuilding($destination);
 		//get the building the person is headed from

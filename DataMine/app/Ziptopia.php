@@ -37,4 +37,21 @@ class Ziptopia extends Model
     {
         return Ziptopia::create(['client_id'=>$clientID, 'start_time'=>$currentMomentID]);
     }
+
+    public static function loadZipTopinstance($clientID, $ziptopiaID)
+    {
+        return Ziptopia::where('client_id'=>$clientID)->where('start_time'=>$currentMomentID)->get()->first();
+    }
+
+    public static function endZipTopinstance($clientID, $ziptopiaID, $currentMomentID)
+    {
+        $ziptopia = Ziptopia::where('client_id'=>$clientID)->where('start_time'=>$currentMomentID)->update(['end_time' => $]);
+        if ($ziptopia == 1) {
+            //we only want to return a ziptopia if there is a SINGLE ziptopia with this unique combination
+            return Ziptopia::loadZipTopinstance($clientID, $ziptopiaID);
+        }else{
+            //I am putting this here because this is the best place to put a "o holy cow this whole data run is crap"  function call... for now...
+        }
+        return false;
+    }
 }
