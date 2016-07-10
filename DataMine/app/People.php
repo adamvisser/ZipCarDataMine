@@ -58,8 +58,8 @@ class People extends Model
 		//get the building the person is going to
 		$destination= Building::getBuilding($destination);
 		//get the building the person is headed from
-		$origin= Building::getBuilding($origin, $x, $y);
-		if ($origin->isAtBuilding) {
+		$origin= Building::getBuilding($origin);
+		if (Building::isAtBuilding($origin, $x, $y)) {
 			//the person is waiting at the building, create a waiting
 			Waiting::setupData($person->id, $origin->id, $turnNumber, $destination->id, $time, $time0, $x, $y, $currentMoment->id);
 		}else{

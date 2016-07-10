@@ -4,6 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+use Log;
+
 class Ziptopia extends Model
 {
 	protected $table = 'ziptopias';
@@ -38,14 +40,17 @@ class Ziptopia extends Model
         return Ziptopia::create(['client_id'=>$clientID, 'start_time'=>$currentMomentID]);
     }
 
-    public static function loadZipTopinstance($clientID, $ziptopiaID)
+    public static function loadZipTopinstance($ziptopiaID)
     {
-        return Ziptopia::where('client_id',$clientID)->where('start_time',$currentMomentID)->get()->first();
+        Log::info('ziptopia loading: '.$ziptopiaID);
+        $ziptopia =  Ziptopia::find($ziptopiaID);
+        Log::info('ziptopia created: '.$ziptopia);
+        return $ziptopia;
     }
 
-    public static function endZipTopinstance($clientID, $ziptopiaID, $currentMomentID)
+    public static function endZipTopinstance($ziptopiaID, $currentMomentID)
     {
-        $ziptopia = Ziptopia::where('client_id',$clientID)->where('start_time',$currentMomentID)->update(['end_time' => $currentMomentID]);
+        $ziptopia = Ziptopia::where('id',$ziptopiaID)->update(['end_time' => $currentMomentID]);
         if ($ziptopia == 1) {
             //we only want to return a ziptopia if there is a SINGLE ziptopia with this unique combination
             return Ziptopia::loadZipTopinstance($clientID, $ziptopiaID);

@@ -30,19 +30,17 @@ class Building extends Model
         return $this->hasMany('App\Walking', 'walking_from');
     }
 
-    public static function getBuilding($name, $x=-1, $y=-1)
+    public static function getBuilding($name)
     {
-        if($x==-1 || $y==-1){
-            $whereClause = ['name'=>$name];
-        }else{
-            $whereClause = ['name'=>$name, 'x'=> $x, 'y'=> $y];
-        }
-        $building = Building::where($whereClause)->get()->first();
+        $building = Building::where(['name'=>$name])->first();
         //check if the x and y passed in are here
-        $building->isAtBuilding = false;
-        if ($building->x == $x && $building->y == $y) {
-           $building->isAtBuilding = true;
-        }
         return $building;
+    }
+
+    public static function isAtBuilding(Building $building, $x, $y){
+        if ($building->x == $x && $building->y == $y) {
+           return true;
+        }
+        return false;
     }
 }

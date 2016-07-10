@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Log;
+
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -72,51 +74,92 @@ class DataSubmissionController extends Controller
 			//everything is just begining
 			//create the ziptopia id
 			$ziptopia = Ziptopia::createZipTopinstance($clientID, $currentMoment->id);
+
 			if ($ziptopia) {
 				$peoples = People::dataSubmit($currentMoment, $ziptopia, $turnNumber, $peoplesRequest);
 				//ziptopia starting so make sure to set its start
+				if ($peoples) {
+					Log::info('===Starting a run worked data here ');
+						Log::info('peoples count: '.count($peoples));
+						Log::info('ziptopia id returned: '.$ziptopia->id);
+						Log::info('passed in turn number : '.$jsonData['turnNumber']);
+						Log::info('passed in ziptopia id : '.$jsonData['ziptopiaID']);
+						Log::info('passed in current time: '.$jsonData['currentTime']);
+						Log::info('passed in client id: '.$jsonData['clientID']);
+						Log::info('====== end data here ');
+				}
+				
 				return response()->json([
 					'ziptopiaID'=>$ziptopia->id,
 				]);
 			}
-			$peoples = People::dataSubmit($currentMoment, $ziptopia, $turnNumber, $peoplesRequest);
-			//ziptopia starting so make sure to set its start
-			return response()->json([
-				'ziptopiaID'=>$ziptopia->id,
-			]);
+			Log::info('turn ==0 ziptopia brok');
 		} else if ($turnNumber == 999) {
 			//everything is ending
 			$ziptopiaID = $jsonData['ziptopiaID'];
 			//load the ziptopia id
 			if ($ziptopiaID > -1) {
-				$ziptopia = Ziptopia::endZipTopinstance($clientID, $ziptopiaID, $currentMoment);
+				$ziptopia = Ziptopia::endZipTopinstance($ziptopiaID, $currentMoment);
 				if ($ziptopia) {
 					//for all the peoples, do their walking/waitings
 					$peoples = People::dataSubmit($currentMoment, $ziptopia, $turnNumber, $peoplesRequest);
+					if ($peoples) {
+						Log::info('===ending a run worked data here ');
+						Log::info('peoples count: '.count($peoples));
+						Log::info('passed in ziptopia id: '.$ziptopiaID);
+						Log::info('ziptopia id returned: '.$ziptopia->id);
+						Log::info('passed in turn number : '.$jsonData['turnNumber']);
+						Log::info('passed in ziptopia id : '.$jsonData['ziptopiaID']);
+						Log::info('passed in current time: '.$jsonData['currentTime']);
+						Log::info('passed in client id: '.$jsonData['clientID']);
+						Log::info('====== end data here ');
+					}
+					
 					return response()->json([
 						'ziptopiaID'=>$ziptopia->id,
 					]);
 			 	}
 			}
+			Log::info('turn ==999 ziptopia brok');
 		} else if ($turnNumber >0 && $turnNumber < 999 ) {
 			$ziptopiaID = $jsonData['ziptopiaID'];
 			//load the ziptopia id
 			if ($ziptopiaID > -1) {
-				$ziptopia = Ziptopia::loadZipTopinstance($clientID, $ziptopiaID);
+				$ziptopia = Ziptopia::loadZipTopinstance($ziptopiaID);
 				if ($ziptopia) {
 					//for all the peoples, do their walking/waitings
 					$peoples = People::dataSubmit($currentMoment, $ziptopia, $turnNumber, $peoplesRequest);
+					if ($peoples) {
+						Log::info('===mid turn worked great=== data here ');
+						Log::info('peoples count: '.count($peoples));
+						Log::info('passed in ziptopia id: '.$ziptopiaID);
+						Log::info('ziptopia id returned: '.$ziptopia->id);
+						Log::info('passed in turn number : '.$jsonData['turnNumber']);
+						Log::info('passed in ziptopia id : '.$jsonData['ziptopiaID']);
+						Log::info('passed in current time: '.$jsonData['currentTime']);
+						Log::info('passed in client id: '.$jsonData['clientID']);
+						Log::info('====== end data here ');
+					}
 					return response()->json([
 						'ziptopiaID'=>$ziptopia->id,
 					]);
 				}
+				Log::info('turn >0 ziptopia create brok');
 			}
+			Log::info('turn >0 ziptopia id passed in brok');
 		}
 		//if we are at this point then all is wrong!!!
 		//I baked in an "o goodness all is wrong" flag to the ziptopiaID. for now....
-		return response()->json(array(
-			'ziptopiaID '=>-2,
-		));
+		Log::info('===all is dead=== data here ');
+		Log::info('client id: '.$clientID);
+		Log::info('passed in turn number : '.$jsonData['turnNumber']);
+		Log::info('passed in ziptopia id : '.$jsonData['ziptopiaID']);
+		Log::info('passed in current time: '.$jsonData['currentTime']);
+		Log::info('passed in client id: '.$jsonData['clientID']);
+		Log::info('====== end data here ');
+		return response()->json([
+			'ziptopiaID'=>-2,
+		]);
 	}
 
 	public function checkPeople(){

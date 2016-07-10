@@ -90,12 +90,15 @@ function setupTurnNumber(){
 
 function setupZiptopiaID(id){
 	//I baked in an "o goodness all is wrong" flag to the ziptopiaID. for now....
-	if (id < -1) {
-		resetupRun()
-	} else {
-		window.AdamHatesGlobalsZiptopiaID = id;
+	if (id !== undefined) {
+		if (id < -1) {
+			resetupRun()
+		} else {
+			window.AdamHatesGlobalsZiptopiaID = id;
+		}
+		console.log(id);
 	}
-	
+
 }
 
 function getZiptopiaID(){
@@ -154,15 +157,17 @@ function turn(vehicles,peoples,buildings){
 		var dataMapString = getDataMapString(peoples, Date.now());
 		ziptopiaCrossSiteRequest.send(dataMapString);
 		var text = ziptopiaCrossSiteRequest.responseText;
-		var hasZiptopiaID = text.search('{"ziptopiaID":');
+		//console.log(text );
+		var hasZiptopiaID = text.search('{');
 		console.log(hasZiptopiaID );
 		if (hasZiptopiaID) {
 			//console.log(text);
 			var subString = text.substring(hasZiptopiaID);
-			console.log(subString);
+			//console.log(subString);
 			//were calling this every turn.... for now...
-			//responseJSON = JSON.parse(subString);
-			//setupZiptopiaID(responseJSON.ziptopiaID);
+			responseJSON = JSON.parse(subString);
+			console.log(responseJSON);
+			setupZiptopiaID(responseJSON.ziptopiaID);
 		}else{
 			console.log('JSON Parse has no Ziptopia ID, have to restart the run!');
 			resetupRun();
