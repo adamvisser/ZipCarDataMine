@@ -81,7 +81,7 @@ class DataSubmissionController extends Controller
 			}
 			//ziptopia starting so make sure to set its start
 			return response()->json([
-				'ziptopia-id'=>$ziptopia->id,
+				'ziptopiaID'=>$ziptopia->id,
 			]);
 		} else if ($turnNumber == 999) {
 			//everything is ending
@@ -95,8 +95,8 @@ class DataSubmissionController extends Controller
 			//for all the peoples, do their walking/waitings
 		}
 		return response()->json(array(
+			'ziptopiaID '=>$clientID,
 			'peopleRequest'=>$peoplesRequest,
-			'clientID '=>$clientID,
 			'turnNumber' => $turnNumber,
 			'currentMoment' => $currentMoment,
 		));

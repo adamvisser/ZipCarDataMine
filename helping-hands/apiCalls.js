@@ -10,7 +10,7 @@ function dataSubmissionSetup(method, url) {
 	var ziptopiaCrossSiteRequest = new XMLHttpRequest();
 	if ("withCredentials" in ziptopiaCrossSiteRequest) {
 		//Chrome/Firefox/Opera/Safari.
-		ziptopiaCrossSiteRequest.open(method, url, true);
+		ziptopiaCrossSiteRequest.open(method, url, false);
 		console.log('CSR setup');
 	} else if (typeof XDomainRequest != "undefined") {
 		//Microsoft has a larger "im different" complex than the others
@@ -31,26 +31,19 @@ function getDataSubmitterConnection() {
 	var ziptopiaCrossSiteRequest = dataSubmissionSetup('POST', url);
 	if (!ziptopiaCrossSiteRequest) {
 		//not supported by browser....
+		ziptopiaCrossSiteRequest = null;
 		alert('Please contact adam at: adamvissers@gmail.com to let him know you had a problem caused by his request code!');
+	}else{
+		//it actually worked! log the data so I can make sense of it as I program things out
+		ziptopiaCrossSiteRequest.onload = function() {
+			console.log('REQUEST WORKED AND RESPONDED WELL');
+		};
+		//it didnt work, so now I can have users get a notice, and I will have to check the error logs
+		ziptopiaCrossSiteRequest.onerror = function() {
+			alert('Please contact adam at: adamvissers@gmail.com to let him know to check his error logs!');
+		};
 	}
-	//it actually worked! log the data so I can make sense of it as I program things out
-	ziptopiaCrossSiteRequest.onload = function() {
-		console.log('REQUEST WORKED AND RESPONDED WELL');
-	};
 
-	ziptopiaCrossSiteRequest.onreadystatechange = function() {
-        if (ziptopiaCrossSiteRequest.readyState === 4) {
-            if (ziptopiaCrossSiteRequest.status >= 200 && req.status < 400) {
-                // JSON.parse(req.responseText) etc.
-            } else {
-                // Handle error case
-            }
-        }
-    };
-	//it didnt work, so now I can have users get a notice, and I will have to check the error logs
-	ziptopiaCrossSiteRequest.onerror = function() {
-		alert('Please contact adam at: adamvissers@gmail.com to let him know to check his error logs!');
-	};
 	//all that mumbo jumbo, just so I can run this call is pure JS.
 	//it submits data to my api. 
 	return ziptopiaCrossSiteRequest;
@@ -97,7 +90,6 @@ function setupTurnNumber(){
 //this breaks if it gets called more than once....
 //thats some really crap programming adam
 function getTurnNumber(){
-	console.log('turn number was requested');
 	setupTurnNumber();
 	return window.AdamHatesGlobalsTurnNumber;
 }
@@ -110,9 +102,14 @@ function setupClientID(){
 }
 
 function getClientID(){
-	console.log('client id was requested');
 	setupClientID();
 	return window.AdamHatesGlobalsClientID;
+}
+
+function resetupRun(){
+	window.AdamHatesGlobalsTurnNumber = 0;
+	window.AdamHatesGlobalsClientID = parseInt(Date.now());
+	jQuery('#run').click();
 }
 
 /*
@@ -133,9 +130,20 @@ function turn(vehicles,peoples,buildings){
 	//just to be safe we use the parseint here
 	console.log('Launching the request functions');
 	var ziptopiaCrossSiteRequest = getDataSubmitterConnection();
-	var dataMapString = getDataMapString(peoples, Date.now());
-	ziptopiaCrossSiteRequest.send(dataMapString);
-	var text = ziptopiaCrossSiteRequest.responseText;
-	console.log(text);
-	console.log(JSON.parse(text));
+	if (ziptopiaCrossSiteRequest !== null) {
+		var dataMapString = getDataMapString(peoples, Date.now());
+		ziptopiaCrossSiteRequest.send(dataMapString);
+		var text = ziptopiaCrossSiteRequest.responseText;
+		var hasZiptopiaID = text.search('{"ziptopiaID:');
+		if (hasZiptopiaID) {
+			//console.log(text);
+			console.log(JSON.parse(text.substring(hasZiptopiaID)));
+		}else{
+			console.log('JSON Parse has no Ziptopia ID, have to restart the run!');
+			resetupRun();
+		}
+	} else {
+		console.log('CORS request cant be setup.... No POST, No Data.');
+	}
+	console.log('Ending the request functions');
 }
