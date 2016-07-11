@@ -13,12 +13,4 @@ $(document).ready(function() {
 		});
 
 
-angular.module('ziptopia', [ 'ngRoute']).config(function ($routeProvider) {
-			$routeProvider
-			.when('/', {templateUrl: '/views/home.html', controller: homeController});
-		});
-
-
-function homeController(){
-	
-}
+angular.module('ziptopia', [ 'ngRoute','ngResource']);

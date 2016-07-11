@@ -53,7 +53,7 @@ class Ziptopia extends Model
         $ziptopia = Ziptopia::where('id',$ziptopiaID)->update(['end_time' => $currentMomentID]);
         if ($ziptopia == 1) {
             //we only want to return a ziptopia if there is a SINGLE ziptopia with this unique combination
-            return Ziptopia::loadZipTopinstance($clientID, $ziptopiaID);
+            return Ziptopia::loadZipTopinstance($ziptopiaID);
         }else{
             //I am putting this here because this is the best place to put a "o holy cow this whole data run is crap"  function call... for now...
         }

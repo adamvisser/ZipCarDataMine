@@ -6,12 +6,12 @@
 ====================================
 */
 function dataSubmissionSetup(method, url) {
-	console.log('starting data submission setup');
+	//console.log('starting data submission setup');
 	var ziptopiaCrossSiteRequest = new XMLHttpRequest();
 	if ("withCredentials" in ziptopiaCrossSiteRequest) {
 		//Chrome/Firefox/Opera/Safari.
 		ziptopiaCrossSiteRequest.open(method, url, false);
-		console.log('CSR setup');
+		//console.log('CSR setup');
 	} else if (typeof XDomainRequest != "undefined") {
 		//Microsoft has a larger "im different" complex than the others
 		ziptopiaCrossSiteRequest = new XDomainRequest();
@@ -36,7 +36,7 @@ function getDataSubmitterConnection() {
 	}else{
 		//it actually worked! log the data so I can make sense of it as I program things out
 		ziptopiaCrossSiteRequest.onload = function() {
-			console.log('REQUEST WORKED AND RESPONDED WELL');
+			//console.log('REQUEST WORKED AND RESPONDED WELL');
 		};
 		//it didnt work, so now I can have users get a notice, and I will have to check the error logs
 		ziptopiaCrossSiteRequest.onerror = function() {
@@ -96,7 +96,7 @@ function setupZiptopiaID(id){
 		} else {
 			window.AdamHatesGlobalsZiptopiaID = id;
 		}
-		console.log(id);
+		//console.log(id);
 	}
 
 }
@@ -113,6 +113,7 @@ function getZiptopiaID(){
 //thats some really crap programming adam
 function getTurnNumber(){
 	setupTurnNumber();
+	console.log(window.AdamHatesGlobalsTurnNumber);
 	return window.AdamHatesGlobalsTurnNumber;
 }
 
@@ -159,7 +160,7 @@ function turn(vehicles,peoples,buildings){
 		var text = ziptopiaCrossSiteRequest.responseText;
 		//console.log(text );
 		var hasZiptopiaID = text.search('{');
-		console.log(hasZiptopiaID );
+		//console.log(hasZiptopiaID );
 		if (hasZiptopiaID) {
 			//console.log(text);
 			var subString = text.substring(hasZiptopiaID);

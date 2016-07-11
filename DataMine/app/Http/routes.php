@@ -17,10 +17,9 @@ Route::get('/', function () {
 
 Route::post('/submitdata', 'DataSubmissionController@submitData');
 
-Route::get('/check/people','DataSubmissionController@checkPeople');
 
-Route::get('/check/waiting','DataSubmissionController@checkWaiting');
+//we will want to know which building is being traveled to the most, and from which building
+Route::get('/api/graphs/destination/treemap/{startTurn?}/{endTurn?}','DataSubmissionController@checkPeople');
 
-Route::get('/check/walking','DataSubmissionController@checkWalking');
-
-Route::get('/check/buildings','DataSubmissionController@checkBuildings');
+//we will want to know which building is being waited at the longest, and for what building
+Route::get('/api/graphs/origin/treemap/{startTurn?}/{endTurn?}','DataSubmissionController@checkPeople');

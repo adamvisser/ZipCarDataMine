@@ -79,19 +79,10 @@ class DataSubmissionController extends Controller
 				$peoples = People::dataSubmit($currentMoment, $ziptopia, $turnNumber, $peoplesRequest);
 				//ziptopia starting so make sure to set its start
 				if ($peoples) {
-					Log::info('===Starting a run worked data here ');
-						Log::info('peoples count: '.count($peoples));
-						Log::info('ziptopia id returned: '.$ziptopia->id);
-						Log::info('passed in turn number : '.$jsonData['turnNumber']);
-						Log::info('passed in ziptopia id : '.$jsonData['ziptopiaID']);
-						Log::info('passed in current time: '.$jsonData['currentTime']);
-						Log::info('passed in client id: '.$jsonData['clientID']);
-						Log::info('====== end data here ');
+					return response()->json([
+						'ziptopiaID'=>$ziptopia->id,
+					]);
 				}
-				
-				return response()->json([
-					'ziptopiaID'=>$ziptopia->id,
-				]);
 			}
 			Log::info('turn ==0 ziptopia brok');
 		} else if ($turnNumber == 999) {
@@ -104,20 +95,10 @@ class DataSubmissionController extends Controller
 					//for all the peoples, do their walking/waitings
 					$peoples = People::dataSubmit($currentMoment, $ziptopia, $turnNumber, $peoplesRequest);
 					if ($peoples) {
-						Log::info('===ending a run worked data here ');
-						Log::info('peoples count: '.count($peoples));
-						Log::info('passed in ziptopia id: '.$ziptopiaID);
-						Log::info('ziptopia id returned: '.$ziptopia->id);
-						Log::info('passed in turn number : '.$jsonData['turnNumber']);
-						Log::info('passed in ziptopia id : '.$jsonData['ziptopiaID']);
-						Log::info('passed in current time: '.$jsonData['currentTime']);
-						Log::info('passed in client id: '.$jsonData['clientID']);
-						Log::info('====== end data here ');
+						return response()->json([
+							'ziptopiaID'=>$ziptopia->id,
+						]);
 					}
-					
-					return response()->json([
-						'ziptopiaID'=>$ziptopia->id,
-					]);
 			 	}
 			}
 			Log::info('turn ==999 ziptopia brok');
@@ -130,19 +111,11 @@ class DataSubmissionController extends Controller
 					//for all the peoples, do their walking/waitings
 					$peoples = People::dataSubmit($currentMoment, $ziptopia, $turnNumber, $peoplesRequest);
 					if ($peoples) {
-						Log::info('===mid turn worked great=== data here ');
-						Log::info('peoples count: '.count($peoples));
-						Log::info('passed in ziptopia id: '.$ziptopiaID);
-						Log::info('ziptopia id returned: '.$ziptopia->id);
-						Log::info('passed in turn number : '.$jsonData['turnNumber']);
-						Log::info('passed in ziptopia id : '.$jsonData['ziptopiaID']);
-						Log::info('passed in current time: '.$jsonData['currentTime']);
-						Log::info('passed in client id: '.$jsonData['clientID']);
-						Log::info('====== end data here ');
+						return response()->json([
+							'ziptopiaID'=>$ziptopia->id,
+						]);
 					}
-					return response()->json([
-						'ziptopiaID'=>$ziptopia->id,
-					]);
+					
 				}
 				Log::info('turn >0 ziptopia create brok');
 			}
@@ -150,35 +123,8 @@ class DataSubmissionController extends Controller
 		}
 		//if we are at this point then all is wrong!!!
 		//I baked in an "o goodness all is wrong" flag to the ziptopiaID. for now....
-		Log::info('===all is dead=== data here ');
-		Log::info('client id: '.$clientID);
-		Log::info('passed in turn number : '.$jsonData['turnNumber']);
-		Log::info('passed in ziptopia id : '.$jsonData['ziptopiaID']);
-		Log::info('passed in current time: '.$jsonData['currentTime']);
-		Log::info('passed in client id: '.$jsonData['clientID']);
-		Log::info('====== end data here ');
 		return response()->json([
 			'ziptopiaID'=>-2,
 		]);
-	}
-
-	public function checkPeople(){
-
-		return json_encode(People::take(300)->get());
-	}
-
-	public function checkWaiting(){
-
-		return json_encode(Waiting::take(300)->get());
-	}
-
-	public function checkWalking(){
-
-		return json_encode(Walking::take(300)->get());
-	}
-
-	public function checkBuildings(){
-
-		return json_encode(Building::take(300)->get());
 	}
 }
