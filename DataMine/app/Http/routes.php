@@ -25,6 +25,10 @@ Route::get('/api/graphs/destination/treemap/{startTurn?}/{endTurn?}','DataSubmis
 Route::get('/api/graphs/origin/treemap/{startTurn?}/{endTurn?}','DataSubmissionController@checkPeople');
 
 
+
 Route::match(['get', 'post'],
-	'/login',
-	'MainController@login');
+	'/login', [
+    	'as' => 'login', 
+    	'uses' => 'UserController@showProfile'
+    ]
+);
