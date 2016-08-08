@@ -12,5 +12,5 @@ $(document).ready(function() {
 			//alert('bootstrap attempt....');
 		});
 
-
-angular.module('ziptopia', [ 'ngRoute','ngResource']);
+angular.module('ziptopia.auth', []);
+angular.module('ziptopia', [ 'ziptopia.auth','ngRoute','ngResource']);

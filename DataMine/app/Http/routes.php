@@ -29,6 +29,6 @@ Route::get('/api/graphs/origin/treemap/{startTurn?}/{endTurn?}','DataSubmissionC
 Route::match(['get', 'post'],
 	'/login', [
     	'as' => 'login', 
-    	'uses' => 'UserController@showProfile'
+    	'uses' => 'UserController@login'
     ]
 );
