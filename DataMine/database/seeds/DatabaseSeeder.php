@@ -57,5 +57,9 @@ class DatabaseSeeder extends Seeder
 		DB::table('users')->insert([
 				'fullname'=>'Mainz Brady Group', 'username'=>'MBG', 'email'=>'mperkins@mbg.com', 'password'=>Hash::make('adam-does-challenges'),
 			]);
+
+		DB::table('users')->insert([
+				'fullname'=>'CBS Interactive', 'username'=>'CBSI', 'email'=>'notgiven@cbs.com', 'password'=>Hash::make('adam-does-challenges'),
+			]);
     }
 }
