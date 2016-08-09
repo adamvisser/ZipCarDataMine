@@ -6,16 +6,16 @@
 	</div>
 </div>
 <div class="row">
-	<div class="seven wide centered column">
+	<div class="seven wide column">
 		<form ng-submit="checkLogin()" class="ui form">
 			<div class="field">
 				<label>User Name</label>
-				<input type="text" ng-model="auth.username" id="username" placeholder="User Name" />
+				<input type="text" ng-model="loginAuth.username" id="username" placeholder="User Name" />
 			</div>
-			<div class="field" ng-hide="!auth.errors">
-				<div class="ui labeled button" tabindex="0">
+			<div class="field" ng-hide="!loginAuth.errors">
+				<div class="ui labeled fluid button" tabindex="0">
 					<div class="ui red fluid button">
-						<i class="heart icon"></i> Trouble in Zip Town!
+						<i class="remove user icon"></i> Trouble in Zip Town!
 					</div>
 					<a class="ui red basic fluid label">
 						Check Username/Password
@@ -24,9 +24,37 @@
 			</div>
 			<div class="field">
 				<label>Password</label>
-				<input type="password" ng-model="auth.password" id="password" placeholder="Password" />
+				<input type="password" ng-model="loginAuth.password" id="password" placeholder="Password" />
 			</div>
 			<input class="ui fluid purple button" type="submit" value="Login"></input>
+		</form>
+	</div>
+	<div class="two wide column">
+		<div class="ui vertical divider">
+			Or
+		</div>
+	</div>
+	<div class="seven wide column">
+		<form class="ui form">
+			<div class="field">
+				<label>User Name</label>
+				<input type="text" ng-model="registerAuth.username" id="username" placeholder="User Name" />
+			</div>
+			<div class="field" >
+				<label>Full Name</label>
+				<input type="text" ng-model="registerAuth.fullname" id="fullname" placeholder="Full Name" />
+			</div>
+			<div class="field" >
+				<label>Email</label>
+				<input type="text" ng-model="registerAuth.email" id="email" placeholder="Email" />
+			</div>
+			<div class="field">
+				<label>Password</label>
+				<input type="password" ng-model="registerAuth.password" id="password" placeholder="Password" />
+			</div>
+			<button class="ui disabled fluid button">
+				<i class="user icon"></i>Registration Opening Soon
+			</button>
 		</form>
 	</div>
 </div>
