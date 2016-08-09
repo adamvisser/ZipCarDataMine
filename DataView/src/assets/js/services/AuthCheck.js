@@ -1,34 +1,28 @@
-angular.module('ziptopia.auth').factory('AuthCheck', ['$location', function($location) {
-  //this will be the random hashed algorithm that laravel sends us
-  var authToken = '';
-  var userID = 0;
-  var fullName = '';
-  var email = '';
-  var loggedIn = false;
-  var userName = '';
+angular.module('ziptopia.auth').factory('AuthCheck', ['$location', '$cookies', function($location, $cookies) {
 
   return {
     getAuth : function(){
-      return authToken;
+      return $cookies.get('authToken');
     },
     isLoggedIn : function(){
-      return loggedIn;
+      return $cookies.get('loggedIn');
     },
     getUserID : function () {
-      return userID;
+      return $cookies.get('userID');
     },
     getFullName : function () {
-      return fullName;
+      return $cookies.get('fullName');
     },
     setAuth: function(newAuthToken, newUserID, newFullName, newUserName, newEmail){
-      authToken = newAuthToken;
-      userID = newUserID;
-      fullName = newFullName;
-      userName = newUserName;
-      email = newEmail;
-      loggedIn = true;
+      $cookies.put('authToken', newAuthToken);
+      $cookies.put('userID', newUserID);
+      $cookies.put('fullName', newFullName);
+      $cookies.put('userName', newUserName);
+      $cookies.put('email', newEmail);
+      $cookies.put('loggedIn', true);
     },
     forceAuth: function(){
+      var loggedIn = $cookies.get('loggedIn');
       if (!loggedIn) {
         $location.path('/login');
       }

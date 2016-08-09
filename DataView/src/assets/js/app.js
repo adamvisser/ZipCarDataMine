@@ -13,4 +13,4 @@ $(document).ready(function() {
 		});
 
 angular.module('ziptopia.auth', []);
-angular.module('ziptopia', [ 'ziptopia.auth','ngRoute','ngResource']);
+angular.module('ziptopia', [ 'ziptopia.auth','ngRoute','ngResource', 'ngCookies']);
