@@ -18,6 +18,7 @@
 		<a class="item" href="/#/">
 			<i class="home icon"></i>Home
 		</a>
+		<a class="item" href="http://adamvisser.me" target="_blank"><i class="sidebar icon"></i>More About Adam</a>
 	</div>
 
 	<div class="pusher">
@@ -25,6 +26,11 @@
 			<a class="item">
 				<i class="sidebar icon"></i>Menu
 			</a>
+			<div class="right menu">
+				<a class="item" ng-click="logout()">
+					<i class="logout icon"></i>Logout
+				</a>
+			</div>
 		</div>
 		<div class="ui segment" >
 			<div class="ui grid" ng-view>

@@ -30,16 +30,12 @@ PATHS:
     - "src/assets/js/routes.js"
     # stuff to get the app displaying data nicely
     - "src/assets/js/graphs/*.js"
-    - "src/assets/js/graphs/*/*.js"
     # stuff to get the controllers functions included
     - "src/assets/js/controllers/*.js"
-    - "src/assets/js/controllers/*/*.js"
     # all the services needed for this app
     - "src/assets/js/services/*.js"
-    - "src/assets/js/services/*/*.js"
     # all the directives needed for this
     - "src/assets/js/directives/*.js"
-    - "src/assets/js/directives/*/*.js"
   javascriptLibraries:
     - "bower_components/jquery/dist/jquery.js"
     - "bower_components/angular/angular.js"

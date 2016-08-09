@@ -12,28 +12,31 @@
   
 </head>
 <body>
-    
-    <div class="ui inverted labeled icon left inline vertical sidebar menu">
-        <div class="blue header item">ZipTopia</div>
-        <a class="item" href="/#/">
-            <i class="home icon"></i>Home
-        </a>
-    </div>
+	
+	<div class="ui inverted labeled icon left inline vertical sidebar menu">
+		<div class="blue header item">ZipTopia</div>
+		<a class="item" href="/#/">
+			<i class="home icon"></i>Home
+		</a>
+		<a class="item" href="http://adamvisser.me" target="_blank"><i class="sidebar icon"></i>More About Adam</a>
+	</div>
 
-    <div class="pusher">
-        <div id="menu" class="ui centered menu">
-            <a class="item">
-                <i class="sidebar icon"></i>Menu
-            </a>
-            <div class="ui right">
-              <a class="item" href="http://adamvisser.me" target="_blank"><i class="sidebar icon"></i>More About Adam</a>
-            </div>
-        </div>
-        <div class="ui segment" >
-            <div class="ui grid" ng-view>
-                
-            </div>
-        </div>
-    </div>
+	<div class="pusher">
+		<div id="menu" class="ui centered menu" ng-controller="LogoutController">
+			<a id="MenuButton" class="item">
+				<i class="sidebar icon"></i>Menu
+			</a>
+			<div class="right menu" ng-hide="!loggedIn()">
+				<a class="item" ng-click="logout()">
+					<i class="sign out icon"></i>Logout
+				</a>
+			</div>
+		</div>
+		<div class="ui segment" >
+			<div class="ui grid" ng-view>
+				
+			</div>
+		</div>
+	</div>
 </body>
 </html>

@@ -44,7 +44,7 @@ gulp.task('laravel-dev',
  gulp.series(laravel_watch));
 
 gulp.task('laravelize',
- gulp.series('build', laravel_sass, laravel_copy, laravel_javascript, laravel_javascriptLibraries,laravel_images, laravel_templates, laravel_extracss));
+ gulp.series( laravel_sass, laravel_copy, laravel_javascript, laravel_javascriptLibraries,laravel_images, laravel_templates, laravel_extracss));
 
 gulp.task('watch', gulp.series('build', server, watch));
 // Build the site, run the server, and watch for file changes

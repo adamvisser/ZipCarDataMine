@@ -5,12 +5,12 @@ $(document).ready(function() {
 				dimPage          : false,
 				transition       : 'scale down',
 				mobileTransition : 'uncover'
-			}).sidebar('attach events', '.menu .item');
+			}).sidebar('attach events', '#MenuButton');
 			$('#menu').sticky({
 				context: '.pusher'
 			});
 			//alert('bootstrap attempt....');
 		});
 
-angular.module('ziptopia.auth', []);
-angular.module('ziptopia', [ 'ziptopia.auth','ngRoute','ngResource', 'ngCookies']);
+angular.module('ziptopia.auth', ['ngResource','ngCookies']);
+angular.module('ziptopia', [ 'ziptopia.auth','ngRoute']);
