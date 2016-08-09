@@ -25,7 +25,9 @@
             <a class="item">
                 <i class="sidebar icon"></i>Menu
             </a>
-            <a href="http://adamvisser.me" target="_blank">More About Adam</a>
+            <div class="ui right">
+              <a class="item" href="http://adamvisser.me" target="_blank"><i class="sidebar icon"></i>More About Adam</a>
+            </div>
         </div>
         <div class="ui segment" >
             <div class="ui grid" ng-view>

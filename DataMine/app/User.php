@@ -31,7 +31,7 @@ class User extends Authenticatable
         return $this->hasMany('App\JSONSession');
     }
 
-    public static function isValidUsernamePassword($userName, $password){
+    public static function getUserCredentials($userName, $password){
         //search based off of the username
         $user = User::where('username', $userName)->first();
         if($user){
@@ -41,6 +41,30 @@ class User extends Authenticatable
                return $user;
             }
         }
-        return False;
+        return false;
+    }
+
+    public static function newUserCredentials($credentials, $password){
+        //search based off of the username
+        $user = User::where('username', $userName)->first();
+        if($user){
+            //check if the password in the user table matches the hashed version of what was passed in
+            if (Hash::check($password, $user->password)) {
+                // The passwords match...
+               return $user;
+            }
+        }
+        return false;
+    }
+
+    public static function emptyUserCredentials(){
+        return [
+            'username'=>'',
+            'fullname'=>'',
+            'email'=>'',
+            'userid'=>0,
+            'token'=>'',
+            'errors'=>true,
+        ];;
     }
 }

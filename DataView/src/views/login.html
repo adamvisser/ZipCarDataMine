@@ -1,18 +1,32 @@
-<div class="seven wide centered column">
-	<h1>Ziptopia: Login</h1>
-	<h2>Data mining a fake world has never been so fun.</h2>
-	<p>You just have to log in first</p>
+<div class="row">
+	<div class="seven wide centered column">
+		<h1>Ziptopia: Login</h1>
+		<h2>Data mining a fake world has never been so fun.</h2>
+		<p>You just have to log in first</p>
+	</div>
 </div>
-<div class="seven wide centered column">
-	<form ng-submit="checkLogin()" class="ui form">
-		<div class="field">
-			<label>User Name</label>
-			<input type="text" ng-model="auth.username" id="username" placeholder="User Name" />
-		</div>
-		<div class="field">
-			<label>Password</label>
-			<input type="password" ng-model="auth.password" id="password" placeholder="Password" />
-		</div>
-		<input class="ui button" type="submit" value="Login"></input>
-	</form>
+<div class="row">
+	<div class="seven wide centered column">
+		<form ng-submit="checkLogin()" class="ui form">
+			<div class="field">
+				<label>User Name</label>
+				<input type="text" ng-model="auth.username" id="username" placeholder="User Name" />
+			</div>
+			<div class="field" ng-hide="!auth.errors">
+				<div class="ui labeled button" tabindex="0">
+					<div class="ui red fluid button">
+						<i class="heart icon"></i> Trouble in Zip Town!
+					</div>
+					<a class="ui red basic fluid label">
+						Check Username/Password
+					</a>
+				</div>
+			</div>
+			<div class="field">
+				<label>Password</label>
+				<input type="password" ng-model="auth.password" id="password" placeholder="Password" />
+			</div>
+			<input class="ui fluid purple button" type="submit" value="Login"></input>
+		</form>
+	</div>
 </div>

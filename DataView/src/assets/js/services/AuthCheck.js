@@ -3,7 +3,9 @@ angular.module('ziptopia.auth').factory('AuthCheck', ['$location', function($loc
   var authToken = '';
   var userID = 0;
   var fullName = '';
+  var email = '';
   var loggedIn = false;
+  var userName = '';
 
   return {
     getAuth : function(){
@@ -16,11 +18,14 @@ angular.module('ziptopia.auth').factory('AuthCheck', ['$location', function($loc
       return userID;
     },
     getFullName : function () {
-      return userID;
+      return fullName;
     },
-    setAuth: function(newAuth, newName){
-      authToken = newAuth;
-      fullName = newName;
+    setAuth: function(newAuthToken, newUserID, newFullName, newUserName, newEmail){
+      authToken = newAuthToken;
+      userID = newUserID;
+      fullName = newFullName;
+      userName = newUserName;
+      email = newEmail;
       loggedIn = true;
     },
     forceAuth: function(){

@@ -14,27 +14,21 @@ class UserController extends Controller
 	//
 	public function login(Request $request){
 		$jsonData = $request->json()->all();
-		$responseArray = [
-			'userName'=>'',
-			'fullName'=>'',
-			'user_id'=>'',
-			'token'=>'',
-			'status'=>1,
-		];
+		$responseArray = User::emptyUserCredentials();
 		$password = '';
 		if (array_key_exists('username', $jsonData)) {
-			$responseArray['userName'] = $jsonData['username'];
+			$responseArray['username'] = $jsonData['username'];
 		}
 		if (array_key_exists('password', $jsonData)) {
 			$password = $jsonData['password'];
 		}
 
 		//return a bad status if no data was submitted
-		if ($responseArray['userName'] == '' && $password == '') {
+		if ($responseArray['username'] == '' && $password == '') {
 			return response()->json($responseArray);
 		}
 		//trying to cut down on number of mysql selects
-		$userData = User::isValidUsernamePassword($responseArray['userName'], $password);
+		$userData = User::getUserCredentials($responseArray['username'], $password);
 		if($userData){
 			//now we can actually create a 'session', this shouldnt be a new one all the time though... in the future eh
 			$sessionData = JSONSession::startNewSession($userData->id);
@@ -42,9 +36,29 @@ class UserController extends Controller
 			$responseArray['fullname'] = $userData->fullname;
 			$responseArray['user_id'] = $userData->id;
 			$responseArray['token'] = $sessionData->token;
-			$responseArray['errors'] = 0;
+			$responseArray['errors'] = false;
 		}
-		//always return the same array
+		//always return the same array, this way the username wont change on the front end. no way to tell if its a legit username or not. security-ish.
 		return response()->json($responseArray);
+	}
+
+
+	public function register(Request $request){
+		$jsonData = $request->json()->all();
+		$responseArray = User::emptyUserCredentials();
+		$password = '';
+		if (array_key_exists('username', $jsonData)) {
+			$responseArray['username'] = $userName;
+		}
+		if (array_key_exists('password', $jsonData)) {
+			$password = $jsonData['password'];
+		}
+		if (array_key_exists('fullname', $jsonData)) {
+			$responseArray['fullname'] = $jsonData['fullname'];
+		}
+		if (array_key_exists('email', $jsonData)) {
+			$responseArray['email'] = $jsonData['email'];
+		}
+		$responseArray = User::newUserCredentials($responseArray['username'], $password);
 	}
 }
