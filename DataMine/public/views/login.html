@@ -1,0 +1,18 @@
+<div class="seven wide centered column">
+	<h1>Ziptopia: Login</h1>
+	<h2>Data mining a fake world has never been so fun.</h2>
+	<p>You just have to log in first</p>
+</div>
+<div class="seven wide centered column">
+	<form ng-submit="checkLogin()" class="ui form">
+		<div class="field">
+			<label>User Name</label>
+			<input type="text" ng-model="auth.username" id="username" placeholder="User Name" />
+		</div>
+		<div class="field">
+			<label>Password</label>
+			<input type="password" ng-model="auth.password" id="password" placeholder="Password" />
+		</div>
+		<input class="ui button" type="submit" value="Login"></input>
+	</form>
+</div>

@@ -2,6 +2,8 @@
 
 namespace App;
 
+use Hash;
+
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
@@ -12,7 +14,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'fullname', 'username', 'email', 'password',
     ];
 
     /**
@@ -23,4 +25,22 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function jsonSessions()
+    {
+        return $this->hasMany('App\JSONSession');
+    }
+
+    public static function isValidUsernamePassword($userName, $password){
+        //search based off of the username
+        $user = User::where('username', $userName)->first();
+        if($user){
+            //check if the password in the user table matches the hashed version of what was passed in
+            if (Hash::check($password, $user->password)) {
+                // The passwords match...
+               return $user;
+            }
+        }
+        return False;
+    }
 }

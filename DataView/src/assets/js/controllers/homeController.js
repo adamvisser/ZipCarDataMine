@@ -3,5 +3,6 @@
 function homeController($scope, AuthCheck){
 	AuthCheck.forceAuth();
 	//logged in and all is well
+	$scope.fullName = AuthCheck.getFullName();
 }
 

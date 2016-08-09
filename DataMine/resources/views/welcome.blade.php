@@ -1,45 +1,37 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+<!doctype html>
+<html lang="en" ng-app="ziptopia">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZipTopia: Everyone can Data Mine</title>
+  <link href="/css/app.css" rel="stylesheet" type="text/css">
+  <link href="/css/semantic.min.css" rel="stylesheet" type="text/css">
+  <script src="/js/frameworks.js"></script>
+  <script src="/js/app.js"></script>
+  
+  
+</head>
+<body>
+    
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+        <div class="blue header item">ZipTopia</div>
+        <a class="item" href="/#/">
+            <i class="home icon"></i>Home
+        </a>
+    </div>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+    <div class="pusher">
+        <div id="menu" class="ui centered menu">
+            <a class="item">
+                <i class="sidebar icon"></i>Menu
+            </a>
+            <a href="http://adamvisser.me" target="_blank">More About Adam</a>
+        </div>
+        <div class="ui segment" >
+            <div class="ui grid" ng-view>
+                
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>

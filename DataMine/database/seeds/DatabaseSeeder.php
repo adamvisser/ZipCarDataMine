@@ -53,5 +53,9 @@ class DatabaseSeeder extends Seeder
 			'x' =>  '16',
 			'y' => '10',
 		]);
+
+		DB::table('users')->insert([
+				'fullname'=>'Mainz Brady Group', 'username'=>'MBG', 'email'=>'mperkins@mbg.com', 'password'=>Hash::make('adam-does-challenges'),
+			]);
     }
 }
