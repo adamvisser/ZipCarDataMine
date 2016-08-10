@@ -4,7 +4,11 @@ namespace App;
 
 use Hash;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
+//for the default auth
+//use Illuminate\Foundation\Auth\User as Authenticatable;
+//for my JWT auth
+use App\Plugins\JWT\User as Authenticatable;
+
 
 class User extends Authenticatable
 {
@@ -26,36 +30,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function jsonSessions()
-    {
-        return $this->hasMany('App\JSONSession');
-    }
+    
 
-    public static function getUserCredentials($userName, $password){
-        //search based off of the username
-        $user = User::where('username', $userName)->first();
-        if($user){
-            //check if the password in the user table matches the hashed version of what was passed in
-            if (Hash::check($password, $user->password)) {
-                // The passwords match...
-               return $user;
-            }
-        }
-        return false;
-    }
 
-    public static function newUserCredentials($credentials, $password){
-        //search based off of the username
-        $user = User::where('username', $userName)->first();
-        if($user){
-            //check if the password in the user table matches the hashed version of what was passed in
-            if (Hash::check($password, $user->password)) {
-                // The passwords match...
-               return $user;
-            }
-        }
-        return false;
-    }
 
     public static function emptyUserCredentials(){
         return [

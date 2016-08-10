@@ -34,4 +34,13 @@ class JSONSession extends Model
         //I should really go through and set up the events to expire this token
         return $session;
     }
+
+    public static function sessionFromToken($token){
+        return JSONSession::with('user')->where('token', $token)->first();
+    }
+
+    public static function tokenFromUser($userID){
+        //assuming that there will always be a token here is bad
+        return JSONSession::where('user_id', $userID)->orderby('expires_at', 'desc')->first()->token;
+    }
 }
